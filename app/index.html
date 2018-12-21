@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>PAHU</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#181817">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="body">
+	<div class="svg-placeholder" style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position: absolute;">
+			<symbol id="logo" viewBox="0 0 329 50.2">
+				<style type="text/css">
+					.st0 {
+						fill: #FECE76;
+					}
+
+					.st1 {
+						fill: #FFFFFF;
+					}
+				</style>
+				<g>
+					<rect y="20" class="st0" width="10" height="10" />
+					<rect x="20" class="st0" width="10" height="10" />
+					<rect class="st0" width="10" height="10" />
+					<rect x="20" y="20" class="st0" width="10" height="10" />
+					<rect y="40" class="st0" width="10" height="10" />
+					<rect x="40" y="40" class="st0" width="10" height="10" />
+					<rect x="40" class="st0" width="10" height="10" />
+					<rect x="20" y="40" class="st0" width="10" height="10" />
+					<rect x="40" y="20" class="st0" width="10" height="10" />
+					<path class="st1" d="M86.7,31.6v18.1H74.2V1H97c7.4,0,12.9,1.4,16.7,4.1c3.7,2.8,5.6,6.5,5.6,11.3c0,4.6-1.9,8.4-5.8,11.1
+	c-3.9,2.8-9.4,4.1-16.5,4.1H86.7z M106.7,16.4c0-2.4-0.9-4.3-2.6-5.6c-1.7-1.3-4.5-1.9-8.4-1.9h-8.9v15h8.9
+	C103,23.8,106.7,21.4,106.7,16.4z" />
+					<polygon class="st0" points="169,1.6 154.7,1.6 131.7,49.7 144.9,49.7 149.3,39.9 152.6,32.5 161.8,12 171,32.5 174.4,39.9 
+	178.7,49.7 191.9,49.7 " />
+					<path class="st1" d="M259.3,1v48.7h-12.6V28.5H220v21.2h-12.5V1H220v19.7h26.7V1H259.3z" />
+					<path class="st1" d="M291.5,1v28.6c0,3.8,1.1,6.7,3.2,8.6c2.2,1.9,5.3,2.9,9.3,2.9c4,0,7.1-1,9.3-2.9c2.2-1.9,3.2-4.8,3.2-8.6V1H329
+	v28.6c0,4.5-1.1,8.3-3.2,11.4c-2.2,3.1-5.1,5.4-8.9,6.9c-3.8,1.5-8.1,2.3-13,2.3c-7.5,0-13.5-1.7-18-5.2c-4.5-3.5-6.7-8.6-6.7-15.4
+	V1H291.5z" />
+					<rect y="20" class="st0" width="10" height="10" />
+				</g>
+			</symbol>
+			<!-- Search иконка -->
+			<symbol id="search-icon" viewBox="0 0 52.966 52.966">
+				<g>
+					<path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+						c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+						C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+						S32.459,40,21.983,40z" />
+				</g>
+			</symbol>
+			<!-- Search иконка конец -->
+			<!-- Cross иконка -->
+			<symbol id="cross-icon" viewBox="0 0 32.526 32.526">
+				<g>
+					<polygon points="32.526,2.828 29.698,0 16.263,13.435 2.828,0 0,2.828 13.435,16.263 0,29.698 2.828,32.526 16.263,19.091 
+						29.698,32.526 32.526,29.698 19.091,16.263 " />
+				</g>
+			</symbol>
+			<!-- Cross иконка конец -->
+		</svg>
+	</div>
+	<header id="header" class="header">
+		<section class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 offset-lg-0 order-lg-1 col-md-4 offset-md-2 order-md-2 col order-xs-1">
+						<a href="#" class="top-logo">
+							<svg width="191" height="30">
+								<use xlink:href="#logo"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="col-lg-7 order-lg-2 col-md-2 order-md-1 col order-xs-2">
+						<div class="nav-block">
+							<button class="hamburger">
+								<span class="hamburger__bar"></span>
+							</button>
+							<nav class="top-nav" id="top-nav">
+								<ul class="top-nav_wrap drop-nav d-flex align-items-center justify-content-between">
+									<li class="nav_active">
+										<a href="#header" class="top-nav_item scroll" data-target="anchor">Home</a>
+									</li>
+									<li>
+										<a href="#advantage" class="top-nav_item scroll" data-target="anchor">Features</a>
+									</li>
+									<li>
+										<a href="#shop" class="top-nav_item scroll" data-target="anchor">Shop</a>
+									</li>
+									<li>
+										<a href="#projects" class="top-nav_item scroll" data-target="anchor">Accessories</a>
+									</li>
+									<li>
+										<a href="#blog" class="top-nav_item scroll" data-target="anchor">Blog</a>
+									</li>
+									<li>
+										<a href="#contacts" class="top-nav_item scroll" data-target="anchor">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-lg-2 offset-lg-0 order-lg-3 col-md-2 offset-md-2 order-md-3">
+						<div class="top-cart d-flex align-items-center justify-content-between">
+							<a href="#" class="top-cart_item top-cart_search search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="top-cart_item top-cart_heart">
+								<i class="far fa-heart"></i>
+							</a>
+							<a href="#" class="top-cart_item top-cart_cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main">
+			<div class="main-carousel owl-carousel owl-theme">
+				<div class="main-slide">
+					<div class="main-slide-bg" style="background-image: url(../img/bg1.png);"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="main-sup_title d-flex align-items-center">
+									Welcome To Pahu Design
+								</div>
+								<h1 class="main-title">
+									YOU ARE IN GOOD
+									<br> HAND WITH US
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-slide">
+					<div class="main-slide-bg" style="background-image: url(../img/bg2.jpg);"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-sup_title d-flex align-items-center">
+									Welcome To Pahu Design
+								</div>
+								<h1 class="main-title">
+									YOU ARE IN GOOD
+									<br> HAND WITH US
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-slide">
+					<div class="main-slide-bg" style="background-image: url(../img/bg3.jpg);"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-sup_title d-flex align-items-center">
+									Welcome To Pahu Design
+								</div>
+								<h1 class="main-title">
+									YOU ARE IN GOOD
+									<br> HAND WITH US
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<section class="advantage" id="advantage">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3 col-sm-12">
+					<h2 class="title advantage__title">
+						Why choose us
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="advantage__card advantage__card_tool">
+						<h4 class="advantage__card__title">
+							Modern Design
+						</h4>
+						<p class="advantage__card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua.
+						</p>
+					</div>
+					<div class="advantage__card advantage__card_star">
+						<h4 class="advantage__card__title">
+							Modern Design
+						</h4>
+						<p class="advantage__card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 advantage__img-dn">
+					<div class="advantage__img d-flex align-items-center">
+						<img src="img/advantage_sofa.png" alt="Sofa" class="advantage__sofa">
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="advantage__card advantage__card_money">
+						<h4 class="advantage__card__title">
+							Modern Design
+						</h4>
+						<p class="advantage__card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua.
+						</p>
+					</div>
+					<div class="advantage__card advantage__card_call">
+						<h4 class="advantage__card__title">
+							Modern Design
+						</h4>
+						<p class="advantage__card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="collection">
+		<div class="collection__wrap d-flex flex-row ">
+			<div class="collection__card collection__card--vietnam">
+				<h3 class="collection__title collection__title--vietnam">
+					Patio
+					<br> Furniture
+					<br> Vietnam
+				</h3>
+				<a href="#" class="collection__detail collection__detail--vietnam">View Deatail</a>
+			</div>
+			<div class="collection__column d-flex flex-column">
+				<div class="collection__row d-flex">
+					<div class="collection__banner collection__banner--plane"></div>
+					<div class="collection__card collection__card--trend">
+						<h3 class="collection__title collection__title--trend">Design by
+							<br> Jarnet Park
+							<br> trend 2017
+						</h3>
+						<a href="#" class="collection__detail collection__detail--trend">View Deatail
+						</a>
+					</div>
+				</div>
+				<div class="collection__row d-flex">
+					<div class="collection__card collection__card--ceramic">
+						<h3 class="collection__title collection__title--ceramic">Ceramics
+							<br> WM
+							<br> Munoz
+						</h3>
+						<a href="#" class="collection__detail collection__detail--ceramic">View Deatail
+						</a>
+					</div>
+					<div class="collection__banner collection__banner--apple"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="shop" id="shop">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="title shop__title">
+						Our Collection
+					</h2>
+				</div>
+			</div>
+			<div class="card__line d-flex flex-wrap">
+				<div class="card d-flex flex-column justify-content-center">
+					<div class="card__new">
+						<span>New</span>
+					</div>
+					<img src="img/card-1.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<img src="img/card-6.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<div class="card__new">
+						<span>New</span>
+					</div>
+					<img src="img/card-2.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<img src="img/card-3.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<img src="img/card-4.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<img src="img/card-5.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<div class="card__new">
+						<span>New</span>
+					</div>
+					<img src="img/card-6.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card d-flex flex-column justify-content-center">
+					<img src="img/card-1.png" alt="Corona Chair" class="card__img">
+					<div class="card__info">
+						<h4 class="card__title">Corna Chair</h4>
+						<p class="card__text">Printed evening dress with straight sleeves
+						</p>
+						<b class="card__price">$14.86</b>
+					</div>
+					<div class="card__overlay d-flex justify-content-center align-items-center">
+						<div class="card__content d-flex justify-content-around">
+							<a href="#" class="card__item card__search">
+								<i class="fas fa-search fa-flip-horizontal"></i>
+							</a>
+							<a href="#" class="card__item card__cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+							<a href="#" class="card__item card__heart">
+								<i class="far fa-heart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="designers">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="title designers__title">
+						Our Designer
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="designers__card">
+						<img src="img/Bertil-Stam.png" alt="Bertil Stam" class="designers__photo">
+						<h3 class="designers__name d-flex align-items-center">Bertil Stam</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="designers__card">
+						<img src="img/Janet-Park.png" alt="Bertil Stam" class="designers__photo">
+						<h3 class="designers__name d-flex align-items-center">Janet Park</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="designers__card">
+						<img src="img/Wm-Munoz.png" alt="Bertil Stam" class="designers__photo">
+						<h3 class="designers__name d-flex align-items-center">Wm Munoz</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="projects" id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="title projects__title">
+						Our Project
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="projects-carousel owl-carousel owl-theme">
+			<div class="projects__item d-flex flex-column">
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-1.png);"></div>
+				<h3 class="projects__name">
+					MODERN LIVING ROOM
+				</h3>
+				<h4 class="projects__type">
+					INTERIOR DESIGN
+				</h4>
+			</div>
+			<div class="projects__item  d-flex flex-column">
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-2.png);"></div>
+				<h3 class="projects__name">
+					MODERN LIVING ROOM
+				</h3>
+				<h4 class="projects__type">
+					INTERIOR DESIGN
+				</h4>
+			</div>
+			<div class="projects__item  d-flex flex-column">
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-3.png);"></div>
+				<h3 class="projects__name">
+					MODERN LIVING ROOM
+				</h3>
+				<h4 class="projects__type">
+					INTERIOR DESIGN
+				</h4>
+			</div>
+			<div class="projects__item  d-flex flex-column">
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-4.png);"></div>
+				<h3 class="projects__name">
+					MODERN LIVING ROOM
+				</h3>
+				<h4 class="projects__type">
+					INTERIOR DESIGN
+				</h4>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="title blog__title">
+						FROM OUR BLOG
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="post blog__post">
+						<img src="img/blog-1.png" alt="Work Space" class="post__img">
+						<div class="post__content">
+							<h3 class="post__title">OUR NEW WORK SPACE</h3>
+							<p class="post__text">Feel alive! So if you’re looking for, here is a list of some of the most popular and
+								fiestas
+								the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+							<a href="#" class="post__btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="post blog__post">
+						<img src="img/blog-2.png" alt="Work Space" class="post__img">
+						<div class="post__content">
+							<h3 class="post__title">Modern trend collection</h3>
+							<p class="post__text">Feel alive! So if you’re looking for, here is a list of some of the most popular and
+								fiestas
+								the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+							<a href="#" class="post__btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="post blog__post">
+						<img src="img/blog-3.png" alt="Work Space" class="post__img">
+						<div class="post__content">
+							<h3 class="post__title">A WOMAN THINKING</h3>
+							<p class="post__text">Feel alive! So if you’re looking for, here is a list of some of the most popular and
+								fiestas
+								the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+							<a href="#" class="post__btn">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="location footer__location">
+						<div class="location__title">
+							CALL US NOW
+						</div>
+						<div class="location__info">
+							Office telephone: (251) 546-9442
+							<br> Hotline: 906-2721
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 col-sm-6 offset-sm-0">
+					<div class="location footer__location">
+						<div class="location__title">
+							COME VISIT US
+						</div>
+						<div class="location__info">
+							123 6th St.
+							<br> Melbourne, FL 32904
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 offset-md-1 col-sm-12 offset-sm-0">
+					<div class="location footer__location">
+						<div class="location__title">
+							SEND A MESSENGE
+						</div>
+						<div class="location__info">
+							Email: pahudesign@pahu.vn
+							<br> Inquiries: support@pahu.vn
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="info footer__info">
+						<a href="#" class="info__logo">
+							<!-- <img src="img/footer-logo.png" alt="PAHU"> -->
+							<svg width="240" height="36">
+								<use xlink:href="#logo"></use>
+							</svg>
+						</a>
+						<ul class="social info__social d-flex justify-content-between">
+							<li class="social__list">
+								<a href="#" class="social__link">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="social__list">
+								<a href="#" class="social__link">
+									<i class="fab fa-google-plus-g"></i>
+								</a>
+							</li>
+							<li class="social__list">
+								<a href="#" class="social__link">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="social__list">
+								<a href="#" class="social__link">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 col-sm-6 offset-sm-0">
+					<div class="info footer__info">
+						<div class="info__title">
+							Hours work
+						</div>
+						<div class="info__text">
+							Monday - Friday: 08:00 am - 17:00 pm.
+							<br> Saturday: 09:00 am - 12h30 pm.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 offset-md-1">
+					<div class="info footer__info">
+						<div class="info__title">
+							Newsletter
+						</div>
+						<div class="email info__email">
+							<input type="email" name="email" id="email__line" class="email__line" placeholder="Enter your email...">
+							<span class="email__bar"></span>
+							<button type="submit" value="send" class="email__btn">
+								<i class="fas fa-long-arrow-alt-right"></i>
+							</button>
+						</div>
+						<div class="info__text">
+							Sign up to get exclusive offers from our favorite brands and to be well up in the news.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Группа модальных окон -->
+	<!-- header search модальное окно -->
+	<div class="search-modal modal">
+		<div class="search-modal__header">
+			<h4 class="search-modal__title">Search</h4>
+			<button class="search-modal__close">
+				<svg width="8" height="8">
+					<use xlink:href="#cross-icon"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="search-modal__body">
+			<div class="search-modal__group">
+				<input placeholder="Search" type="text" name="search" class="search-modal__form">
+				<button class="search-modal__button">
+					<svg width="12" height="12">
+						<use xlink:href="#search-icon"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- header search модальное окно конец -->
+	<!-- Группа модальных окон конец -->
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

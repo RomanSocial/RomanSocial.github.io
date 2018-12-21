@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Linotte-SemiBold';
+  src: url('Linotte-SemiBold.eot');
+  src: url('Linotte-SemiBold.woff2') format('woff2'),
+       url('Linotte-SemiBold.woff') format('woff'),
+       url('Linotte-SemiBold.ttf') format('truetype'),
+       url('Linotte-SemiBold.svg#Linotte-SemiBold') format('svg'),
+       url('Linotte-SemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

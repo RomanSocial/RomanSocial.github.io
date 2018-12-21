@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+.collection {
+	background-color: #a29bfe;
+	&__wrap {
+		
+	}
+  &__card {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &--vietnam {
+			width: 25vw;
+			// max-width: 396px;
+			height: 670px;
+      background-image: url(../img/collection_vietnam.png);
+    }
+    &--ceramic {
+			width: 53vw;
+			// max-width: 866px;
+			height: 329px;
+      background-image: url(../img/collection_ceramic.png);
+    }
+    &--trend {
+			width: 50vw;
+			// max-width: 815px;
+			height: 341px;
+      background-image: url(../img/collection_trend.png);
+    }
+  }
+  &__banner {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &--apple {
+			width: 22vw;
+			// max-width: 338px;
+			height: 330px;
+      background-image: url(../img/collection_apple.png);
+    }
+    &--plane {
+			width: 25vw;
+			// max-width: 390px;
+			height: 341px;
+      background-image: url(../img/collection_plane.png);
+    }
+  }
+  &__column {
+
+	}
+  &__row {
+
+	}
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    &--vietnam {
+      color: #749d26;
+    }
+    &--ceramic {
+      color: #352b30;
+    }
+    &--trend {
+      color: #599ba7;
+    }
+  }
+  &__detail {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    &--vietnam,
+    &--vietnam>.fas {
+      color: #749d26;
+    }
+    &--ceramic,
+    &--ceramic>.fas {
+      color: #352b30;
+    }
+    &--trend,
+    &--trend>.fas {
+      color: #599ba7;
+    }
+  }
+}
+</style>
+</head>
+<body>
+	<section class="collection">
+		<div class="conteiner-fluid">
+			<div class="collection__wrap d-flex flex-row">
+				<div class="collection__card collection__card--vietnam">
+					<div class="collection__title collection__title--vietnam">
+						Patio Furniture Vietnam
+					</div>
+					<div class="collection__detail collection__detail--vietnam">View Deatail
+						<i class="fas fa-long-arrow-alt-right"></i>
+					</div>
+				</div>
+
+				<div class="collection__column d-flex flex-column">
+					<div class="collection__row d-flex">
+						<div class="collection__banner collection__banner--plane"></div>
+						<div class="collection__card collection__card--trend">
+
+							<div class="collection__title collection__title--trend">Design by Jarnet Park trend 2017</div>
+							<div class="collection__detail collection__detail--trend">View Deatail
+								<i class="fas fa-long-arrow-alt-right"></i>
+							</div>
+						</div>
+					</div>
+					<div class="collection__row d-flex">
+						<div class="collection__card collection__card--ceramic">
+							<div class="collection__title collection__title--ceramic">Ceramics WM Munoz</div>
+							<div class="collection__detail collection__detail--ceramic">View Deatail
+								<i class="fas fa-long-arrow-alt-right"></i>
+							</div>
+						</div>
+						<div class="collection__banner collection__banner--apple">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.collection__wrap d-flex flex-row -->
+		</div>
+		<!-- /.conteiner-fluid -->
+	</section>
+</body>
+</html>

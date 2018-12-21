@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-g", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-g", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("linotte-g", "../fonts/LinotteSemiBold/LinotteSemiBold", 600);
+@include font-face("poppins-g", "../fonts/PoppinsRegular/PoppinsRegular", 400);
+@include font-face("poppins-g", "../fonts/PoppinsSemiBold/PoppinsSemiBold", 600);
+

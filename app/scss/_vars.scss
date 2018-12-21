@@ -1,0 +1,26 @@
+$default-font: poppins-g, sans-serif;
+
+$accent: #fece76;
+$text: #000;
+$dark: #181817;
+$white: #fefefe;
+$card-text: #6d6d6d;
+$black: #000;
+
+$text-size: 14px;
+$fourth-title-size: 20px;
+$contact-size: 23px;
+$info-size: 25px;
+$third-title-size: 30px;
+$sec-title-size: 40px;
+$price-size: 27px;
+$email-btn: 18px;
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

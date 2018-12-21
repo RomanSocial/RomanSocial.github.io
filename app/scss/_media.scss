@@ -1,0 +1,266 @@
+@import "vars";
+/*==========  Desktop First  ==========*/
+
+@media screen and (max-height: 540px) {
+  .main {
+    &-slide {
+			height: 440;
+      padding: 100px 0;
+    }
+  }
+}
+// 1300px
+@media screen and (max-width: 1360px) {
+	.main {
+		&-sup_title {
+			font-size: 20px;
+			&::before {
+        width: 50px;
+      }
+		}
+		&-title {
+			font-size: 50px;
+		}
+	}
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.header {
+		min-height: 600px;
+	}
+  .title {
+    font-size: 32px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .main {
+		&-slide {
+			min-height: 500px;
+		}
+    &-sup_title {
+      font-size: 20px;
+      &::before {
+        width: 50px;
+      }
+    }
+    &-title {
+      font-size: 48px;
+    }
+  }
+  .owl-nav {
+    top: 50%;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    width: 56px;
+    height: 56px;
+    font-size: 34px;
+  }
+  // COLLECTION начало
+  .collection {
+    &__card {
+      &--vietnam {
+        flex: 1 0 31%;
+      }
+      &--ceramic,
+      &--trend {
+        flex: 1 0 69%;
+      }
+    }
+    &__banner {
+      display: none;
+    }
+	} 
+	//SHOP 
+	.card {
+		flex: 1 0 24%;
+	}
+	// PROJECT начало
+  .projects {
+    &__item {
+      height: 750px;
+      padding-bottom: 25px;
+    }
+    &__name {
+      font-size: 24px;
+    }
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.header {
+		min-height: 540px;
+	}
+	.hamburger {
+		display: block;
+		overflow: hidden;
+		cursor: pointer;
+	}
+  .top-nav {
+		position: fixed;
+    transition: opacity .3s linear, top .3s linear, visibility .3s linear;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    top: 0px;
+		left: 0px;
+		right: 0;
+		bottom: 0;
+    color: #878787;
+    z-index: 999;
+    background-color: $dark;
+		width: 100%;
+		height: 100%;
+    padding: 7px 0;
+    border-radius: 3px;
+	}
+	.is-show {
+		visibility: visible;
+		opacity: 1;
+		top: 100px;
+		pointer-events: auto;
+	}
+	.drop-nav {
+		flex-direction: column;
+		li {
+			text-align: center;
+			width: 100%;
+		}
+	}
+	.top-nav_item {
+		line-height: 50px;
+	}
+	.top-cart {
+		&_item {
+			&:nth-child(1) {
+				margin-left: 0px;
+			}
+			&:nth-child(3) {
+				margin-right: 0px;
+			}
+		}
+	}
+	//MAIN
+	.main {
+		&-slide {
+			min-height: 440px;
+		}
+		&-title {
+			text-align: center;
+		}
+		&-sup_title {
+			justify-content: center;
+		}
+		&-slide-bg {
+			&::before {
+				// background-position: -25% top;
+			}
+		}
+	}
+	//advantage
+	.advantage__img-dn {
+		display: none !important;
+	}
+	// COLLECTION начало
+  .collection {
+    &__card {
+      &--vietnam {
+        flex: 1 0 40%;
+      }
+      &--ceramic,
+      &--trend {
+        flex: 1 0 60%;
+      }
+    }
+    &__banner {
+      display: none;
+    }
+	}
+	//SHOP 
+	.card {
+		flex: 1 0 45%;
+	}
+	//MODAL
+	.search-modal {
+		width: 700px;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	//HEADER
+	.nav-block {
+		justify-content: end;
+	}
+	.top-cart {
+		display: none !important;
+	}
+	//MAIN
+	.owl-nav {
+		display: none;
+	}
+	//ADVANTAGE
+	.advantage {
+		&__title {
+			margin-bottom: 50px;
+		}
+		&__card {
+			margin-top: 50px;
+		}
+	}
+	//FOOTER
+	.location:last-child {
+		margin-top: 10px;
+	}
+	
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	//HEADER
+	.top-cart {
+		display: none !important;
+	}
+	//MAIN
+	.main-title {
+		font-size: 30px;
+	}
+	.main-sup_title {
+		font-size: 15px;
+		&::before {
+			width: 3.93vmax;
+		}
+	}
+	//PROJECTS
+	.projects {
+    &__item {
+      height: 568px;
+      padding-bottom: 25px;
+    }
+	}
+	//FOOTER
+	.location {
+		margin: 0px auto;
+	}
+	.info__logo {
+		text-align: center;
+	}
+}
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {}
+
+// ≤768px
+@include media-breakpoint-up(md) {}
+
+// ≤992px
+@include media-breakpoint-up(lg) {}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {}
