@@ -1,0 +1,40 @@
+.top-line {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: $text;
+    &:hover {
+      text-decoration: none;
+      color: $Shark;
+    }
+  }
+}
+
+.main-nav--mr {
+  .main-nav__item {
+    margin-right: 40px;
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.main-nav--ml {
+  .main-nav__item {
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
