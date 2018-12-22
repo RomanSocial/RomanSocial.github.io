@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("monstserrat-f", "../fonts/MonstserratBlack/MonstserratBlack", 800);
+@include font-face("monstserrat-f", "../fonts/MonstserratRegular/MonstserratRegular", 400);
+@include font-face("monstserrat-f", "../fonts/MonstserratSemiBold/MonstserratSemiBold", 600);

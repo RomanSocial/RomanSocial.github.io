@@ -1,0 +1,60 @@
+#best-deals {
+	margin-top: 40px;
+}
+.best-deals {
+	position: relative;
+	height: 290px;
+	&__item {
+		height: 290px;
+	}
+	&__wrapper {
+		height: 290px;
+	}
+	.lg-product__img {
+		line-height: 290px;
+	}
+	&__quantity-wrapper {
+		justify-content: space-around;
+	}
+}
+
+
+// Блок навигации слайдера
+.best-deals .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: -30px;
+}
+
+.best-deals .owl-nav .owl-prev {
+  position: absolute;
+  top: -35px;
+  right: 28px;
+}
+
+.best-deals .owl-nav .owl-next {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.best-deals .owl-nav .owl-next,
+.best-deals .owl-nav .owl-prev {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+  background-color: $white !important;
+  fill: $text;
+}
+
+.best-deals .owl-nav .owl-next:hover,
+.best-deals .owl-nav .owl-prev:hover {
+  background-color: transparent;
+  fill: $accent;
+}
+
+.best-deals .owl-nav .owl-next:focus,
+.best-deals .owl-nav .owl-prev:focus {
+  outline: none;
+}

@@ -1,0 +1,385 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  background-color: $gallery;
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  transition: all .3s ease;
+}
+// Модальные окна
+.modal {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+// Модальные окна конец
+// Большая кнопка добавления в корзину
+.button {
+  width: 162px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 56px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $accent;
+  transition: all .2s ease;
+  z-index: 1;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.329);
+  }
+  &:hover {
+    color: lighten($accent, 9);
+  }
+}
+// Большая кнопка добавления в корзину конец
+// Маленькая кнопка добавления в корзину
+.small-button {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $accent;
+  transition: all .2s ease;
+  z-index: 1;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.329);
+  }
+  &:hover {
+    fill: lighten($accent, 9);
+  }
+}
+// Маленькая кнопка добавления в корзину конец
+// Большая кнопка ссылкой <a>
+.link-button {
+  text-align: center;
+  padding: 15px 0px;
+  width: 162px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $accent;
+  transition: all .2s ease;
+  &:active {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.329);
+  }
+  &:hover {
+    text-decoration: none;
+    color: lighten($accent, 9);
+  }
+}
+// Большая кнопка ссылкой <a> конец
+// Заголовок слайдеров продуктов
+.slider-title {
+  display: inline-block;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $text;
+  fill: $accent;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: $alto;
+  }
+  svg {
+    position: relative;
+    top: 2px;
+  }
+}
+// Заголовок слайдеров продуктов конец
+// Слайдер большого размера LG
+.lg-product {
+	position: relative;
+	background-color: #fff;
+	&__wrapper {
+		display: flex;
+	}
+	&__img {
+		text-align: center;
+		flex: 1 0 50%;
+	}
+	&__content {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 0 50%;
+		background-color: $charade;
+		padding-top: 60px;
+		padding-bottom: 12px;
+	}
+	&__title {
+		font-size: 15px;
+		color: $white;
+	}
+	&__price {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 600;
+    &--old {
+      text-indent: -140px;
+      text-decoration: line-through;
+      color: $sale-old;
+    }
+    &--new {
+      font-size: 30px;
+      color: $sale-new;
+    }
+	}
+}
+.sale-timer__lg {
+	position: absolute;
+	top: 0px;
+	left: 20%;
+	z-index: 1;
+}
+// Слайдер большого размера LG конец
+// Слайдеры среднего размера MD
+.md-product {
+	background-color: $white;
+  &__image {
+		position: relative;
+		text-align: center;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      bottom: -18px;
+      width: 80px;
+      height: 1px;
+      background-color: $mercury;
+    }
+  }
+  &__meta {
+    padding: 30px 20px 0px;
+    text-align: center;
+  }
+  &__name {
+    line-height: 1.2;
+    height: 55px;
+    overflow-y: hidden;
+    font-size: 15px;
+  }
+  &__price {
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 600;
+    &--old {
+      text-align: left;
+      text-decoration: line-through;
+      color: $sale-old;
+    }
+    &--new {
+      font-size: 30px;
+      color: $sale-new;
+    }
+  }
+  &__stock {
+    margin-top: 3px;
+    font-size: 13px;
+    color: $stock-yes;
+  }
+  &__button {
+    fill: $text;
+  }
+}
+// Слайдеры среднего размера MD конец
+// Слайдер маленького размера SM
+.sm-product {
+	background-color: #fff;
+	margin-bottom: 18px;
+	display: flex;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+  &__meta {
+    display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-left: 10px;
+  }
+  &__name {
+    font-size: 13px;
+  }
+  &__price {
+    &--new {
+			font-weight: 600;
+			color: $sale-new;
+      font-size: 20px;
+    }
+  }
+  &__stock {
+		font-size: 10px;
+		color: $stock-yes;
+  }
+}
+// Слайдер маленького размера SM конец
+// Блок выбора кол-ва товара
+.quantity-wrapper {
+  display: flex;
+}
+.quantity-adder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input {
+    height: 32px;
+    min-width: 30px;
+    text-align: center;
+    width: auto;
+    border: 1px solid $mercury;
+  }
+}
+.quantity-buttons .add-action {
+  border-bottom: 1px solid $mercury;
+  border-right: 1px solid $mercury;
+  border-top: 1px solid $mercury;
+  color: $text;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  height: 16px;
+  line-height: 15px;
+  position: relative;
+  text-align: center;
+	width: 27px;
+	background-color: #fff;
+}
+.quantity-buttons .add-up {
+  border-bottom: none;
+}
+// Блок выбора кол-ва товара конец
+// Картинки в каруселе 
+.owl-carousel .owl-item img {
+	display: inline;
+	width: inherit;
+}
+// Картинки в каруселе конец
+// Таймер
+.sale-timer {
+	text-align: center;
+	display: flex;
+	&__item {
+		width: 65px;
+		height: 52px;
+		line-height: 25px;
+		color: $charade;
+		background-color: $accent;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 800;
+		border-right: 1px solid rgba(0, 0, 0, 0.199);
+		&:last-child {
+			width: 75px;
+		}
+	}
+}
+// Таймер конец
+
+
+
+@import "animate";
+@import "header";
+@import "modal";
+@import "main-slider";
+@import "banners";
+@import "featured-products";
+@import "best-deals";
+@import "main-page-banner";
+@import "new-popular-products";
+@import "new-products";
+@import "popular-products";
+@import "brands";
+@import "media"; // Always at the end

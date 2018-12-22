@@ -1,0 +1,86 @@
+// Header Search модальное окно
+.search-modal {
+  position: fixed;
+	margin: 0px auto;
+	top: 0px;
+  left: 0;
+  right: 0;
+  width: 900px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	
+  &__header {
+    padding: 15px;
+    display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(153, 153, 153, 0.26);
+  }
+  &__title {
+    font-size: 18px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  &__close {
+    border: none;
+		outline: none;
+		background-color: transparent;
+		cursor: pointer;
+    &:focus {
+      border: none;
+      outline: none;
+		}
+		svg {
+			fill: #999;
+		}
+		&:hover svg {
+			fill: $warning;
+		}
+	}
+	&__body {
+		padding: 15px;
+	}
+	&__group {
+		display: flex;
+		flex: 1;
+		margin-top: 10px;
+	}
+	&__form {
+		width: 100%;
+		font-size: 13px;
+		padding: 13px 12px 11px;
+		border: none;
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+		border: 1px solid rgba(153, 153, 153, 0.418);
+	}
+  &__button {
+		flex: 0 0 auto;
+		padding: 10px 15px 10px 15px;
+		border-bottom-right-radius: 50px;
+		border-top-right-radius: 50px;
+		border: 1px solid rgba(153, 153, 153, 0.418);
+		border-left: none;
+    outline: none;
+		background-color: transparent;
+		transition: all .2s ease;
+    &:focus {
+      outline: none;
+		}
+		&:active {
+			box-shadow: inset 0px 0px 5px rgba(153, 153, 153, 0.418);
+		}
+		&:hover svg {
+			fill: $accent;
+		}
+	}
+	&--show {
+		display: block;
+		visibility: visible;
+		top: 40px;
+		opacity: 1;
+		animation: search-show .4s ease;
+		z-index: 5;
+		
+	}
+}

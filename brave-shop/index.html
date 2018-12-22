@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Arabica</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="isHome">
+	<!-- SVG-иконки -->
+	<div class="svg-placeholder" style="display: none;">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0"
+		 height="0" style="position: absolute;">
+			<!-- Search иконка -->
+			<symbol id="search-icon" viewBox="0 0 52.966 52.966">
+				<g>
+					<path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+						c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+						C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+						S32.459,40,21.983,40z" />
+				</g>
+			</symbol>
+			<!-- Search иконка конец -->
+			<!-- Cart иконка -->
+			<symbol id="cart-icon" viewBox="0 0 511.999 511.999">
+				<g>
+					<g>
+						<g>
+							<path d="M214.685,402.828c-24.829,0-45.029,20.2-45.029,45.029c0,24.829,20.2,45.029,45.029,45.029s45.029-20.2,45.029-45.029
+										C259.713,423.028,239.513,402.828,214.685,402.828z M214.685,467.742c-10.966,0-19.887-8.922-19.887-19.887
+										c0-10.966,8.922-19.887,19.887-19.887s19.887,8.922,19.887,19.887C234.572,458.822,225.65,467.742,214.685,467.742z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path d="M372.63,402.828c-24.829,0-45.029,20.2-45.029,45.029c0,24.829,20.2,45.029,45.029,45.029s45.029-20.2,45.029-45.029
+										C417.658,423.028,397.458,402.828,372.63,402.828z M372.63,467.742c-10.966,0-19.887-8.922-19.887-19.887
+										c0-10.966,8.922-19.887,19.887-19.887c10.966,0,19.887,8.922,19.887,19.887C392.517,458.822,383.595,467.742,372.63,467.742z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path d="M383.716,165.755H203.567c-6.943,0-12.571,5.628-12.571,12.571c0,6.943,5.629,12.571,12.571,12.571h180.149
+										c6.943,0,12.571-5.628,12.571-12.571C396.287,171.382,390.659,165.755,383.716,165.755z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path d="M373.911,231.035H213.373c-6.943,0-12.571,5.628-12.571,12.571s5.628,12.571,12.571,12.571h160.537
+										c6.943,0,12.571-5.628,12.571-12.571C386.481,236.664,380.853,231.035,373.911,231.035z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path d="M506.341,109.744c-4.794-5.884-11.898-9.258-19.489-9.258H95.278L87.37,62.097c-1.651-8.008-7.113-14.732-14.614-17.989
+										l-55.177-23.95c-6.37-2.767-13.773,0.156-16.536,6.524c-2.766,6.37,0.157,13.774,6.524,16.537L62.745,67.17l60.826,295.261
+										c2.396,11.628,12.752,20.068,24.625,20.068h301.166c6.943,0,12.571-5.628,12.571-12.571c0-6.943-5.628-12.571-12.571-12.571
+										H148.197l-7.399-35.916H451.69c11.872,0,22.229-8.44,24.624-20.068l35.163-170.675
+										C513.008,123.266,511.136,115.627,506.341,109.744z M451.69,296.301H135.619l-35.161-170.674l386.393,0.001L451.69,296.301z" />
+						</g>
+					</g>
+				</g>
+			</symbol>
+			<!-- Cart иконка конец -->
+			<!-- Angle Down иконка -->
+			<symbol id="angle-down" viewBox="0 0 284.929 284.929">
+				<g>
+					<path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+						L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+						c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+						c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z" />
+				</g>
+			</symbol>
+			<!-- Angle Down иконка конец -->
+			<!-- Cross иконка -->
+			<symbol id="cross-icon" viewBox="0 0 32.526 32.526">
+				<g>
+					<polygon points="32.526,2.828 29.698,0 16.263,13.435 2.828,0 0,2.828 13.435,16.263 0,29.698 2.828,32.526 16.263,19.091 
+						29.698,32.526 32.526,29.698 19.091,16.263 " />
+				</g>
+			</symbol>
+			<!-- Cross иконка конец -->
+			<!-- Angle Right иконка -->
+			<symbol id="angle-right" viewBox="0 0 284.935 284.936">
+				<g>
+					<path d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
+								c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677
+								c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
+								c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z" />
+				</g>
+			</symbol>
+			<!-- Angle Right иконка конец -->
+			<!-- Angle Left иконка -->
+			<symbol id="angle-left" viewBox="0 0 284.935 284.936">
+				<g>
+					<path d="M110.488,142.468L222.694,30.264c1.902-1.903,2.854-4.093,2.854-6.567c0-2.474-0.951-4.664-2.854-6.563L208.417,2.857
+								C206.513,0.955,204.324,0,201.856,0c-2.475,0-4.664,0.955-6.567,2.857L62.24,135.9c-1.903,1.903-2.852,4.093-2.852,6.567
+								c0,2.475,0.949,4.664,2.852,6.567l133.042,133.043c1.906,1.906,4.097,2.857,6.571,2.857c2.471,0,4.66-0.951,6.563-2.857
+								l14.277-14.267c1.902-1.903,2.851-4.094,2.851-6.57c0-2.472-0.948-4.661-2.851-6.564L110.488,142.468z" />
+				</g>
+			</symbol>
+			<!-- Angle Left иконка конец -->
+			<!-- Star иконка -->
+			<symbol id="star-icon" viewBox="0 0 19.481 19.481">
+				<g>
+					<path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z" />
+				</g>
+			</symbol>
+			<!-- Star иконка конец -->
+		</svg>
+	</div>
+	<!-- SVG-иконки конец -->
+
+	<!-- /#header.header -->
+	<header class="header" id="header">
+		<div class="row">
+			<!-- Логотип -->
+			<div class="logo__column col-lg-2 col-12">
+				<a href="#" class="logo--link header__logo">
+					<img src="img/logo.png" alt="Логотип" class="logo">
+				</a>
+			</div>
+			<!-- Логотип конец -->
+			<!-- Главная навигация -->
+			<div class="nav__column col-lg-6 col-12">
+				<nav class="main-nav header__main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Домой</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Категории</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Аксесуары</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Сервис</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Поддержка</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Главная навигация конец -->
+			<!-- Коробка пользователя -->
+			<div class="box__column col-lg-4 col-12">
+				<!-- Поиск -->
+				<div class="header__search">
+					<a href="#" class="search">
+						<svg width="19" height="19">
+							<use xlink:href="#search-icon"></use>
+						</svg>
+						<br>
+						Поиск
+					</a>
+				</div>
+				<!-- Поиск конец -->
+				<!-- Корзина -->
+				<div id="cart" class="cart header__cart">
+					<div class="cart__iner">
+						<div class="cart__icon">
+							<svg width="36" height="36">
+								<use xlink:href="#cart-icon"></use>
+							</svg>
+						</div>
+						<div class="cart__text">
+							<h6 class="cart__title">Корзина покупок</h6>
+							<span class="cart__total">0 предметов - 0.00 грн.</span>
+							<svg width="7" height="7">
+								<use xlink:href="#angle-down"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- Корзина конец -->
+			</div>
+			<!-- Коробка пользователя конец -->
+		</div>
+	</header>
+	<!-- /#header.header -->
+
+
+	<section id="main-slider">
+		<div class="row">
+			<div class="col-12">
+				<!-- Слайдер -->
+				<div class="main-slider owl-carousel owl-theme">
+					<!-- Слайд -->
+					<div class="main-slider__item">
+						<div class="row">
+							<div class="col-lg-6 offset-lg-1">
+								<div class="main-slider__cont">
+									<h1 class="main-slider__title">Сезонный <br> <span>Sale</span></h1>
+									<p class="main-slider__text">Лучшие вина, которые со временнем становяться только лучше</p>
+									<button class="button main-slider__button">Купить сейчас</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Слайд конец -->
+					<!-- Слайд -->
+					<div class="main-slider__item">
+						<div class="row">
+							<div class="col-lg-6 offset-lg-1">
+								<div class="main-slider__cont">
+									<h1 class="main-slider__title">Сезонный <br> <span>Sale</span></h1>
+									<p class="main-slider__text">Лучшие вина, которые со временнем становяться только лучше</p>
+									<button class="button main-slider__button">Купить сейчас</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Слайд конец -->
+					<!-- Слайд -->
+					<div class="main-slider__item">
+						<div class="row">
+							<div class="col-lg-6 offset-lg-1">
+								<div class="main-slider__cont">
+									<h1 class="main-slider__title">Сезонный <br> <span>Sale</span></h1>
+									<p class="main-slider__text">Лучшие вина, которые со временнем становяться только лучше</p>
+									<button class="button main-slider__button">Купить сейчас</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Слайд конец -->
+				</div>
+				<!-- Слайдер конец -->
+				<!-- Блок навигации слайдера -->
+				<svg class="main-slider__prev" width="65" height="65">
+					<use xlink:href="#angle-left"></use>
+				</svg>
+				<svg class="main-slider__next" width="65" height="65">
+					<use xlink:href="#angle-right"></use>
+				</svg>
+				<!-- Блок навигации слайдера конец -->
+			</div>
+		</div>
+	</section>
+	<!-- /#slider -->
+
+	<section id="banners">
+		<!-- Банеры -->
+		<div class="banners">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<!-- Банер--1 -->
+						<div class="banner banner--1">
+							<h2 class="banner__title">Email <span>накладная</span></h2>
+							<p class="banner__text">После оформления заказа, электронная накладная приходит вам на email</p>
+							<a href="#" class="link-button banner__button">Отлично!</a>
+						</div>
+						<!-- Банер--1 конец -->
+					</div>
+					<div class="col-md-4">
+						<!-- Банер--2 -->
+						<div class="banner banner--2">
+							<h2 class="banner__title">Шоколадки с <span>цельным орехом</span></h2>
+							<p class="banner__text">Лучшие заграничные шоколадки, по сладким ценам!</p>
+							<a href="#" class="link-button banner__button">Купить сейчас</a>
+						</div>
+						<!-- Банер--2 конец -->
+					</div>
+					<div class="col-md-4">
+						<!-- Банер--3 -->
+						<div class="banner banner--3">
+							<h2 class="banner__title">100% Арабика + <span>Шоколадка</span></h2>
+							<p class="banner__text">Купи одну любую упаковку кофе и получи скидку, на плитку шоколада!</p>
+							<a href="#" class="link-button banner__button">Купить сейчас</a>
+						</div>
+						<!-- Банер--3 конец -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Банеры конец -->
+	</section>
+	<!-- /#banners -->
+
+	<section id="featured-products">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Шапка слайдера -->
+					<h3 class="featured-products__title slider-title">
+						<svg width="18" height="18">
+							<use xlink:href="#star-icon"></use>
+						</svg>
+						Рекомендуемые товары
+					</h3>
+					<!-- Шапка слайдера конец -->
+					<!-- Слайдер -->
+					<div class="featured-products owl-carousel owl-theme">
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id1.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино.</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id2.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id3.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id4.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id5.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="featured-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id2.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper featured-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+					</div>
+					<!-- Слайдер конец -->
+					<!-- Блок навигации слайдера -->
+					<svg class="featured-products__prev" width="8" height="8">
+						<use xlink:href="#angle-left"></use>
+					</svg>
+					<svg class="featured-products__next" width="8" height="8">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+					<!-- Блок навигации слайдера конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /#featured-products -->
+
+	<section id="best-deals">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Шапка слайдера -->
+					<h3 class="best-deals__title slider-title">
+						<svg width="18" height="18">
+							<use xlink:href="#star-icon"></use>
+						</svg>
+						Лучшие предложения
+					</h3>
+					<!-- Шапка слайдера конец -->
+					<!-- Слайдер -->
+					<div class="best-deals owl-carousel owl-theme">
+						<!-- Слайд -->
+						<div class="best-deals__item lg-product">
+							<div class="best-deals__wrapper lg-product__wrapper">
+								<div class="lg-product__img"><img src="img/id6-b.png" alt="Вино"></div>
+								<div class="lg-product__content">
+									<div class="lg-product__title">Далеко-далеко за словесными горами в стране гласных и согласных живут.</div>
+									<div class="lg-product__price">
+										<div class="lg-product__price--old">150 грн.</div>
+										<div class="lg-product__price--new">100 грн.</div>
+									</div>
+									<div class="quantity-wrapper best-deals__quantity-wrapper">
+										<div class="quantity-adder">
+											<div class="quantity-number pull-left">
+												<input type="text" name="quantity" size="2" value="1" />
+											</div>
+											<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+												<span class="add-down add-action">-</span>
+											</div>
+											<input type="hidden" name="product_id" size="2" value="40" />
+										</div>
+										<button type="button" class="lg-product__button button">
+											Добавить в корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- Таймер обратного отсчета дней -->
+							<div class="sale-timer sale-timer__lg sale-timer__vine">
+								<div class="sale-timer__item sale-timer__vine--days"></div>
+								<div class="sale-timer__item sale-timer__vine--hours"></div>
+								<div class="sale-timer__item sale-timer__vine--minutes"></div>
+								<div class="sale-timer__item sale-timer__vine--second"></div>
+							</div>
+							<!-- Таймер обратного отсчета дней конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="best-deals__item lg-product">
+							<div class="best-deals__wrapper lg-product__wrapper">
+								<div class="lg-product__img"><img src="img/id7-b.png" alt="Вино"></div>
+								<div class="lg-product__content">
+									<div class="lg-product__title">Далеко-далеко за словесными горами в стране гласных и согласных живут.</div>
+									<div class="lg-product__price">
+										<div class="lg-product__price--old">150 грн.</div>
+										<div class="lg-product__price--new">100 грн.</div>
+									</div>
+									<div class="quantity-wrapper best-deals__quantity-wrapper">
+										<div class="quantity-adder">
+											<div class="quantity-number pull-left">
+												<input type="text" name="quantity" size="2" value="1" />
+											</div>
+											<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+												<span class="add-down add-action">-</span>
+											</div>
+											<input type="hidden" name="product_id" size="2" value="40" />
+										</div>
+										<button type="button" class="lg-product__button button">
+											Добавить в корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- Таймер обратного отсчета дней -->
+							<div class="sale-timer sale-timer__lg sale-timer__choco">
+								<div class="sale-timer__item sale-timer__choco--days"></div>
+								<div class="sale-timer__item sale-timer__choco--hours"></div>
+								<div class="sale-timer__item sale-timer__choco--minutes"></div>
+								<div class="sale-timer__item sale-timer__choco--second"></div>
+							</div>
+							<!-- Таймер обратного отсчета дней конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="best-deals__item lg-product">
+							<div class="best-deals__wrapper lg-product__wrapper">
+								<div class="lg-product__img"><img src="img/id6-b.png" alt="Вино"></div>
+								<div class="lg-product__content">
+									<div class="lg-product__title">Далеко-далеко за словесными горами в стране гласных и согласных живут.</div>
+									<div class="lg-product__price">
+										<div class="lg-product__price--old">150 грн.</div>
+										<div class="lg-product__price--new">100 грн.</div>
+									</div>
+									<div class="quantity-wrapper best-deals__quantity-wrapper">
+										<div class="quantity-adder">
+											<div class="quantity-number pull-left">
+												<input type="text" name="quantity" size="2" value="1" />
+											</div>
+											<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+												<span class="add-down add-action">-</span>
+											</div>
+											<input type="hidden" name="product_id" size="2" value="40" />
+										</div>
+										<button type="button" class="lg-product__button button">
+											Добавить в корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- Таймер обратного отсчета дней -->
+							<div class="sale-timer sale-timer__lg sale-timer__coffe">
+								<div class="sale-timer__item sale-timer__coffe--days"></div>
+								<div class="sale-timer__item sale-timer__coffe--hours"></div>
+								<div class="sale-timer__item sale-timer__coffe--minutes"></div>
+								<div class="sale-timer__item sale-timer__coffe--second"></div>
+							</div>
+							<!-- Таймер обратного отсчета дней конец -->
+						</div>
+						<!-- Слайд конец -->
+					</div>
+					<!-- Слайдер конец -->
+					<!-- Блок навигации слайдера -->
+					<svg class="best-deals__prev" width="8" height="8">
+						<use xlink:href="#angle-left"></use>
+					</svg>
+					<svg class="best-deals__next" width="8" height="8">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+					<!-- Блок навигации слайдера конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /#best-deals -->
+
+	<section id="main-page-banner">
+		<div class="container">
+			<img src="img/main-page-banner.png" alt="Банер главной страници" class="main-page-banner img-responsive">
+		</div>
+	</section>
+
+	<section id="new-popular-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<!-- Шапка слайдера -->
+					<h3 class="new-products__title slider-title">
+						<svg width="18" height="18">
+							<use xlink:href="#star-icon"></use>
+						</svg>
+						Новые продукты
+					</h3>
+					<!-- Шапка слайдера конец -->
+					<!-- New products слайдер -->
+					<div class="new-products owl-carousel owl-theme">
+						<!-- Слайд -->
+						<div class="new-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id1.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино.</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper new-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="new-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id1.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино.</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper new-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="new-products__item md-product">
+							<div class="md-product__image">
+								<img src="img/id1.png" alt="Картинка продукта">
+							</div>
+							<!-- Описание продукта -->
+							<div class="md-product__meta">
+								<div class="md-product__name">Вино.</div>
+								<div class="md-product__price">
+									<div class="md-product__price--old">150 грн.</div>
+									<div class="md-product__price--new">100 грн.</div>
+								</div>
+								<div class="md-product__stock">Есть в наличии</div>
+								<!-- Добавление кол-ва предметов -->
+								<div class="quantity-wrapper new-products__quantity-wrapper">
+									<div class="quantity-adder">
+										<div class="quantity-number pull-left">
+											<input type="text" name="quantity" size="2" value="1" />
+										</div>
+										<div class="quantity-buttons pull-left"> <span class="add-up add-action">+</span>
+											<span class="add-down add-action">-</span>
+										</div>
+										<input type="hidden" name="product_id" size="2" value="40" />
+									</div>
+									<button type="button" class="md-product__button small-button">
+										<svg width="30" height="30">
+											<use xlink:href="#cart-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- Добавление кол-ва предметов конец -->
+							</div>
+							<!-- Описание продукта конец -->
+						</div>
+						<!-- Слайд конец -->
+					</div>
+					<!-- New products слайдер конец -->
+					<!-- Блок навигации слайдера -->
+					<svg class="new-products__prev" width="8" height="8">
+						<use xlink:href="#angle-left"></use>
+					</svg>
+					<svg class="new-products__next" width="8" height="8">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+					<!-- Блок навигации слайдера конец -->
+				</div>
+				<div class="col-lg-6">
+					<!-- Шапка слайдера -->
+					<h3 class="popular-products__title slider-title">
+						<svg width="18" height="18">
+							<use xlink:href="#star-icon"></use>
+						</svg>
+						Популярные продукты
+					</h3>
+					<!-- Шапка слайдера конец -->
+					<!-- Most popular слайдер -->
+					<div class="popular-products owl-carousel owl-theme">
+						<!-- Слайд -->
+						<div class="popular-products__item">
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="popular-products__item">
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="popular-products__item">
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+							<!-- Товары маленького SM размера -->
+							<div class="sm-product">
+								<div class="sm-product__image">
+									<img src="img/id1.png" alt="Картинка продукта">
+								</div>
+								<!-- Описание продукта -->
+								<div class="sm-product__meta">
+									<div class="sm-product__name">Вино.</div>
+									<div class="sm-product__price">
+										<div class="sm-product__price--new">100 грн.</div>
+									</div>
+									<div class="sm-product__stock">Есть в наличии</div>
+								</div>
+								<!-- Описание продукта конец -->
+							</div>
+							<!-- Товары маленького SM размера конец -->
+						</div>
+						<!-- Слайд конец -->
+					</div>
+					<!-- Most popular слайдер конец -->
+					<!-- Блок навигации слайдера -->
+					<svg class="popular-products__prev" width="8" height="8">
+						<use xlink:href="#angle-left"></use>
+					</svg>
+					<svg class="popular-products__next" width="8" height="8">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+					<!-- Блок навигации слайдера конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /#new-popular-products -->
+
+	<section id="brands">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Brand слайдер -->
+					<div class="brand-slider owl-carousel owl-theme">
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/ambassador_logo.png" alt="Ambassador" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/ariel_logo.png" alt="Ariel" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/bellarome_logo.png" alt="Bellarome" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/barillapasta_logo.png" alt="Barilla Pasta" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/bertolli_logo.png" alt="Bertolli" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/Combino_logo.jpg" alt="Combino" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/Fragolino_logo.png" alt="Fragolino" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/gillette_logo.png" alt="Gillette" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/gimoka_logo.png" alt="Gimoka" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/hellmanns-logo.png" alt="Hellmanns" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/jacobs_logo.png" alt="Jacobs" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/lamarchesina_logo.jpg" alt="La Marchesina" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/lavazza_logo.png" alt="Lavazza" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/milka_logo.png" alt="Milka" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/pringles_logo.jpg" alt="Pringles" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/riomare_logo.jpg" alt="Rio Mare" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/rittersport.png" alt="Ritter Sport" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/studentska_logo.png" alt="Studentska" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/tide_logo.png" alt="Tide" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+						<!-- Слайд -->
+						<div class="brand-slider__item brand">
+							<img src="img/toblerone_logo.png" alt="Toblerone" class="brand__img">
+						</div>
+						<!-- Слайд конец -->
+					</div>
+					<!-- Brand слайдер конец -->
+					<!-- Блок навигации слайдера -->
+					<svg class="brand-slider__prev" width="8" height="8">
+						<use xlink:href="#angle-left"></use>
+					</svg>
+					<svg class="brand-slider__next" width="8" height="8">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+					<!-- Блок навигации слайдера конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Группа модальных окон -->
+	<!-- header search модальное окно -->
+	<div class="search-modal modal">
+		<div class="search-modal__header">
+			<h4 class="search-modal__title">Search</h4>
+			<button class="search-modal__close">
+				<svg width="8" height="8">
+					<use xlink:href="#cross-icon"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="search-modal__body">
+			<div class="search-modal__group">
+				<input placeholder="Search" type="text" name="search" class="search-modal__form">
+				<button class="search-modal__button">
+					<svg width="12" height="12">
+						<use xlink:href="#search-icon"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- header search модальное окно конец -->
+	<!-- Группа модальных окон конец -->
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/countdown/js/jquery.countdown.min.js"></script>
+
+</body>
+
+</html>

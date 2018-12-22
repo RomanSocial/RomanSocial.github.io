@@ -1,0 +1,29 @@
+$default-font: "monstserrat-f", sans-serif;
+$accent: #fcdd2d;
+$text: #333;
+$warning: tomato;
+$slim-text: #999;
+
+$sale-old: #ff5252;
+$sale-new: #fcdd2d;
+// $sale-new: #4CAF50;
+
+$stock-no: #ff5252;
+$stock-yes: #4CAF50;
+
+$mandy: #e25a5a;
+$charade: #2b2d36;
+$cerulean-blue: #2f59b7;
+$white: #ffffff;
+$gallery: #eeeeee;
+$alto: #d9d9d9;
+$mercury: #e1e1e1;
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

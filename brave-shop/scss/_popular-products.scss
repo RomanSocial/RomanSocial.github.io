@@ -1,0 +1,54 @@
+.popular-products {
+  position: relative;
+  height: 504px;
+  &__item {
+    height: 504px;
+  }
+  .sm-product__image {
+    height: 113px;
+  }
+  .sm-product__image img {
+    display: block;
+    height: 100%;
+  }
+}
+
+// Блок навигации слайдера
+.popular-products .owl-nav {
+  position: absolute; 
+  width: 100%;
+  height: 0px;
+  top: -30px;
+}
+
+.popular-products .owl-nav .owl-prev {
+  position: absolute;
+  top: -35px;
+  right: 28px;
+}
+
+.popular-products .owl-nav .owl-next {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.popular-products .owl-nav .owl-next,
+.popular-products .owl-nav .owl-prev {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+  background-color: $white !important;
+  fill: $text;
+}
+
+.popular-products .owl-nav .owl-next:hover,
+.popular-products .owl-nav .owl-prev:hover {
+  background-color: transparent;
+  fill: $accent;
+}
+
+.popular-products .owl-nav .owl-next:focus,
+.popular-products .owl-nav .owl-prev:focus {
+  outline: none;
+}
