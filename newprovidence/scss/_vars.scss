@@ -1,9 +1,11 @@
-$default-font: "Lato-e", sans-serif;
+$default-font: "lato-g", sans-serif;
+$custom-font: "varela-g", sans-serif;
 $accent: #267df4;
 $text: #26272d;
-
-// Custom collor's
-$Shark: #1b1c1e;
+$text-color: #8c8f94;
+$green: #6fc754;
+$hover: rgba(27, 28, 30, 0.4);
+$link: 16px;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
