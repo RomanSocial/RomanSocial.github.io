@@ -1,0 +1,420 @@
+@import "vars";
+/*==========  Desktop First  ==========*/
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+  // App секция
+  .app {
+    &__form {
+      margin-bottom: 60px;
+      &_text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      &_btn {
+        display: inline-block;
+        &--xs {
+          display: none;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  // App секция конец
+  // Plan секция
+  .card-wrap-xs {
+    display: none;
+  }
+  // Plan секция конец
+  // Subscribe секция
+  .subscribe {
+    text-align: center;
+    &__line {
+      input {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    &__btn {
+      display: inline-block;
+      &--xs {
+        display: none;
+      }
+    }
+  }
+	// Subscribe секция конец
+	// Plan секция
+	.starter,
+  .Pro {
+    display: block;
+    opacity: 1;
+  }
+	// Plan секция конец
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	//  Бургер
+	// App секция
+	.app {
+		&__form {
+			margin-bottom: 60px;
+			&_text {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			&_btn {
+				display: inline-block;
+				&--xs {
+					display: none;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+// App секция конец
+// Plan секция
+.card-wrap-xs {
+	display: none;
+}
+// Plan секция конец
+// Subscribe секция
+.subscribe {
+	text-align: center;
+	&__line {
+		input {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		&--xs {
+			display: none;
+		}
+	}
+}
+// Subscribe секция конец
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  // Header
+  #header {
+    z-index: 1;
+  }
+  .main-page {
+    &__title {
+      margin-top: 30px;
+      font-size: 50px;
+    }
+    &__text {
+      color: #8c8f94;
+      font-size: 18px;
+    }
+    &__tel {
+      display: block;
+    }
+    &__btn {
+      margin-bottom: 0;
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  } // Main menu главное меню
+  .main-menu {
+    &__item {
+      display: none;
+    }
+  } //  Бургер
+  .top_mnu {
+    &__faq-menu {
+      margin-top: 50px;
+      padding-bottom: 100px;
+    }
+    &__basic-menu {
+      display: block !important;
+      margin-top: 100px;
+    }
+  }
+  .basic-menu {
+    display: block;
+    text-align: center;
+    &__item {
+      display: block;
+    }
+    &__link {
+      color: #fff;
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 12px;
+      opacity: 1;
+      position: relative;
+      height: 60px;
+      &:hover,
+      :active,
+      :focus {
+        color: $accent;
+        outline: none;
+      }
+    }
+    &__scroll-text {
+      pointer-events: none;
+      margin: 0px auto;
+      text-align: center;
+      text-indent: 1px;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      color: rgba(255, 255, 255, 0.26);
+      font-size: 13px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      text-transform: uppercase;
+      animation: scroll-text 3s ease infinite;
+    }
+  } // Protected секция
+  .protected {
+    &__btns {
+      &_learn {
+        margin-top: 10px;
+      }
+    }
+  } // Protected секция конец
+  // App секция
+  .app {
+    &__form {
+      width: 100%;
+    }
+  } // App секция конец
+  // Customers секция
+  // Кнопки слайдера
+  .slick-prev {
+    left: 0px;
+    top: 20px;
+  }
+  .slick-next {
+    right: 0px;
+    top: 20px;
+  } // Customers секция конец
+  // Plan секция
+  .plan {
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    &__title {
+      text-align: center;
+    }
+    &__ident {
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  } // Plan секция конец
+  // Subscribe секция 
+  .subscribe {
+    &__title {
+      text-align: center;
+    }
+  } // subscribe секция конец
+  // Social секция
+  .social {
+    &__links {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  } // Social секция конец
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  // Main page главная страница
+  .main-page {
+    &__tel {
+      display: none;
+    }
+    &__title {
+      margin-top: 15px;
+    }
+    &__btn {
+      margin-bottom: 62px;
+      background-color: rgba(255, 255, 255, 0.363);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.363);
+      }
+    }
+    &__text {
+      color: #26272d;
+    }
+  } // Social секция
+  .social {
+    &__aple-btn {
+      display: block;
+      margin: 10px auto;
+    }
+    &__links {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  } // Social секция конец
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .title {
+    text-align: center;
+  } // Feature секция
+  .feature {
+    text-align: center;
+    &__pic {
+      margin: 0px auto;
+      &_clock {
+        margin-top: 10px;
+      }
+    }
+    &__text {
+      width: 100%;
+    }
+  } // Feature секция конец
+  // App секция
+  .app {
+    &__form {
+      margin-bottom: 10px;
+      &_text {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      &_btn {
+        display: none;
+        &--xs {
+          display: inline-block;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  // App секция конец
+  // Protected секция
+  .protected {
+    &__text {
+      text-align: center;
+    }
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      &_try {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      &_learn {
+        margin-top: 20px;
+        margin-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  } // Protected секция конец
+  // Plan секция
+  .starter,
+  .Pro {
+    display: none;
+    opacity: 0;
+  }
+  .card-wrap-xs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+  .card-xs {
+    flex: 1 0 50%;
+    padding: 10px 0px;
+    border-radius: 21px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #26292c46;
+    outline: none;
+    transition: all .3s ease;
+    &:active,
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(92, 95, 101, .28);
+    }
+  }
+  .card-xs--active {
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(92, 95, 101, .28);
+  }
+  // Plan секция конец
+  // Subscribe секция
+  .subscribe {
+    text-align: center;
+    &__line {
+      input {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    &__btn {
+      display: none;
+      &--xs {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  }
+  // Subscribe секция конец
+  // site-map секция
+  #site-map {
+    height: auto;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+  .info {
+    text-align: center;
+    position: relative;
+		cursor: pointer;
+		transition: all .3s ease;
+    &__item {
+      display: none;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+    &:hover .info__item {
+      display: block;
+      opacity: 1;
+    }
+    &:active .info__item {
+      display: block;
+      opacity: 1;
+    }
+  } // site-map секция конец
+}
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {}
+
+// ≤768px
+@include media-breakpoint-up(md) {}
+
+// ≤992px
+@include media-breakpoint-up(lg) {}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {}
