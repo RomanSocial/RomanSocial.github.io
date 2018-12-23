@@ -8,3 +8,13 @@
 		opacity: 1;
 	}
 }
+@keyframes cart-show {
+	from {
+		right: -1000px;
+		opacity: 0;
+	}
+	to {
+		right: 0px;
+		opacity: 1;
+	}
+}

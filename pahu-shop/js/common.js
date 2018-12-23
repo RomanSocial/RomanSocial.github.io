@@ -103,4 +103,14 @@ $(function () {
 		$('.search-modal').removeClass("search-modal--show");
 	});
 
+	// Корзина открыть и закрыть
+	$(".cart").click(function (e) {
+		$('.cart-modal').addClass("cart-modal--show");
+		e.preventDefault();
+	});
+	$(".cart-modal__close").click(function (e) {
+		$('.cart-modal').removeClass("cart-modal--show");
+		e.preventDefault();
+	});
+
 });
