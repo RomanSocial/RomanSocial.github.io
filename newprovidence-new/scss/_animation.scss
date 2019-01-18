@@ -1,0 +1,29 @@
+@keyframes fun-slider {
+	0%{
+		transform: translateX(0px);
+	}
+	12%{
+		transform: translateX(363px);
+	}
+	24%{
+		transform: translateX(726px);
+	}
+	36%{
+		transform: translateX(363px);
+	}
+	48%{
+		transform: translateX(0px);
+	}
+	60%{
+		transform: translateX(-363px);
+	}
+	72%{
+		transform: translateX(-726px);
+	}
+	84%{
+		transform: translateX(-363px);
+	}
+	96%{
+		transform: translateX(0px);
+	}
+}

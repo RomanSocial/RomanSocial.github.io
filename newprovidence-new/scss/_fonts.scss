@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("Lato-e", "../fonts/LatoBold/LatoBold", 700);
+@include font-face("Lato-e", "../fonts/LatoLight/LatoLight", 200);
+@include font-face("Lato-e", "../fonts/LatoRegular/LatoRegular", 400);
+@include font-face("Varela-e", "../fonts/VarelaRound/VarelaRound", 400);

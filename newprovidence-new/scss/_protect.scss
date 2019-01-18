@@ -1,0 +1,38 @@
+.protect {
+	position: relative;
+	overflow-y: hidden;
+	padding: 240px 0px;
+	&__picture {
+		overflow-y: hidden;
+		position: absolute;
+		right: 80px;
+		top: -120px;
+	}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    margin-top: 70px;
+    color: $sub-text;
+    font-size: 20px;
+    &:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
+  &__buttons {
+		display: flex;
+    margin-top: 75px;
+  }
+  &__button {
+		&--blue {
+			justify-content: space-between;
+			width: 202px;
+			padding: 8px 20px;
+		}
+		&--grey {
+			margin-left: 20px;
+			padding: 8px 30px;
+		}
+	}
+}

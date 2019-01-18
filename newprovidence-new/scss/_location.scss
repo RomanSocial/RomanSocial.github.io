@@ -1,0 +1,40 @@
+.location {
+  position: relative;
+  overflow-x: hidden;
+  padding: 240px 0px;
+  &__picture {
+    overflow-x: hidden;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    margin-top: 64px;
+    color: $sub-text;
+    font-size: 20px;
+    &:nth-child(3) {
+			margin-top: 30px;
+			margin-bottom: 64px;
+    }
+  }
+  &__links-title {
+    color: $text;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+	}
+	&__links {
+		margin-top: 30px;
+	}
+	&__link {
+		&:first-child {
+			margin-right: 30px;
+		}
+	}
+}

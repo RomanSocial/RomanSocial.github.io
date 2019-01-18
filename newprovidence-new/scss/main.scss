@@ -1,0 +1,143 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  transition: all .3s ease;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+// Стилизация заголовков
+.h2 {
+  font-family: 'Varela-e';
+  color: $text;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+.h3 {
+  color: $text;
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 34px;
+}
+
+// Общие классы
+.button {
+  border-radius: 25px;
+  &--acc {
+    display: flex;
+    align-items: center;
+    background-color: $accent;
+    color: #fff;
+    border: 1px solid transparent;
+    svg {
+      fill: #fff;
+    }
+    &:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: $accent;
+      border: 1px solid $accent;
+    }
+    &:hover svg {
+      fill: $accent;
+    }
+  }
+  &--grey {
+    border: 1px solid rgba($text, .1);
+    color: $text;
+    text-decoration: none;
+    svg {
+      fill: $text;
+    }
+    &:hover {
+      border: 1px solid rgba($accent, .2);
+      box-shadow: 0px 0px 20px lighten($accent, 35);
+      text-decoration: none;
+      svg {
+        fill: $accent;
+      }
+    }
+  }
+}
+@import "animation";
+@import "general";
+@import "header";
+@import "top-line";
+@import "hamburger";
+@import "hamburger-menu";
+@import "main-screen";
+@import "advantage";
+@import "protect";
+@import "location";
+@import "interface";
+@import "download";
+@import "reviwes";
+@import "business";
+@import "media"; // Always at the end

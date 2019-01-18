@@ -1,0 +1,124 @@
+.main-screen {
+  &__title {
+    color: $text; //удалить
+  }
+  &__feedback-video {
+    margin-top: 20px;
+  }
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 68px;
+  span {
+    color: #fff;
+    background-color: $accent;
+  }
+}
+
+.feedback-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 438px;
+  height: 237px;
+  background-image: url(../img/fedback-1.png);
+  &:hover {
+    text-decoration: none;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: $accent;
+    svg {
+      fill: #fff;
+    }
+  }
+  &__title {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+  }
+  &__text {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.advantage-list {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__icon {
+    svg {
+      fill: $accent;
+    }
+  }
+  &__block {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    color: $text;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.gybrid-sim {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.pulse-bg {
+	position: absolute;
+	width: 120%;
+	padding-bottom: 120%;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	color: $accent;
+  z-index: 1;
+  &__container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pulse infinite ease-in-out 2s;
+  }
+  &__circle {
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	}
+	&__circle1 {
+		width: 100%;
+		height: 100%;
+	}
+	&__circle2 {
+		width: 85%;
+		height: 85%;
+	}
+}

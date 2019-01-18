@@ -1,0 +1,102 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+// Кастомный баг-фикс 17px margin-right и сдвига контента
+html {
+	margin-right: 0 !important;
+}
+.mfp-bg {
+	overflow-y: scroll !important;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+ul, li, p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+* {
+	transition: all .3s ease;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+main {
+	overflow: hidden;
+}
+
+.top-line--fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	animation: top-line-fixed .3s ease forwards;
+}
+
+.header_placeholder {
+	height: 50px;
+	display: none;
+}
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+
+
+
+@import "top-line";
+@import "bottom-line";
+@import "main-screen";
+@import "animation";
+@import "custom-form";
+@import "pop-up";
+
+@import "media"; // Always at the end
