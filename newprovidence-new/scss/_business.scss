@@ -1,5 +1,8 @@
 .business {
-  padding: 150px 0px;
+	position: relative;
+  background-color: $bg;
+	padding: 150px 0px;
+	z-index: 1;
   &__choose-u {
     margin-top: 70px;
   }
@@ -17,6 +20,10 @@
       color: #267df4;
       text-decoration: underline;
     }
+  }
+  &__plan {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -61,6 +68,9 @@
     line-height: 50px;
     font-size: 16px;
     color: $sub-text;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__active {
     color: $text;
@@ -68,6 +78,26 @@
 }
 
 .plan {
+  &__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+	}
+	&__active {
+		transform: scale(1.1);
+		box-shadow: 10px 28px 50px rgba(92, 95, 101, 0.2);
+    background-color: #fff;
+	}
+	&__starter {
+		padding: 55px 40px;
+	}
+	&__pro {
+		padding: 40px 40px;
+	}
   &__title {
     color: $text;
     font-size: 32px;
@@ -75,19 +105,47 @@
     line-height: 38px;
   }
   &__cost {
+		margin-top: 25px;
+		padding: 2px 15px;
     border-radius: 14px;
     border: 1px solid $sub-text;
     color: $text;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 22px;
     text-transform: uppercase;
     letter-spacing: 1.1px;
   }
   &__descr {
+		margin-top: 50px;
     color: $sub-text;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-  }
+	}
+	&__advantages {
+		margin-top: 40px;
+	}
+}
+
+.p-advantages {
+	&__item {
+		margin-bottom: 8px;
+		svg {
+			fill: $send;
+		}
+	}
+	&__item:last-child{
+		margin-bottom: 0px;
+	}
+}
+
+.plan__starter .plan__button {
+	margin-top: 70px;
+	padding: 8px 65px;
+}
+
+.plan__pro .plan__button {
+	margin-top: 50px;
+	padding: 8px 50px;
 }

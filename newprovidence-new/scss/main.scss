@@ -109,6 +109,16 @@ strong {
       fill: $accent;
     }
   }
+  &--disable {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: $accent;
+    border: 1px solid $accent;
+    svg {
+      fill: #fff;
+    }
+  }
   &--grey {
     border: 1px solid rgba($text, .1);
     color: $text;
@@ -124,8 +134,12 @@ strong {
         fill: $accent;
       }
     }
-  }
+	}
+	&:hover {
+		cursor: pointer;
+	}
 }
+
 @import "animation";
 @import "general";
 @import "header";
