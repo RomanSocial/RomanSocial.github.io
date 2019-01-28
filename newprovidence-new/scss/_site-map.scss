@@ -1,0 +1,76 @@
+.site-map {
+  padding: 90px 0px 130px;
+}
+
+.social-map {
+  &__text {
+    margin-top: 30px;
+    color: $sub-text;
+    font-size: 14px;
+  }
+  &__button {
+    width: 140px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 3px 0px;
+    .dl-button__text {
+      margin-left: 10px;
+    }
+    .dl-button__text--lg {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .dl-button__text--sm {
+      font-size: 10px;
+    }
+  }
+  &__container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 25px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__link {
+    svg {
+      fill: $light-gray;
+    }
+    &:hover svg {
+      fill: $accent;
+    }
+  }
+}
+
+.site-info {
+  display: flex;
+  flex-direction: row;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+	}
+	&__item:first-child {
+		margin-bottom: 20px;
+	}
+  &__title {
+    color: $text;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  &__link {
+    color: $sub-text;
+    font-weight: 400;
+		line-height: 36px;
+		&:hover {
+			color: $accent;
+			text-decoration: none;;
+		}
+  }
+}

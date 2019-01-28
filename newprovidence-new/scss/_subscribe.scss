@@ -1,0 +1,12 @@
+.subscribe {
+	padding: 85px 0px;
+	text-align: center;
+  &__form {
+    margin-top: 45px;
+  }
+  &__sub-text {
+		margin-top: 25px;
+    color: $sub-text;
+		font-size: 14px;
+  }
+}
