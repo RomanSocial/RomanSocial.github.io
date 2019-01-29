@@ -8,7 +8,10 @@
 .main-nav {
   display: flex;
   align-items: center;
-  height: 100%;
+	height: 100%;
+	&--jcfe {
+		justify-content: flex-end;
+	}
   &__list {
     display: flex;
     align-items: center;

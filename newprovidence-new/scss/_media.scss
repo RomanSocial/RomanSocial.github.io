@@ -1,47 +1,142 @@
 @import "vars";
-
-
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
-@include media-breakpoint-down(lg) {
-	
-}
+@include media-breakpoint-down(lg) {}
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+  // Главное меню
+  .main-nav {
+    &--mr .main-nav__hamburger {
+      margin-right: 0px;
+    }
+    &--ml .main-nav__button-container {
+      margin-left: 0px;
+    }
+    &__item {
+      display: none;
+    }
+    &__hamburger {
+      display: block;
+    }
+    &__button-container {
+      margin-left: 0px;
+      display: block;
+    }
+	} 
+	// Главное меню конец
+  // Восьмой экран (Bussines)
+  .business {
+    &__title {
+      text-align: center;
+    }
+    &__choose-u {
+      justify-content: center;
+      align-items: center;
+    }
+    &__plan {
+      margin-top: 30px;
+    }
+	} 
+	// Восьмой экран конец
+  // Седьмой экран
+  .r-photos__prev {
+    left: 0;
+  }
+  .r-photos__next {
+    right: 0;
+	} 
+	// Седьмой экран коец
+  // Десятый экран
+  // Карта сайта - левая колонка 
+  .site-map {
+    &__social-map {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__site-info {
+      margin-top: 25px;
+    }
+	} 
+	// Десятый экран конец
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+  // Главный экран
+  .h1 {
+    font-size: 49px;
+	} 
+	// Главный экран конец
+  // Восьмой экран
+  .plan__starter,
+  .plan__pro {
+    .plan__button {
+      padding: 8px 30px;
+    }
+	} 
+	// Восьмой экран конец
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+  // Главное меню
+  .logo-link {
+    margin-bottom: 30px;
+	} 
+	// Главное меню конец
+  // Второй экран
+  .advantage {
+    .p-l-40 {
+      padding-left: 0;
+    }
+    &-wrapper {
+      margin-top: 50px;
+    }
+	} 
+	// Второй экран конец
+  // Третий экран
+  .protect {
+    &__button {
+      &--blue {
+        width: auto;
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+	} 
+	// Третий экран конец
+	// Шестой экран
+	.cust-form {
+		&__button {
+			padding: 8px 15px 8px 15px;
+		}
+	}
+	// Шестой экран конец
+  // Восьмой экран
+  .plan__starter,
+  .plan__pro {
+    .plan__button {
+      padding: 8px 10px;
+    }
+  }
+  // Восьмой экран конец
 }
-
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
-@include media-breakpoint-up(sm) {
-
-}
+@include media-breakpoint-up(sm) {}
 
 // ≤768px
-@include media-breakpoint-up(md) {
-
-}
+@include media-breakpoint-up(md) {}
 
 // ≤992px
-@include media-breakpoint-up(lg) {
-
-}
+@include media-breakpoint-up(lg) {}
 
 // ≤1200px
-@include media-breakpoint-up(xl) {
-	
-}
+@include media-breakpoint-up(xl) {}

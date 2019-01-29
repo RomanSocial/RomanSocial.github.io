@@ -183,10 +183,10 @@
 		<section class="top-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-lg-4 col">
 						<nav class="main-nav">
 							<ul class="main-nav__list main-nav--mr justify-content-start">
-								<li class="main-nav__item ">
+								<li class="main-nav__item main-nav__hamburger">
 									<div class="hamburger-toggle" id="hamburger-toggle">
 										<div class="hamburger">
 											<span class="hamburger-line"></span>
@@ -211,13 +211,13 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-md-2 offset-md-1">
+					<div class="col-lg-2 offset-lg-1 col-sm order-sm-0 col-12 order-first">
 						<a href="#" class="logo-link">
 							<img src="img/logo.png" alt="Logo" class="logo top-line__logo">
 						</a>
 					</div>
-					<div class="col-md-4 offset-md-1">
-						<nav class="main-nav">
+					<div class="col-lg-4 offset-lg-1 col">
+						<nav class="main-nav main-nav--jcfe">
 							<ul class="main-nav__list main-nav--ml justify-content-end">
 								<li class="main-nav__item">
 									<a href="#" class="main-nav__link">Help</a>
@@ -225,8 +225,8 @@
 								<li class="main-nav__item">
 									<a href="#" class="main-nav__link">Contacts</a>
 								</li>
-								<li class="main-nav__item">
-									<a href="#" class="button button--acc main-nav__button">
+								<li class="main-nav__item main-nav__button-container">
+									<a href="#pu-app" class="button button--acc main-nav__button pu-app__link">
 										<svg width="17" height="21">
 											<use xlink:href="#apple-icon"></use>
 										</svg>
@@ -244,16 +244,16 @@
 		<section class="main-screen">
 			<div class="container">
 				<div class="row">
-					<div class="col-8 offset-2">
+					<div class="col-md-8 offset-md-2 col">
 						<div class="main-screen__wrapper">
-							<h1 class="main-screen__title">
+							<h1 class="h1 main-screen__title">
 								What happens tomorrow?
 							</h1>
 							<p class="main-screen__text">
 								The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his
 								interview with his landlady. His face brightened up, and he began to feel quite convivial.
 							</p>
-							<a href="#" class="button button--grey main-screen__button">
+							<a href="https://www.youtube.com/watch?v=ZdcWu6PZZo0" class="button button--grey main-screen__button">
 								<svg width="10" height="10">
 									<use xlink:href="#video-icon"></use>
 								</svg>
@@ -274,7 +274,7 @@
 	<section class="advantage">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-sm-6 col-12">
 					<div class="advantage__wrapper">
 						<div class="advantage__picture">
 							<img src="img/lock.png" alt="Замок">
@@ -291,7 +291,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-sm-6 col-12">
 					<div class="advantage-wrapper p-l-40">
 						<div class="advantage__picture">
 							<img src="img/clock.png" alt="Часы">
@@ -316,14 +316,13 @@
 
 	<!-- Третий экран начало -->
 	<section class="protect">
+
 		<div class="container">
-			<div class="row">
-				<div class="col-7">
-					<div class="protect__picture">
-						<img src="img/protect-Iphone-6.png" alt="Большой Айфон">
-					</div>
-				</div>
-				<div class="col-5">
+			<div class="protect__picture">
+				<img src="img/protect-Iphone-6.png" alt="Большой Айфон">
+			</div>
+			<div class="row justify-content-lg-end">
+				<div class="col-lg-5 col-md-7 col">
 					<div class="protect__wrapper">
 						<h2 class="h2 protect__title">
 							Your day <br>
@@ -358,7 +357,7 @@
 	<section class="location">
 		<div class="container">
 			<div class="row">
-				<div class="col-5">
+				<div class="col-lg-5 col-md-7">
 					<div class="location__wrapper">
 						<h2 class="h2 location__title">
 							We are almost <br>
@@ -384,11 +383,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-7">
-					<div class="location__picture">
-						<img src="img/world-map.png" alt="Карта Мира">
-					</div>
-				</div>
+			</div>
+			<div class="location__picture">
+				<img src="img/world-map.png" alt="Карта Мира">
 			</div>
 		</div>
 	</section>
@@ -443,7 +440,7 @@
 	<section class="download">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 offset-3">
+				<div class="col-lg-6 offset-lg-3 col">
 					<div class="download__wrapper">
 						<p class="download__sub-title">
 							<b>New</b>Providence
@@ -453,7 +450,7 @@
 						</h2>
 						<form class="download__form cust-form">
 							<input type="text" class="cust-form__input" placeholder="denis@getcraftwork.com">
-							<button class="button button--acc cust-form__button">
+							<button class="button button--acc cust-form__button pu-send__link" data-mfp-src="#pu-send">
 								Send Invite
 								<svg width="13" height="12">
 									<use xlink:href="#right-arrow-icon"></use>
@@ -483,7 +480,7 @@
 	<section class="reviews">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 offset-3">
+				<div class="col-lg-6 offset-lg-3 col">
 					<div class="reviews__slider r-slider">
 						<div class="r-slider__photos r-photos">
 							<div class="r-photos__item">
@@ -648,7 +645,7 @@
 	<section class="business">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-lg-4 col-12">
 					<div class="business__wrapper">
 						<h2 class="h2 business__title">
 							Choose your <br> perfect plan
@@ -672,7 +669,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-7 offset-1">
+				<div class="col-lg-7 offset-lg-1 col-12">
 					<div class="business__plan plan">
 						<div class="plan__item plan__starter plan__active">
 							<p class="plan__title">
@@ -744,14 +741,14 @@
 	<section class="subscribe">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 offset-3">
+				<div class="col-lg-6 offset-lg-3 col">
 					<div class="subscribe__wrapper">
 						<h2 class="h2 subscribe__title">
 							Subscribe our newsletters
 						</h2>
 						<form class="subscribe__form cust-form">
 							<input type="text" class="cust-form__input" placeholder="denis@getcraftwork.com">
-							<button class="button button--acc cust-form__button">
+							<button class="button button--acc cust-form__button pu-send__link" data-mfp-src="#pu-send">
 								Subscribe
 							</button>
 						</form>
@@ -771,7 +768,7 @@
 		<section class="site-map">
 			<div class="container">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-lg-3 col-12">
 						<!-- Левая колонка Карты сайта -->
 						<div class="site-map__social-map social-map">
 							<img src="img/logo.png" alt="Логотип" class="social-map__logo">
@@ -834,7 +831,7 @@
 						</div>
 						<!-- Левая колонка Карты сайта конец -->
 					</div>
-					<div class="col-6 offset-3">
+					<div class="col-lg-6 offset-lg-3 col-12">
 						<!-- Правая колонка Карты сайта -->
 						<div class="site-map__site-info site-info">
 							<ul class="site-info__container">
@@ -882,11 +879,11 @@
 			<div class="container">
 				<div class="bottom-line__container">
 					<p class="bottom-line__link">
-						For more freebies visit: 
+						For more freebies visit:
 						<a href="#" class="">http://getcraftwork.com</a>
 					</p>
 					<div class="bottom-line__made">
-						<p class="bottom-line__text">Made with Love by</p> 
+						<p class="bottom-line__text">Made with Love by</p>
 						<img src="img/2nd-logo.png" alt="Craft Work" class="bottom-line__logo">
 					</div>
 				</div>
@@ -922,7 +919,7 @@
 				<a href="#" class="hamburger-menu__link">Contacts</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="button button--acc hamburger-menu__button">
+				<a href="#pu-app" class="button button--acc hamburger-menu__button pu-app__link">
 					<svg width="17" height="21">
 						<use xlink:href="#apple-icon"></use>
 					</svg>
@@ -934,6 +931,25 @@
 	</section>
 	<!-- Гамбургер меню конец -->
 
+	<!-- Попап окна -->
+	<div class="pop-up" style="display:none;">
+		<!-- .pu-app__link класс для инициальзации окна -->
+		<div class="pop-up__app pu-body pu-app mfp-hide" id="pu-app">
+			<p class="pu-app__title pu-title">Info about App</p>
+			<p class="pu-app__text pu-text">App coming soon!</p>
+		</div>
+		<!-- .pu-send__link класс для инициальзации окна -->
+		<div class="pop-up__send pu-body pu-send mfp-hide" id="pu-send">
+			<p class="pu-send__title pu-title">
+				<svg width="50px" height="50px">
+					<use xlink:href="#check-icon"></use>
+				</svg>
+				Thank you!
+			</p>
+			<p class="pu-send__text pu-text">Check your @mail</p>
+		</div>
+	</div>
+	<!-- Попап окна конец -->
 
 	<script src="js/scripts.min.js"></script>
 

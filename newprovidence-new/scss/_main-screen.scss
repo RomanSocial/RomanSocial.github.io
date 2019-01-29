@@ -1,14 +1,5 @@
 .main-screen {
 	text-align: center;
-	&__wrapper {
-	}
-  &__title {
-    color: $text;
-    font-family: "Varela-e";
-    font-size: 59px;
-    font-weight: 400;
-    line-height: 72px;
-  }
   &__text {
     margin: 40px 0px 65px;
     color: $sub-text;

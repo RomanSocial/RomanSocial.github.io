@@ -72,6 +72,14 @@ strong {
 }
 
 // Стилизация заголовков
+.h1 {
+	font-family: "Varela-e";
+  font-size: 59px;
+  line-height: 72px;
+  color: $text;
+  font-weight: 400;
+}
+
 .h2 {
   font-family: 'Varela-e';
   color: $text;
@@ -134,10 +142,10 @@ strong {
         fill: $accent;
       }
     }
-	}
-	&:hover {
-		cursor: pointer;
-	}
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @import "animation";
@@ -157,4 +165,5 @@ strong {
 @import "subscribe";
 @import "site-map";
 @import "bottom-line";
+@import "pop-up";
 @import "media"; // Always at the end
