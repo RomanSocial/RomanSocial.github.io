@@ -1,0 +1,51 @@
+.header {
+  height: 84px;
+  background-color: #ffffff;
+  &__logo {
+    line-height: 84px;
+	}
+	&__main-menu {
+		padding-left: 60px;
+	}
+	&__phone {
+		align-items: flex-end;
+	}
+}
+
+.main-menu {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+		display: block;
+		line-height: 84px;
+    color: $text;
+    font-weight: bold;
+		letter-spacing: 0.32px;
+		&:hover {
+			text-decoration: none;
+			color: $accent;
+		}
+  }
+}
+
+.phone {
+  display: flex;
+	flex-direction: column;
+	
+  &__number {
+		color: $text;
+		font-weight: bold;
+    letter-spacing: 0.32px;
+  }
+  &__schedule {
+    color: $tundora;
+    font-size: 12px;
+    font-weight: 700;
+	}
+	&:hover .phone__number, &:hover .phone__schedule {
+		color: $accent;
+		cursor: pointer;
+	}
+}

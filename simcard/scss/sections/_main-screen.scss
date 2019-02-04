@@ -1,0 +1,154 @@
+// Общий класс
+.main-screen {
+  padding: 30px 0px;
+  background-color: $spring-wood;
+  &__video {
+    width: 100%;
+	}
+	&__advantage {
+		margin-top: 25px;
+	}
+}
+
+// Видео
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; // width: 730px;
+  height: 470px;
+  background-image: url(../img/video-photo.png);
+  background-size: cover;
+  background-position: 0 0;
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 61px;
+    height: 62px;
+    background-color: $accent;
+    svg {
+      margin-left: 5px;
+      fill: #fff;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 87px;
+      height: 87px;
+      border: 2px solid $accent;
+			opacity: 0.6;
+			animation: pulse infinite ease-in-out 2s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      width: 111px;
+      height: 110px;
+      transform: translate(-50%, -50%);
+      border: 2px solid $accent;
+			opacity: 0.3;
+			animation: pulse infinite ease-in-out 2s;
+			animation-delay: 1s;
+    }
+  }
+  &__title {
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 0.24px;
+  }
+  &__text {
+    color: $accent;
+    letter-spacing: 0.24px;
+  }
+  &:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
+
+.b-form {
+	padding: 30px;
+	background-color: #fff;
+	flex-direction: column;
+	justify-content: center;
+	&__title {
+    color: $text;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+	}
+	&__sub-title {
+    margin-top: 19px;
+    color: $text;
+    letter-spacing: 0.24px;
+	}
+	&__name {
+    margin-top: 25px;
+  }
+  &__tel {
+    margin-top: 14px;
+  }
+	&__check {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 25px;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    input:checked~.form__check--checkmark:after {
+      display: block;
+    }
+    &--checkmark {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: $spring-wood;
+      border: 2px solid $iron;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 5.5px;
+        top: 2.5px;
+        width: 5px;
+        height: 10px;
+        border: solid $text;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1;
+      }
+    }
+    &--text {
+      font-size: 12px;
+      padding-left: 30px;
+    }
+  }
+	&__button {
+    margin-top: 25px;
+	}
+}
+
+
+

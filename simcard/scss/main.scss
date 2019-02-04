@@ -1,0 +1,221 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+// Шрифт
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+// Кастомыне свойства
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+p,
+label {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  transition: all .3s ease;
+}
+
+// Заголовки
+.h2 {
+  color: $text;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42.22px;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+}
+
+.sub-title {
+  color: $text;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42.22px;
+	letter-spacing: 0.32px;
+	&:after {
+		content: '';
+		margin: 5px auto 0px;
+		display: block;
+		background-image: url(../img/wave.png);
+		width: 54px;
+		height: 8px;
+	}
+}
+// Заголовки конец
+
+// Форма связи
+.form {
+	display: flex;
+	
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 10px 20px;
+    box-shadow: 0 6px 23px 1px rgba(250, 249, 245, 0.4);
+    border: 2px solid $iron;
+    background-color: $spring-wood;
+    color: $text;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    svg {
+      margin-right: 15px;
+      fill: $tundora;
+    }
+    input {
+      background-color: $spring-wood;
+      border: none;
+      outline: none;
+      &::placeholder {
+        color: $text;
+        font-weight: 700;
+        letter-spacing: 0.32px;
+      }
+    }
+  }
+  &__button {
+		position: relative;
+    padding: 14px 0px;
+    border: none;
+    outline: none;
+    box-shadow: 0 6px 23px 1px rgba(253, 195, 62, 0.4);
+    background-color: $accent;
+    color: $text;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+		letter-spacing: 0.32px;
+		overflow: hidden;
+		cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 300px;
+			margin-left: 60px;
+			background: #fff;
+			position: absolute;
+			left: -40px;
+			top: -150px;
+			z-index: 1;
+			transform: rotate(45deg);
+			transition: .1s;
+			animation: button-animation 3s .05s ease-in-out infinite;
+		}
+		&:hover {
+			background-color: lighten($accent, 9);
+		}
+  }
+}
+// Форма связи конец
+
+// Преимущества
+.advantage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 350px;
+		padding: 31px 20px;
+		&--picture {
+			.advantage__text {
+				padding-left: 13px;
+			}
+		}
+  }
+  &__text {
+    padding-left: 18px;
+    color: $text;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+  }
+}
+// Преимущества конец
+
+
+
+// Стили по блокам
+@import "sections/header";
+@import "sections/main-screen";
+@import "sections/about-sim";
+@import "sections/question";
+@import "sections/catalog";
+
+// Анимация
+@import "animation";
+
+@import "media"; // Always at the end
