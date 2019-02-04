@@ -113,7 +113,7 @@
       height: 0;
       width: 0;
     }
-    input:checked~.form__check--checkmark:after {
+    input:checked~.b-form__check--checkmark:after {
       display: block;
     }
     &--checkmark {
