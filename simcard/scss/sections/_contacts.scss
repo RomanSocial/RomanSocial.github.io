@@ -1,0 +1,46 @@
+.contacts {
+  padding: 80px 0px;
+  background-color: $spring-wood;
+  &__wrapper {
+    display: flex;
+		flex-direction: column;
+		justify-content: center;
+  }
+  &__name {
+    color: $text;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    &:after {
+			content: '';
+			margin-top: 3px;
+      display: block;
+      width: 104px;
+      height: 4px;
+      background-color: $accent;
+    }
+  }
+  &__call {
+    margin-top: 10px;
+    color: $text;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  }
+  &__button {
+    padding: 18px 50px;
+    border: 2px solid $accent;
+    color: $text;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      background-color: $text;
+      border: 2px solid transparent;
+    }
+  }
+}

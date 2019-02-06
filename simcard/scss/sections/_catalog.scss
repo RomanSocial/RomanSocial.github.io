@@ -1,10 +1,102 @@
 .catalog {
-	padding: 60px 0px;
-	background-color: $spring-wood;
-	&__title {
-		text-align: center;
+  padding: 60px 0px;
+  background-color: $spring-wood;
+  &__title {
+    text-align: center;
+  }
+  &__sub-title {
+    text-align: center;
+  }
+  &__stock {
+    margin-top: 38px;
 	}
-	&__sub-title {
-		text-align: center;
+	&__item {
+		margin-top: 30px;
 	}
+}
+
+.stock {
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__standart {
+		background-image: url(../img/standart.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
+  &__family {
+		background-image: url(../img/family.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
+  &__title {
+    color: $text;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.89px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  &__text {
+    margin-top: 10px;
+    color: $text;
+    line-height: 23.89px;
+    letter-spacing: 0.24px;
+  }
+  &__price {
+    margin-top: 15px;
+    color: $text;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+  }
+  &__button {
+    margin-top: 17px;
+    padding: 15px 58px;
+    border: 2px solid $accent;
+    color: $text;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      background-color: $text;
+      border: 2px solid transparent;
+    }
+  }
+}
+
+.sim-shop {
+  background-color: #fff;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 2px 10px 1px rgba(102, 102, 102, 0.4);
+	}
+  &__text {
+    margin-top: 30px;
+    color: $text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+  }
+  &__price {
+		margin-top: 25px;
+    color: $price;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+  }
 }

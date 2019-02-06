@@ -80,27 +80,40 @@
 					<!-- Логотип конец -->
 				</div>
 				<div class="col-md-7">
-					<!-- Главное меню -->
-					<nav class="header__main-menu main-menu">
-						<ul class="main-menu__wrapper">
-							<li class="main-menu__item">
-								<a href="#" class="main-menu__link">Технология</a>
-							</li>
-							<li class="main-menu__item">
-								<a href="#" class="main-menu__link">Установка</a>
-							</li>
-							<li class="main-menu__item">
-								<a href="#" class="main-menu__link">Цены</a>
-							</li>
-							<li class="main-menu__item">
-								<a href="#" class="main-menu__link">Обо мне</a>
-							</li>
-							<li class="main-menu__item">
-								<a href="#" class="main-menu__link">Отзывы</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- Главное меню конец -->
+					<div class="header__wrapper">
+						<a href="#" class="hamburger-toggle" id="hamburger-toggle">
+							<div class="hamburger">
+								<span class="hamburger-line"></span>
+								<span class="hamburger-line"></span>
+								<span class="hamburger-line"></span>
+							</div>
+							<div class="cross">
+								<span class="hamburger-line"></span>
+								<span class="hamburger-line"></span>
+							</div>
+						</a>
+						<!-- Главное меню -->
+						<nav class="header__main-menu main-menu">
+							<ul class="main-menu__wrapper">
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Технология</a>
+								</li>
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Установка</a>
+								</li>
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Цены</a>
+								</li>
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Обо мне</a>
+								</li>
+								<li class="main-menu__item">
+									<a href="#" class="main-menu__link">Отзывы</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- Главное меню конец -->
+					</div>
 				</div>
 				<div class="col-md-3">
 					<!-- Телефон -->
@@ -122,8 +135,7 @@
 				<div class="col-md-8">
 					<!-- Видео на главном экране -->
 					<div class="main-screen__video">
-						<a href="#"
-						 class="video">
+						<a href="#" class="video">
 							<div class="video__button">
 								<svg width="23" height="31">
 									<use xlink:href="#play-icon"></use>
@@ -234,8 +246,8 @@
 				</div>
 				<div class="col-md-4">
 					<!-- Картинка -->
-					<div class="about-sim__item about-picture">
-						<div class="about-picture__photo"></div>
+					<div class="about-sim__item about-picture circle-animation">
+						<div class="about-picture__photo circle-animation__center"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -337,35 +349,37 @@
 				<div class="col">
 					<!-- Заголовки -->
 					<h2 class="h2 catalog__title">
-							цены которые не кусаются
+						цены которые не кусаются
 					</h2>
 					<p class="sub-title catalog__sub-title">
-							Подберу оптимальный пакет услуг для каждого клиента
+						Подберу оптимальный пакет услуг для каждого клиента
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<!-- Скидка №1 -->
-					<div class="catalog__stock stock">
+					<div class="catalog__stock stock stock__standart">
 						<p class="stock__title">
-							Пакет "Стандартный"
+							Пакет "Стандарт"
 						</p>
 						<p class="stock__text">
-							Далеко-далеко за, словесными горами в стране гласных и согласных живут.
+							Установка гибридной SIM-карты <br>
+							в два смартфона
 						</p>
 						<b class="stock__price">320 грн</b>
 						<a href="#" class="stock__button">Заказать</a>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<!-- Скидка №1 -->
-					<div class="price__stock stock">
+					<!-- Скидка №2 -->
+					<div class="catalog__stock stock stock__family">
 						<p class="stock__title">
-							Пакет "Стандартный"
+							пакет «Семейный»
 						</p>
 						<p class="stock__text">
-							Далеко-далеко за, словесными горами в стране гласных и согласных живут.
+							Установка гибридной SIM-карты <br>
+							в два смартфона
 						</p>
 						<b class="stock__price">320 грн</b>
 						<a href="#" class="stock__button">Заказать</a>
@@ -374,9 +388,10 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
+					<!-- Карта памяти 32 Гб -->
 					<div class="catalog__item sim-shop">
 						<div class="sim-shop__picture">
-							<img src="" alt="Samsung EVO 32Gb">
+							<img src="img/sd32.png" alt="Samsung EVO 32Gb">
 						</div>
 						<p class="sim-shop__text">
 							Карта памяти Samsung EVO 32 Гб
@@ -386,32 +401,185 @@
 					</div>
 				</div>
 				<div class="col-md-3">
+					<!-- Карта памяти 64 Гб -->
 					<div class="catalog__item sim-shop">
 						<div class="sim-shop__picture">
-							<img src="" alt="Samsung EVO 32Gb">
+							<img src="img/sd32.png" alt="Samsung EVO 32Gb">
 						</div>
 						<p class="sim-shop__text">
-							Карта памяти Samsung EVO 32 Гб
+							Карта памяти Samsung EVO 64 Гб
 						</p>
-						<b class="sim-shop__price">270 Грн
+						<b class="sim-shop__price">470 Грн
 						</b>
 					</div>
 				</div>
 				<div class="col-md-3">
+					<!-- Карта памяти 128 Гб -->
 					<div class="catalog__item sim-shop">
 						<div class="sim-shop__picture">
-							<img src="" alt="Samsung EVO 32Gb">
+							<img src="img/sd32.png" alt="Samsung EVO 32Gb">
 						</div>
 						<p class="sim-shop__text">
-							Карта памяти Samsung EVO 32 Гб
+							Карта памяти Samsung EVO 128 Гб
 						</p>
-						<b class="sim-shop__price">270 Грн
+						<b class="sim-shop__price">870 Грн
+						</b>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<!-- Карта памяти 256 Гб -->
+					<div class="catalog__item sim-shop">
+						<div class="sim-shop__picture">
+							<img src="img/sd32.png" alt="Samsung EVO 32Gb">
+						</div>
+						<p class="sim-shop__text">
+							Карта памяти Samsung EVO 256 Гб
+						</p>
+						<b class="sim-shop__price">1670 Грн
 						</b>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="about-me">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Заголовки -->
+					<h2 class="h2 about-me__title">
+						Привет, меня зовут игорь!
+					</h2>
+					<p class="sub-title about-me__sub-title">
+						Я лучший в Киеве мастер по установке гибридной SIM-карты
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="about-me__wrapper">
+						<div class="about-me__item plus plus--left">
+							<p class="plus__title">
+								Хороший
+								специалист
+								<span class="plus__text">
+									Я мастер в сфере создания
+									и установки гибридной SIM
+								</span>
+							</p>
+							<div class="plus__number">
+								<img src="img/me-1.png" alt="Первое преимущество">
+							</div>
+						</div>
+						<div class="about-me__item plus plus--left">
+							<p class="plus__title">
+								450+ отзывов
+								о моей работе
+								<span class="plus__text">
+									За все время работы было собрано более 450 отзывов на моей странице Facebook
+								</span>
+							</p>
+							<div class="plus__number">
+								<img src="img/me-3.png" alt="Первое преимущество">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-me__wrapper my-photo">
+						<!-- Фотография -->
+						<img src="img/me-photo.png" alt="Моя фотография" class="my-photo__img">
+						<div class="my-photo__circle"></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-me__wrapper">
+						<div class="about-me__item plus plus--right">
+							<div class="plus__number">
+								<img src="img/me-2.png" alt="Первое преимущество">
+							</div>
+							<p class="plus__title">
+								колоссальный
+								опыт работы
+								<span class="plus__text">
+									Я делал это больше раз чем кто-либо другой на планете
+								</span>
+							</p>
+						</div>
+						<div class="about-me__item plus plus--right">
+							<div class="plus__number">
+								<img src="img/me-4.png" alt="Первое преимущество">
+							</div>
+							<p class="plus__title">
+								работаю по
+								всему Киеву
+								<span class="plus__text">
+									Вся работа проводится при вас в кафе, ресторане или на любой станции метро
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="contacts__wrapper">
+						<p class="contacts__name">
+							<b>Vodafone,</b> Игорь
+						</p>
+						<p class="contacts__call">
+							+38 (099) 433 22 00
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="contacts__wrapper">
+						<p class="contacts__name">
+							<b>Kyivstar,</b> Игорь
+						</p>
+						<p class="contacts__call">
+							+38 (099) 433 22 00
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="contacts__wrapper">
+						<p class="contacts__name">
+							<b>Lifecell,</b> Игорь
+						</p>
+						<p class="contacts__call">
+							+38 (099) 433 22 00
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="contacts__wrapper">
+						<a href="#" class="contacts__button">Написать мне</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer__wrapper">
+						<p class="footer__info">
+							2019 © Твоя гибридная симочка
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/scripts.min.js"></script>
 
