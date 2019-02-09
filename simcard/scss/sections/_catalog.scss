@@ -32,7 +32,7 @@
   }
   &__title {
     color: $text;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 25.89px;
     text-transform: uppercase;
@@ -84,7 +84,7 @@
   &__text {
     margin-top: 30px;
     color: $text;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
@@ -93,7 +93,7 @@
   &__price {
 		margin-top: 25px;
     color: $price;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;

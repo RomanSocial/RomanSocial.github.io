@@ -86,7 +86,7 @@ input:focus::placeholder {
 .h2 {
   color: $text;
   font-family: Montserrat;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 700;
   line-height: 42.22px;
   text-transform: uppercase;
@@ -97,7 +97,7 @@ input:focus::placeholder {
 .sub-title {
   color: $text;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 42.22px;
 	letter-spacing: 0.32px;
@@ -256,6 +256,14 @@ input:focus::placeholder {
 }
 // Анимированый большой круг конец
 
+	// Кнопка формы
+	.form-side {
+		&__button {
+			display: none;
+		}
+	}
+	// Кнопка формы конец
+
 
 
 // Стили по блокам
@@ -263,6 +271,7 @@ input:focus::placeholder {
 @import "sections/main-screen";
 @import "sections/about-sim";
 @import "sections/question";
+@import "sections/tech";
 @import "sections/catalog";
 @import "sections/about-me";
 @import "sections/contacts";
