@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SVG-animation</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<button id="cta"> Click me </button>
+
+	<svg viewBox="0 0 200 100">
+		<polygon class="polymorph" points="0,0 36,0 200,0 200,100 0,100 " />
+	</svg>
+
+	<div id="blip">
+		<h1>Далеко-далеко за словесными горами в стране.</h1>
+		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Меня пустился речью страна
+			родного свою? Злых наш семантика эта.</p>
+
+		<button id="cta2">Go back</button>
+
+	</div>
+
+	<script src="anime.min.js"></script>
+
+
+	<script>
+
+		var btn = document.getElementById('cta');
+		var btn2 = document.getElementById('cta2');
+
+		btn.onclick = function () {
+			var morphing = anime({
+				targets: ' .polymorph',
+				points: [
+					{ value: '0,0 36,0 70.8,67.8 200,100 0,100' },
+					{ value: '0,0 0,0 70.8,67.8 200,100 0,100' },
+				],
+				easing: 'easeOutQuad',
+				duration: 1200,
+				loop: false
+			});
+
+			anime({
+				targets: '#blip',
+				opacity: 1,
+				duration: 500,
+				translateY: 150,
+			})
+
+			var promise = morphing.finished.then(() => {
+				btn2.onclick = function () {
+					var morphing = anime({
+						targets: ' .polymorph',
+						points: [
+							{ value: '0,0 36,0 70.8,67.8 200,100 0,100' },
+							{ value: '0,0 36,0 200,0 200,100 0,100' },
+						],
+						easing: 'easeOutQuad',
+						duration: 1200,
+						loop: false
+					});
+					anime({
+						targets: '#blip',
+						opacity: 0,
+						duration: 500,
+						translateY: -800,
+					})
+				};
+			})
+		}
+
+
+	</script>
+</body>
+
+</html>
