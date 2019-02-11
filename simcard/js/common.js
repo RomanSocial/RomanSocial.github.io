@@ -1,7 +1,8 @@
 $(function() {
 
 	//  Гамбургер открывашка
-	$('.hamburger-toggle').click(function () {
+	$('.hamburger-toggle').click(function (e) {
+		e.preventDefault();
 		$(this).toggleClass('open');
 		$('.hamburger-menu').toggleClass('menu-open');
 	});

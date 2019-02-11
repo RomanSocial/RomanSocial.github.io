@@ -61,10 +61,18 @@
         margin-right: 0;
       }
     }
-  } // Пятый блок / Обо мне
+	} // Пятый блок / Обо мне
+	.plus {
+		&--margin {
+			margin-top: 20px;
+		}
+	}
   .my-photo {
+		justify-content: center;
+		align-items: center;
     &__img {
-      width: 100%;
+      max-width: 300px;
+      max-height: 410px;
     }
     &__circle {
       margin-top: -100px;
@@ -257,7 +265,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  } // Шапка сайта конец
+	} // Шапка сайта конец
+	// Седьмой блок / Контакты
+	.contacts {
+		&__button {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			max-width: 300px;
+		}
+	}
+	// Седьмой блок / Контакты конец
 }
 
 // ≥768px
@@ -383,13 +401,66 @@
   } // Первый блок / Главный экран конец
   // Второй блок / Что такое гибридная сим-карта
   .about-picture {
+    height: auto;
     margin: 50px 0px;
   }
   .about-card {
     &__picture {
       max-width: none;
     }
+  }
+  .advantage__item {
+    margin-right: 0;
   } // Второй блок / Что такое гибридная сим-карта конец
+  // Третий блок / Вопрос
+  .question__form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .s-form__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  } // Третий блок / Вопрос конец
+  // Четвертый блок / Технология установки
+  .tech {
+    &__item {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .process {
+    &__title {
+      width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } // Четвертый блок / Технология установки конец
+  // Шестой блок / Обо мне
+  .about-me {
+    &__item {
+      margin-bottom: 20px;
+    }
+	} // Шестой блок / Обо мне конец
+	// Седьмой блок / Контакты
+	.contacts {
+		&__wrapper {
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		&__call {
+			margin-top: 0px;
+		}
+	}
+	// Седьмой блок / Контакты конец
   // Восьмой блок / Бренды
   .brands {
     &__item {
