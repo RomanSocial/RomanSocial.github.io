@@ -53,25 +53,23 @@
         height: 312px;
       }
     }
-	}
-	//Третий блок / Задать вопрос
-	.s-form {
-		&__item {
-			margin-right: 12px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-	// Пятый блок / Обо мне
-	.my-photo {
-		&__img {
-			width: 100%;
-		}
-		&__circle {
-			margin-top: -100px;
-			margin-left: -100px;
-			width: 200px;
+  } //Третий блок / Задать вопрос
+  .s-form {
+    &__item {
+      margin-right: 12px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  } // Пятый блок / Обо мне
+  .my-photo {
+    &__img {
+      width: 100%;
+    }
+    &__circle {
+      margin-top: -100px;
+      margin-left: -100px;
+      width: 200px;
       height: 200px;
       &:before {
         margin-top: -126px;
@@ -85,14 +83,13 @@
         width: 313px;
         height: 312px;
       }
-		}
-	}
-	// Шестой блок / Контакты
-	.contacts {
-		&__button {
-			padding: 18px 30px;
-		}
-	}
+    }
+  } // Шестой блок / Контакты
+  .contacts {
+    &__button {
+      padding: 18px 30px;
+    }
+  }
 }
 
 // ≥992px
@@ -109,11 +106,11 @@
     visibility: hidden;
     pointer-events: none;
     top: 50px;
-    left: 0;
+    right: 0;
     padding: 15px 0px;
     background-color: #fff;
-		box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.192);
-		z-index: 3;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.192);
+    z-index: 3;
     .main-menu__wrapper {
       display: flex;
       flex-direction: column;
@@ -144,7 +141,7 @@
       -webkit-filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, .15));
       filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, .15));
       bottom: 100%;
-      left: 5px;
+      right: 2px;
       border: 7px solid transparent;
       border-bottom-color: transparent;
       content: " ";
@@ -163,6 +160,10 @@
     height: 20px;
     position: relative;
     cursor: pointer;
+    &--sm-right {
+      display: flex;
+      justify-content: flex-end;
+    }
     .hamburger-line {
       display: block;
       background-color: #566973;
@@ -249,71 +250,81 @@
   .menu-open {
     opacity: 1;
     visibility: visible;
-    top: 28px;
+    top: 30px;
     pointer-events: auto;
   } // Выравнивание логотипа
   .header__logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   } // Шапка сайта конец
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-  // Шапка сайта
-  .header {
-		height: 140px;
-	} 
-	.logo {
-		display: none;
-	}
-	.logo-small {
-		display: block;
-	}
-	// Шапка сайта конец
-	// Первый блок / Главный экран
-	.b-form {
-		display: none;
-	}
+  // Базовые стили
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .sub-title {
+    line-height: 1.5rem;
+  } // Шапка сайта
+  .logo {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+  } // Шапка сайта конец
+  // Первый блок / Главный экран
+  .main-screen {
+    .video {
+      height: 300px;
+    }
+  }
+  .b-form {
+    display: none;
+  }
+  .form-side__wrapper {
+    position: fixed;
+    right: 0px;
+    top: 40%;
+  }
   .form-side {
-		position: absolute;
-		top: -120px;
-		right: -400px;
-		display: flex;
-		padding: 20px 20px 20px 20px;
-		background-color: #fff;
-		flex-direction: column;
-		&__title {
-			font-size: 20px;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-		&__sub-title {
-			font-size: 14px;
-			margin-bottom: 10px;
-		}
-		&__item {
-			margin-bottom: 10px;
-		}
-		&__check--text {
-			font-size: 12px;
-		}
-		&__button {
-			margin-top: 10px;
-		}
-		&__wrapper {
-			position: fixed;
-			right: 0px;
-			top: 40%;
-		}
-		&--open {
-			right: 0px;
-		}
+    position: absolute;
+    top: -120px;
+    right: -400px;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
+    flex-direction: column;
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &__sub-title {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &__item {
+      margin-bottom: 10px;
+    }
+    &__check--text {
+      font-size: 12px;
+    }
+    &__button {
+      margin-top: 10px;
+    }
+    &--open {
+      right: 0px;
+    }
     &__sticker {
       display: block;
       position: fixed;
-      right: -70px;
+      right: -62px;
       opacity: 1;
       visibility: visible;
       top: 40%;
@@ -322,32 +333,32 @@
       background-color: $accent;
       color: $text;
       z-index: 2;
-			transition: all .3 ease;
-			overflow: hidden;
-			&:after {
-				content: "";
-				display: block;
-				width: 30px;
-				height: 300px;
-				margin-left: 60px;
-				background: #fff;
-				position: absolute;
-				left: -40px;
-				top: -150px;
-				z-index: 1;
-				transform: rotate(45deg);
-				transition: .1s;
-				animation: button-animation 3s .05s ease-in-out infinite;
-			}
+      transition: all .3 ease;
+      overflow: hidden;
+      &:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 300px;
+        margin-left: 60px;
+        background: #fff;
+        position: absolute;
+        left: -40px;
+        top: -150px;
+        z-index: 1;
+        transform: rotate(45deg);
+        transition: .1s;
+        animation: button-animation 3s .05s ease-in-out infinite;
+      }
       &:hover {
-				text-decoration: none;
-				background-color: $text;
-				color: #fff;
+        text-decoration: none;
+        background-color: $text;
+        color: #fff;
       }
       &.open {
-				background-color: $text;
-				color: #fff;
-        right: -85px;
+        background-color: $text;
+        color: #fff;
+        right: -65px;
         opacity: 0.7;
       }
     }
@@ -371,11 +382,22 @@
     }
   } // Первый блок / Главный экран конец
   // Второй блок / Что такое гибридная сим-карта
+  .about-picture {
+    margin: 50px 0px;
+  }
   .about-card {
     &__picture {
       max-width: none;
     }
   } // Второй блок / Что такое гибридная сим-карта конец
+  // Восьмой блок / Бренды
+  .brands {
+    &__item {
+      &:nth-child(n+5) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 380px) {
