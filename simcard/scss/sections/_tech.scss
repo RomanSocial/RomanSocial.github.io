@@ -1,10 +1,81 @@
 .tech {
-  background-color: $spring-wood;
-  padding: 30px 0px;
+  background-color: #fff;
+  padding: 60px 0px;
   &__title {
     text-align: center;
   }
   &__sub-title {
     text-align: center;
+  }
+  &__item {
+    margin-top: 50px;
+  }
+  &__button {
+    color: $text;
+    margin: 50px auto 0px;
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.process {
+  text-align: center;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    margin-top: -1px;
+    right: -20px;
+    background-color: $text;
+    width: 17px;
+    height: 2px;
+	}
+	&--last {
+		&:after {
+			display: none;
+		}
+	}
+  &__img {
+    width: 136px;
+    position: relative;
+    z-index: 1;
+  }
+  &__picture {
+    .circle-animation__center {
+      position: absolute;
+      width: 108px;
+      height: 108px;
+      &:after {
+        width: 136px;
+        height: 136px;
+        margin-top: -68px;
+        margin-left: -68px;
+      }
+      &:before {
+        width: 170px;
+        height: 170px;
+        margin-top: -85px;
+        margin-left: -85px;
+      }
+    }
+  }
+  &__title {
+    margin-top: 30px;
+    color: $text;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 5px;
+    color: $text;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

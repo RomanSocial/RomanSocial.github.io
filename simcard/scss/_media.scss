@@ -112,7 +112,8 @@
     left: 0;
     padding: 15px 0px;
     background-color: #fff;
-    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.192);
+		box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.192);
+		z-index: 3;
     .main-menu__wrapper {
       display: flex;
       flex-direction: column;
@@ -262,14 +263,54 @@
 @include media-breakpoint-down(sm) {
   // Шапка сайта
   .header {
-    height: 140px;
-  } // Шапка сайта конец
-  // Первый блок / Главный экран
-  .form {
-    display: none;
-  }
+		height: 140px;
+	} 
+	.logo {
+		display: none;
+	}
+	.logo-small {
+		display: block;
+	}
+	// Шапка сайта конец
+	// Первый блок / Главный экран
+	.b-form {
+		display: none;
+	}
   .form-side {
-    &__button {
+		position: absolute;
+		top: -120px;
+		right: -400px;
+		display: flex;
+		padding: 20px 20px 20px 20px;
+		background-color: #fff;
+		flex-direction: column;
+		&__title {
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		&__sub-title {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		&__item {
+			margin-bottom: 10px;
+		}
+		&__check--text {
+			font-size: 12px;
+		}
+		&__button {
+			margin-top: 10px;
+		}
+		&__wrapper {
+			position: fixed;
+			right: 0px;
+			top: 40%;
+		}
+		&--open {
+			right: 0px;
+		}
+    &__sticker {
       display: block;
       position: fixed;
       right: -70px;
@@ -281,13 +322,31 @@
       background-color: $accent;
       color: $text;
       z-index: 2;
-      transition: opacity .2s linear, right .2s linear, visibility .2s linear;
+			transition: all .3 ease;
+			overflow: hidden;
+			&:after {
+				content: "";
+				display: block;
+				width: 30px;
+				height: 300px;
+				margin-left: 60px;
+				background: #fff;
+				position: absolute;
+				left: -40px;
+				top: -150px;
+				z-index: 1;
+				transform: rotate(45deg);
+				transition: .1s;
+				animation: button-animation 3s .05s ease-in-out infinite;
+			}
       &:hover {
-        color: #fff;
-        text-decoration: none;
-        right: -74px;
+				text-decoration: none;
+				background-color: $text;
+				color: #fff;
       }
       &.open {
+				background-color: $text;
+				color: #fff;
         right: -85px;
         opacity: 0.7;
       }

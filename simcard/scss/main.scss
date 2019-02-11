@@ -116,7 +116,6 @@ input:focus::placeholder {
 // Форма связи
 .form {
 	display: flex;
-	
   &__item {
     display: flex;
     flex-direction: row;
@@ -184,6 +183,15 @@ input:focus::placeholder {
   }
 }
 // Форма связи конец
+
+// Форма связи в мобильной версии
+.form-side {
+	display: none;
+	&__sticker {
+		display: none;
+	}
+}
+// Форма связи в мобильной версии конец
 
 // Преимущества
 .advantage {
@@ -256,13 +264,7 @@ input:focus::placeholder {
 }
 // Анимированый большой круг конец
 
-	// Кнопка формы
-	.form-side {
-		&__button {
-			display: none;
-		}
-	}
-	// Кнопка формы конец
+
 
 
 
@@ -275,6 +277,7 @@ input:focus::placeholder {
 @import "sections/catalog";
 @import "sections/about-me";
 @import "sections/contacts";
+@import "sections/brands";
 @import "sections/footer";
 
 // Анимация

@@ -2,7 +2,7 @@
   height: 84px;
   background-color: #ffffff;
   &__logo {
-    line-height: 84px;
+		line-height: 84px;
 	}
 	&__main-menu {
 		padding-left: 60px;
@@ -32,6 +32,10 @@
 			color: $accent;
 		}
   }
+}
+
+.logo-small {
+	display: none;
 }
 
 .phone {

@@ -1,0 +1,37 @@
+.brands {
+  background-color: $spring-wood;
+  padding: 60px 0px;
+  &__title {
+    text-align: center;
+  }
+  &__sub-title {
+    text-align: center;
+	}
+	&__wrapper {
+		margin-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+  &__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 120px;
+		min-width: 263px;
+		background-color: #fff;
+		margin-bottom: 20px;
+		border: 2px solid transparent;
+		&:nth-child(n+5) {
+			margin-bottom: 0;
+		}
+    svg {
+      fill: $text;
+		}
+		&:hover {
+			cursor: pointer;
+			border: 2px solid $accent;
+		}
+  }
+}
