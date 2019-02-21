@@ -2,7 +2,12 @@
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+	// Восьмой экрна
+	.plan__item .plan__button {
+		padding: 8px 30px;
+	}
+}
 
 // ≥992px
 @include media-breakpoint-down(md) {
@@ -24,8 +29,21 @@
       margin-left: 0px;
       display: block;
     }
-	} 
-	// Главное меню конец
+	} 	// Главный экран
+	.main-screen {
+		&__title {
+			margin-top: 20px;
+			font-size: 50px;
+			line-height: 60px;
+		}
+		&__text {
+			margin: 30px 0px;
+			font-size: 15px;
+		}
+		&__button {
+			font-size: 15px;
+		}
+	}
   // Восьмой экран (Bussines)
   .business {
     &__title {
@@ -67,10 +85,12 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
   // Главный экран
-  .h1 {
-    font-size: 49px;
-	} 
-	// Главный экран конец
+	.main-screen {
+		&__title {
+			font-size: 40px;
+			line-height: 50px;
+		}
+	}
   // Восьмой экран
   .plan__starter,
   .plan__pro {
@@ -85,9 +105,8 @@
 @include media-breakpoint-down(xs) {
   // Главное меню
   .logo-link {
-    margin-bottom: 30px;
-	} 
-	// Главное меню конец
+    margin-bottom: 40px;
+	}
   // Второй экран
   .advantage {
     .p-l-40 {
@@ -100,31 +119,59 @@
 	// Второй экран конец
   // Третий экран
   .protect {
+		padding: 100px 0px;
     &__button {
       &--blue {
+				padding: 8px 10px;
         width: auto;
         svg {
           margin-left: 10px;
         }
-      }
+			}
+			&--grey {
+				padding: 8px 15px;
+			}
     }
-	} 
+	}
 	// Третий экран конец
+	// Четвертый экран
+	.location {
+		padding: 100px 0px;
+	}
 	// Шестой экран
 	.cust-form {
+		&__input {
+			font-size: 14px;
+		}
 		&__button {
-			padding: 8px 15px 8px 15px;
+			font-size: 14px;
+			padding: 8px 10px 8px 10px;
+			svg {
+				display: none;
+			}
 		}
 	}
 	// Шестой экран конец
-  // Восьмой экран
+	// Восьмой экран
+	.plan {
+		&__item {
+			padding: 20px 15px;
+		}
+	}
   .plan__starter,
   .plan__pro {
     .plan__button {
       padding: 8px 10px;
     }
   }
-  // Восьмой экран конец
+	// Восьмой экран конец
+	// Десятый экран
+	.site-map {
+		padding: 40px 0px;
+	}
+	.site-info {
+		font-size: 14px;
+	}
 }
 
 /*==========  Mobile First  ==========*/
