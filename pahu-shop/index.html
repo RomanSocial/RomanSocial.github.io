@@ -27,6 +27,8 @@
 </head>
 
 <body class="body">
+
+	<!-- SVG-контейнер начало -->
 	<div class="svg-placeholder" style="display: none;">
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position: absolute;">
 			<symbol id="logo" viewBox="0 0 329 50.2">
@@ -81,18 +83,22 @@
 			<!-- Cross иконка конец -->
 		</svg>
 	</div>
+	<!-- SVG-контейнер начало -->
+
+	<!-- header начало -->
 	<header id="header" class="header">
+		<!-- Шапка -->
 		<section class="top-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 offset-lg-0 order-lg-1 col-md-4 offset-md-2 order-md-2 col order-xs-1">
+					<div class="col-lg-3 offset-lg-0 order-lg-1 col-md-4 offset-md-2 order-md-2 justify-content-md-start col order-2 d-flex justify-content-center">
 						<a href="#" class="top-logo">
 							<svg width="191" height="30">
 								<use xlink:href="#logo"></use>
 							</svg>
 						</a>
 					</div>
-					<div class="col-lg-7 order-lg-2 col-md-2 order-md-1 col order-xs-2">
+					<div class="col-lg-7 order-lg-2 col-md-2 order-md-1 col-3 order-1 d-md-block d-flex justify-content-sm-start">
 						<div class="nav-block">
 							<button class="hamburger">
 								<span class="hamburger__bar"></span>
@@ -121,7 +127,7 @@
 							</nav>
 						</div>
 					</div>
-					<div class="col-lg-2 offset-lg-0 order-lg-3 col-md-2 offset-md-2 order-md-3">
+					<div class="col-lg-2 offset-lg-0 order-lg-3 col-md-2 offset-md-2 order-md-3 col-3 order-3">
 						<div class="top-cart d-flex align-items-center justify-content-between">
 							<a href="#" class="top-cart_item top-cart_search search">
 								<i class="fas fa-search fa-flip-horizontal"></i>
@@ -137,10 +143,11 @@
 				</div>
 			</div>
 		</section>
+		<!-- Главный экран -->
 		<section class="main">
 			<div class="main-carousel owl-carousel owl-theme">
 				<div class="main-slide">
-					<div class="main-slide-bg" style="background-image: url(../pahu-shop/img/bg1.png);"></div>
+					<div class="main-slide-bg" style="background-image: url(../img/bg1.png);"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-md-12">
@@ -156,7 +163,7 @@
 					</div>
 				</div>
 				<div class="main-slide">
-					<div class="main-slide-bg" style="background-image: url(../pahu-shop/img/bg2.jpg);"></div>
+					<div class="main-slide-bg" style="background-image: url(../img/bg2.jpg);"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -172,7 +179,7 @@
 					</div>
 				</div>
 				<div class="main-slide">
-					<div class="main-slide-bg" style="background-image: url(../pahu-shop/img/bg3.jpg);"></div>
+					<div class="main-slide-bg" style="background-image: url(../img/bg3.jpg);"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -188,9 +195,12 @@
 					</div>
 				</div>
 			</div>
+			<div class="main-mouse-scroll"></div>
 		</section>
 	</header>
+	<!-- header конец -->
 
+	<!-- advantage начало -->
 	<section class="advantage" id="advantage">
 		<div class="container">
 			<div class="row">
@@ -249,9 +259,11 @@
 			</div>
 		</div>
 	</section>
+	<!-- advantage конец -->
 
+	<!-- collection начало -->
 	<section class="collection">
-		<div class="collection__wrap d-flex flex-row ">
+		<div class="collection__wrap">
 			<div class="collection__card collection__card--vietnam">
 				<h3 class="collection__title collection__title--vietnam">
 					Patio
@@ -286,7 +298,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- collection конец -->
 
+	<!-- shop начало -->
 	<section class="shop" id="shop">
 		<div class="container">
 			<div class="row">
@@ -485,7 +499,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- shop конец -->
 
+	<!-- designers начало -->
 	<section class="designers">
 		<div class="container">
 			<div class="row">
@@ -517,7 +533,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- designers конец -->
 
+	<!-- projects начало -->
 	<section class="projects" id="projects">
 		<div class="container">
 			<div class="row">
@@ -530,7 +548,7 @@
 		</div>
 		<div class="projects-carousel owl-carousel owl-theme">
 			<div class="projects__item d-flex flex-column">
-				<div class="projects__pic" style="background-image: url(../pahu-shop/img/modern-living-room-1.png);"></div>
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-1.png);"></div>
 				<h3 class="projects__name">
 					MODERN LIVING ROOM
 				</h3>
@@ -539,7 +557,7 @@
 				</h4>
 			</div>
 			<div class="projects__item  d-flex flex-column">
-				<div class="projects__pic" style="background-image: url(../pahu-shop/img/modern-living-room-2.png);"></div>
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-2.png);"></div>
 				<h3 class="projects__name">
 					MODERN LIVING ROOM
 				</h3>
@@ -548,7 +566,7 @@
 				</h4>
 			</div>
 			<div class="projects__item  d-flex flex-column">
-				<div class="projects__pic" style="background-image: url(../pahu-shop/img/modern-living-room-3.png);"></div>
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-3.png);"></div>
 				<h3 class="projects__name">
 					MODERN LIVING ROOM
 				</h3>
@@ -557,7 +575,7 @@
 				</h4>
 			</div>
 			<div class="projects__item  d-flex flex-column">
-				<div class="projects__pic" style="background-image: url(../pahu-shop/img/modern-living-room-4.png);"></div>
+				<div class="projects__pic" style="background-image: url(../img/modern-living-room-4.png);"></div>
 				<h3 class="projects__name">
 					MODERN LIVING ROOM
 				</h3>
@@ -567,7 +585,9 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- projects конец -->
+	
+	<!-- blog начало -->
 	<section class="blog" id="blog">
 		<div class="container">
 			<div class="row">
@@ -617,7 +637,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- blog конец -->
 
+	<!-- footer начало -->
 	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="row">
@@ -719,6 +741,7 @@
 			</div>
 		</div>
 	</footer>
+	<!-- footer конец -->
 
 	<!-- Группа модальных окон -->
 	<!-- header search модальное окно -->
@@ -743,6 +766,7 @@
 		</div>
 	</div>
 	<!-- header search модальное окно конец -->
+	
 	<!-- header cart модальное окно -->
 	<div class="cart-modal modal">
 		<div class="cart-modal__header">
@@ -761,8 +785,10 @@
 				<p class="cart-modal__name">
 					Lorem ipsum dolor sit, amet consectetur adipisicing.
 				</p>
-				<div class="cart-modal__quant">
-					+ 1 -
+				<div class="cart-modal__quant quant">
+					<span class="quant__plus quant__item">+</span>
+					<span class="quant__number quant__item">1</span>
+					<span class="quant__minus quant__item">-</span>
 				</div>
 				<div class="cart-modal__price">
 					125$
@@ -780,9 +806,11 @@
 				<p class="cart-modal__name">
 					Lorem ipsum dolor sit, amet consectetur adipisicing.
 				</p>
-				<div class="cart-modal__quant">
-					+ 1 -
-				</div>
+				<div class="cart-modal__quant quant">
+						<span class="quant__plus quant__item">+</span>
+						<span class="quant__number quant__item">1</span>
+						<span class="quant__minus quant__item">-</span>
+					</div>
 				<div class="cart-modal__price">
 					125$
 				</div>
@@ -797,6 +825,7 @@
 	<!-- header cart модальное окно конец -->
 	<!-- Группа модальных окон конец -->
 
+	<!-- Подключение скриптов -->
 	<script src="js/scripts.min.js"></script>
 
 </body>

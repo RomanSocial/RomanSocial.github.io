@@ -50,6 +50,7 @@ $(function () {
 		$('.hamburger').toggleClass('hamburger--active');
 		$('.top-nav').toggleClass('is-show');
 		$('.top-line').toggleClass('fixed');
+		$('.main').toggleClass('mt-100');
 		$('.body').toggleClass('overflow-yh');
 		e.preventDefault();
 	});
@@ -58,6 +59,7 @@ $(function () {
 		$('.hamburger').removeClass('hamburger--active');
 		$('.top-nav').removeClass('is-show');
 		$('.top-line').removeClass('fixed');
+		$('.main').removeClass('mt-100');
 		$('.body').removeClass('overflow-yh');
 		e.preventDefault();
 	});

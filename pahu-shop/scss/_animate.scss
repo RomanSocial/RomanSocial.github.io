@@ -18,3 +18,12 @@
 		opacity: 1;
 	}
 }
+
+@keyframes mouse-scroll {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 25px;
+	}
+}

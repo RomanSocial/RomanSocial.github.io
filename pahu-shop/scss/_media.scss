@@ -193,11 +193,14 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
 	//HEADER
+	.top-logo {
+		svg {
+			width: 130px;
+			height: 30px;
+		}
+	}
 	.nav-block {
 		justify-content: end;
-	}
-	.top-cart {
-		display: none !important;
 	}
 	//MAIN
 	.owl-nav {
@@ -222,9 +225,6 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
 	//HEADER
-	.top-cart {
-		display: none !important;
-	}
 	//MAIN
 	.main-title {
 		font-size: 30px;
@@ -234,6 +234,16 @@
 		&::before {
 			width: 3.93vmax;
 		}
+	}
+	// COLLECTION
+	.collection__wrap {
+		flex-direction: column;
+	}
+	.collection__card--vietnam {
+		padding-top: 51px;
+		padding-left: 48px;
+		padding-bottom: 51px;
+		background-position: right bottom;
 	}
 	//PROJECTS
 	.projects {

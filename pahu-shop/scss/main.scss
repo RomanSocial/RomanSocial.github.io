@@ -84,6 +84,10 @@ a:focus {
   text-align: center;
 }
 
+.mt-100 {
+	margin-top: 100px;
+}
+
 b,
 strong {
   font-weight: bold;
@@ -319,7 +323,8 @@ strong {
       color: $white;
     }
   }
-} // SLIDER начало
+} 
+// SLIDER начало
 .main {
   position: relative;
   &-slide {
@@ -372,7 +377,29 @@ strong {
     color: #fff;
     font-weight: 600;
     line-height: 1.2;
-  }
+	}
+	&-mouse-scroll {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		margin-left: -5px;
+		width: 20px;
+		height: 35px;
+		border-radius: 20px;
+		border: 1px solid #fff;
+		z-index: 2;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			margin-left: -0.5px;
+			height: 25px;
+			width: 1px;
+			background-color: #fff;
+			animation: mouse-scroll 2s ease infinite;
+		}
+	}
 } // SLIDER навигация
 .owl-nav {
   position: absolute;
@@ -477,7 +504,10 @@ strong {
   }
 } // COLLECTION начало
 .collection {
-  &__wrap {}
+  &__wrap {
+		display: flex;
+		flex-direction: row;
+	}
   &__card {
     position: relative;
     background-size: cover;
