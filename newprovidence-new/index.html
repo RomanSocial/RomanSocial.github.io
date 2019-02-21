@@ -335,7 +335,7 @@
 							birds have deserted them a long while.
 						</p>
 						<div class="protect__buttons">
-							<a href="#" class="button button--acc protect__button protect__button--blue">
+							<a href="#" class="button button--acc protect__button protect__button--blue pu-app__link">
 								Try to hack us
 								<svg width="13" height="12">
 									<use xlink:href="#right-arrow-icon"></use>
@@ -934,18 +934,21 @@
 	<div class="pop-up" style="display:none;">
 		<!-- .pu-app__link класс для инициальзации окна -->
 		<div class="pop-up__app pu-body pu-app mfp-hide" id="pu-app">
-			<p class="pu-app__title pu-title">Info about App</p>
-			<p class="pu-app__text pu-text">App coming soon!</p>
+			<div class="pu-app__check">
+				<svg width="66" height="49">
+				<use xlink:href="#check-icon"></use>
+				</svg>
+			</div>
+			<p class="pu-app__title pu-title">Thank you!</p>
 		</div>
 		<!-- .pu-send__link класс для инициальзации окна -->
 		<div class="pop-up__send pu-body pu-send mfp-hide" id="pu-send">
-			<p class="pu-send__title pu-title">
-				<svg width="50px" height="50px">
-					<use xlink:href="#check-icon"></use>
-				</svg>
-				Thank you!
-			</p>
-			<p class="pu-send__text pu-text">Check your @mail</p>
+				<div class="pu-send__check">
+						<svg width="66" height="49">
+						<use xlink:href="#check-icon"></use>
+						</svg>
+					</div>
+			<p class="pu-send__title pu-title">Thank you!</p>
 		</div>
 	</div>
 	<!-- Попап окна конец -->
