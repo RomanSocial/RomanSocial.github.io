@@ -186,7 +186,7 @@
 	}
 	//MODAL
 	.search-modal {
-		width: 700px;
+		width: 600px;
 	}
 }
 
@@ -220,6 +220,12 @@
 		margin-top: 10px;
 	}
 	
+}
+
+@media screen and (max-width: 666px) {
+	.search-modal  {
+		width: auto;
+	}
 }
 
 // ≥576px
