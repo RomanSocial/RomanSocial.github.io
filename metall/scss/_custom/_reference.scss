@@ -1,0 +1,77 @@
+.reference {
+  padding: 50px 0px;
+	background-color: $hint-of-red;
+	&__links-group {
+		margin-top: 40px;
+	}
+	&__bars {
+		margin-top: 40px;
+	}
+}
+
+.links-group {
+  &__item {
+    padding-top: 30px;
+  }
+  &__text {
+    color: $text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  &__link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    border: 2px solid $accent;
+    background-color: $white;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      background-color: $accent;
+    }
+  }
+}
+
+.bars {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    padding: 30px;
+    flex: 33%;
+    height: 153px;
+    &--dark {
+      background-color: rgba(33, 37, 41, 0.75);
+    }
+    &--light {
+      background-color: rgba(44, 68, 122, 0.75);
+		}
+		&:hover {
+			cursor: pointer;
+			opacity: 0.9;
+		}
+  }
+  &__title {
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+  }
+  &__text {
+		margin-top: 5px;
+		line-height: 1.2;
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+  }
+}
