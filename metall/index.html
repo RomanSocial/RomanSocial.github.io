@@ -1,267 +1,313 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <!-- <base href="/"> -->
 
-    <title>OptimizedHTML 4</title>
-    <meta name="description" content="" />
+<head>
+	<meta charset="utf-8" />
+	<!-- <base href="/"> -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="" />
 
-    <!-- Template Basic Images Start -->
-    <meta property="og:image" content="path/to/image.jpg" />
-    <link rel="icon" href="img/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon-180x180.png"
-    />
-    <!-- Template Basic Images End -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- Custom Browsers Color Start -->
-    <meta name="theme-color" content="#000" />
-    <!-- Custom Browsers Color End -->
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg" />
+	<link rel="icon" href="img/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+	<!-- Template Basic Images End -->
 
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000" />
+	<!-- Custom Browsers Color End -->
 
-  <body>
-    <!-- SVG спрайты -->
-    <div class="svg-container" style="display:none;">
-      <svg
-        version="1.1"
-        id="Capa_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="0"
-        height="0"
-        style="position: absolute;"
-      >
-        <!-- Arrow-right иконка -->
-        <symbol id="arrow-right-icon" viewBox="0 0 32.635 32.635">
-          <g>
-            <path
-              d="M32.135,16.817H0.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h31.635c0.276,0,0.5,0.224,0.5,0.5
-									S32.411,16.817,32.135,16.817z"
-            />
-            <path
-              d="M19.598,29.353c-0.128,0-0.256-0.049-0.354-0.146c-0.195-0.195-0.195-0.512,0-0.707l12.184-12.184L19.244,4.136
+	<link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+	<!-- SVG спрайты -->
+	<div class="svg-container" style="display:none;">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			width="0" height="0" style="position: absolute;">
+			<!-- Arrow-right иконка -->
+			<symbol id="arrow-right-icon" viewBox="0 0 32.635 32.635">
+				<g>
+					<path d="M32.135,16.817H0.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h31.635c0.276,0,0.5,0.224,0.5,0.5
+									S32.411,16.817,32.135,16.817z" />
+					<path d="M19.598,29.353c-0.128,0-0.256-0.049-0.354-0.146c-0.195-0.195-0.195-0.512,0-0.707l12.184-12.184L19.244,4.136
 									c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0l12.537,12.533c0.094,0.094,0.146,0.221,0.146,0.354
-									s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z"
-            />
-          </g>
-        </symbol>
-        <!-- Arrow-right иконка -->
-      </svg>
-    </div>
-    <!-- SVG спрайты конец -->
+									s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z" />
+				</g>
+			</symbol>
+			<!-- Arrow-right иконка -->
+			<!-- Angle-left иконка -->
+			<symbol id="angle-left-icon" viewBox="0 0 284.935 284.936">
+				<g>
+					<path d="M110.488,142.468L222.694,30.264c1.902-1.903,2.854-4.093,2.854-6.567c0-2.474-0.951-4.664-2.854-6.563L208.417,2.857
+						C206.513,0.955,204.324,0,201.856,0c-2.475,0-4.664,0.955-6.567,2.857L62.24,135.9c-1.903,1.903-2.852,4.093-2.852,6.567
+						c0,2.475,0.949,4.664,2.852,6.567l133.042,133.043c1.906,1.906,4.097,2.857,6.571,2.857c2.471,0,4.66-0.951,6.563-2.857
+						l14.277-14.267c1.902-1.903,2.851-4.094,2.851-6.57c0-2.472-0.948-4.661-2.851-6.564L110.488,142.468z" />
+				</g>
+			</symbol>
+			<!-- Angle-left иконка конец -->
+			<!-- Angle-right иконка -->
+			<symbol id="angle-right-icon" viewBox="0 0 284.935 284.936">
+				<g>
+					<path
+						d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
+					c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677
+					c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
+					c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z" />
+				</g>
+			</symbol>
+			<!-- Angle-right иконка конец -->
+			<!-- Archive иконка -->
+			<symbol id="archive-icon" viewBox="0 0 512 512">
+				<g>
+					<g>
+						<path d="M155.999,370.002c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10
+								C165.999,374.482,161.519,370.002,155.999,370.002z" />
+					</g>
+					<g>
+						<path d="M450.143,190.001l58.929-58.929c2.479-2.479,3.478-6.075,2.635-9.477c-0.843-3.403-3.407-6.115-6.757-7.149L361.45,70.156
+									c-12.936-41.581-51.384-70.154-95.451-70.154c-40.964,0-77.6,24.965-92.763,62.625L7.022,114.455
+									c-3.341,1.042-5.895,3.756-6.732,7.155c-0.837,3.398,0.163,6.988,2.638,9.463l60.479,60.479l-38.144,63.575
+									c-1.561,2.601-1.856,5.77-0.804,8.615c1.052,2.845,3.339,5.058,6.217,6.017l55.323,18.44v153.802c0,4.168,2.586,7.899,6.489,9.363
+									c33.827,12.684,159.512,59.822,160.187,60.061c1.984,0.699,4.219,0.794,6.398,0.089c0.029-0.01,0.059-0.016,0.088-0.026l180-60
+									c4.083-1.361,6.838-5.183,6.838-9.487v-157.92l58.998-18.54c3.336-1.048,5.882-3.762,6.715-7.158
+									c0.832-3.396-0.169-6.98-2.641-9.453L450.143,190.001z M365.999,100.002c0-2.541-0.107-5.076-0.298-7.603l117.494,36.265
+									l-49.897,49.896l-81.528-27.173C361.002,135.956,365.999,118.15,365.999,100.002z M190.326,73.974
+									c11.101-32.282,41.512-53.972,75.673-53.972c36.801,0,68.719,24.892,77.618,60.532c1.581,6.333,2.382,12.883,2.382,19.468
+									c0,18.574-6.164,35.983-17.828,50.352c-15.277,18.842-37.938,29.648-62.172,29.648c-26.196,0-50.767-12.858-65.733-34.404
+									c-9.333-13.406-14.267-29.174-14.267-45.596C185.999,91.071,187.454,82.314,190.326,73.974z M28.764,128.625l138.3-43.124
+									c-0.694,4.778-1.065,9.618-1.065,14.5c0,16.101,3.814,31.696,11.084,45.767L78.7,178.56L28.764,128.625z M48.827,254.727
+									l31.62-52.702l160.563,53.521l-31.619,52.702C192.246,302.533,67.133,260.828,48.827,254.727z M245.999,487.572l-140-52.5V294.866
+									c110.15,36.522,104.771,35.407,107.838,35.407c3.438,0,6.73-1.779,8.577-4.856l23.585-39.311V487.572z M255.999,239.461
+									l-148.376-49.458l80.794-26.93c18.91,23.247,47.377,36.929,77.582,36.929c27.942,0,54.203-11.499,73.092-31.759l65.284,21.759
+									L255.999,239.461z M425.999,434.794l-160,53.333v-209.62l35.451,44.31c2.579,3.223,6.872,4.529,10.807,3.293l113.742-35.743
+									V434.794z M312.791,304.979l-40.024-50.026l160.531-53.51l49.964,49.964L312.791,304.979z" />
+					</g>
+					<g>
+						<path d="M219.511,392.198l-22.24-8.34c-5.171-1.938-10.935,0.681-12.875,5.852c-1.939,5.172,0.681,10.936,5.852,12.875l22.24,8.34
+										c5.182,1.942,10.939-0.69,12.875-5.852C227.302,399.902,224.682,394.137,219.511,392.198z" />
+					</g>
+					<g>
+						<path
+							d="M219.51,434.918l-60-22.5c-5.171-1.939-10.935,0.681-12.875,5.852c-1.94,5.171,0.681,10.936,5.852,12.875l60,22.5
+											c1.157,0.434,2.343,0.64,3.51,0.64c4.049,0,7.859-2.477,9.365-6.492C227.302,442.621,224.682,436.857,219.51,434.918z" />
+					</g>
+					<g>
+						<path d="M323.071,62.93c-3.905-3.906-10.237-3.905-14.143,0l-52.929,52.93l-12.929-12.929c-3.905-3.905-10.237-3.905-14.143,0
+												c-3.906,3.905-3.905,10.237,0,14.143l20.001,19.999c3.905,3.905,10.237,3.905,14.143,0l60-60
+												C326.976,73.168,326.976,66.836,323.071,62.93z" />
+					</g>
+				</g>
+			</symbol>
+			<!-- Archive иконка конец -->
+		</svg>
+	</div>
+	<!-- SVG спрайты конец -->
 
-    <section class="first-screen">
-      <div class="container">
-        <div class="row">
-          <!-- Заголовок -->
-          <div class="col-xl-6 offset-3">
-            <div class="first-screen__wrapper">
-              <h1 class="h1 first-screen__title">
-                Металлопрокат
-                <span>
-                  Оптом и в розницу
-                </span>
-              </h1>
-              <p class="first-screen__text">
-                По лучшим ценам с доставкой без выходных и праздников
-              </p>
-            </div>
-          </div>
-          <!-- Заголовок конец -->
-        </div>
-        <div class="row">
-          <!-- Преимущества -->
-          <div class="col-xl-3">
-            <div class="first-screen__plus plus">
-              <p class="plus__text">
-                10 000
-                <span>позиций</span>
-              </p>
-              <a href="#" class="plus__link"
-                >Каталог
-                <svg width="15px" height="9px">
-                  <use xlink:href="#arrow-right-icon"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="first-screen__plus plus">
-              <p class="plus__text">
-                Более 3 000
-                <span>заказов за 2018 год</span>
-              </p>
-              <a href="#" class="plus__link"
-                >Услуги
-                <svg width="15px" height="9px">
-                  <use xlink:href="#arrow-right-icon"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="first-screen__plus plus">
-              <p class="plus__text">
-                2 000 000 т.
-                <span>отгружено</span>
-              </p>
-              <a href="#" class="plus__link"
-                >Доставка
-                <svg width="15px" height="9px">
-                  <use xlink:href="#arrow-right-icon"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="first-screen__plus plus">
-              <p class="plus__text">
-                11 лет
-                <span>на рынке</span>
-              </p>
-              <a href="#" class="plus__link"
-                >Контакты
-                <svg width="15px" height="9px">
-                  <use xlink:href="#arrow-right-icon"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- Преимущества конец -->
-        </div>
-        <div class="row">
-          <!-- Предложение -->
-          <div class="col-xl-4 offset-4">
-            <p class="first-screen__offer">
-              *Рассчитайте заказ прямо сейчас и получите бесплатную доставку
-              вашей продукции
-            </p>
-          </div>
-          <!-- Предложение конец -->
-        </div>
-      </div>
-    </section>
+	<section class="first-screen">
+		<div class="container">
+			<div class="row">
+				<!-- Заголовок -->
+				<div class="col-xl-6 offset-3">
+					<div class="first-screen__wrapper">
+						<h1 class="h1 first-screen__title">
+							Металлопрокат
+							<span>
+								Оптом и в розницу
+							</span>
+						</h1>
+						<p class="first-screen__text">
+							По лучшим ценам с доставкой без выходных и праздников
+						</p>
+					</div>
+				</div>
+				<!-- Заголовок конец -->
+			</div>
+			<div class="row">
+				<!-- Преимущества -->
+				<div class="col-xl-3">
+					<div class="first-screen__plus plus">
+						<p class="plus__text">
+							10 000
+							<span>позиций</span>
+						</p>
+						<a href="#" class="plus__link">Каталог
+							<svg width="15px" height="9px">
+								<use xlink:href="#arrow-right-icon"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3">
+					<div class="first-screen__plus plus">
+						<p class="plus__text">
+							Более 3 000
+							<span>заказов за 2018 год</span>
+						</p>
+						<a href="#" class="plus__link">Услуги
+							<svg width="15px" height="9px">
+								<use xlink:href="#arrow-right-icon"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3">
+					<div class="first-screen__plus plus">
+						<p class="plus__text">
+							2 000 000 т.
+							<span>отгружено</span>
+						</p>
+						<a href="#" class="plus__link">Доставка
+							<svg width="15px" height="9px">
+								<use xlink:href="#arrow-right-icon"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-3">
+					<div class="first-screen__plus plus">
+						<p class="plus__text">
+							11 лет
+							<span>на рынке</span>
+						</p>
+						<a href="#" class="plus__link">Контакты
+							<svg width="15px" height="9px">
+								<use xlink:href="#arrow-right-icon"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<!-- Преимущества конец -->
+			</div>
+			<div class="row">
+				<!-- Предложение -->
+				<div class="col-xl-4 offset-4">
+					<p class="first-screen__offer">
+						*Рассчитайте заказ прямо сейчас и получите бесплатную доставку
+						вашей продукции
+					</p>
+				</div>
+				<!-- Предложение конец -->
+			</div>
+		</div>
+	</section>
 
-    <section class="reference">
-      <div class="container">
-        <div class="row">
-          <!-- Заголовок -->
-          <div class="col-xl-8">
-            <h2 class="h2 reference__title">
-              MetallCore – ваш надежный поставщик в сфере металлопроката!
-            </h2>
-          </div>
-          <!-- Заголовок -->
-        </div>
-        <div class="row">
-          <!-- Кнопки с референсами -->
-          <div class="col-xl-3">
-            <div class="reference__links-group links-group">
-              <div class="links-group__item">
-                <p class="links-group__text">
-                  Предоставляем полный асортимент продукции металлопроката, а
-                  также доборные элементы.
-                </p>
-                <a href="#" class="links-group__link">
-                  Перейти в каталог
-                </a>
-              </div>
-              <div class="links-group__item">
-                <p class="links-group__text">
-                  Гарантируем безупречный сервис, индивидуальный подход и
-                  лояльность к каждому клиенту.
-                </p>
-                <a href="#" class="links-group__link">
-                  Заказать звонок
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Кнопки с референсами конец -->
-          <!-- Плитки -->
-          <div class="col-xl-9">
-            <div class="reference__bars bars">
-              <div class="bars__item bars__item--dark">
-                <p class="bars__title">
-                  Ассортимент
-                </p>
-                <p class="bars__text">
-                  Полный каталог товаров на сайте
-                </p>
-              </div>
-              <div class="bars__item bars__item--light">
-                <p class="bars__title">
-                  Для всех
-                </p>
-                <p class="bars__text">
-                  Поставка металла компаниям и частным лицам
-                </p>
-              </div>
-              <div class="bars__item bars__item--dark">
-                <p class="bars__title">
-                  Объемы
-                </p>
-                <p class="bars__text">
-                  Заказы любого объема оптом и в розницу без наценки
-                </p>
-              </div>
-              <div class="bars__item bars__item--light">
-                <p class="bars__title">
-                  Доставка
-                </p>
-                <p class="bars__text">
-                  Круглосуточная доставка без выходных и праздников
-                </p>
-              </div>
-              <div class="bars__item bars__item--dark">
-                <p class="bars__title">
-                  Оплата
-                </p>
-                <p class="bars__text">
-                  Оплата заказа удобным для клиента способом
-                </p>
-              </div>
-              <div class="bars__item bars__item--light">
-                <p class="bars__title">
-                  Отсрочка
-                </p>
-                <p class="bars__text">
-                  Предоставляем отсрочку платежа до 60 календарных дней
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Плитки конец -->
-        </div>
-      </div>
-    </section>
+	<section class="reference">
+		<div class="container">
+			<div class="row">
+				<!-- Заголовок -->
+				<div class="col-xl-8">
+					<h2 class="h2 reference__title">
+						MetallCore – ваш надежный поставщик в сфере металлопроката!
+					</h2>
+				</div>
+				<!-- Заголовок -->
+			</div>
+			<div class="row">
+				<!-- Кнопки с референсами -->
+				<div class="col-xl-3">
+					<div class="reference__links-group links-group">
+						<div class="links-group__item">
+							<p class="links-group__text">
+								Предоставляем полный асортимент продукции металлопроката, а
+								также доборные элементы.
+							</p>
+							<a href="#" class="links-group__link">
+								Перейти в каталог
+							</a>
+						</div>
+						<div class="links-group__item">
+							<p class="links-group__text">
+								Гарантируем безупречный сервис, индивидуальный подход и
+								лояльность к каждому клиенту.
+							</p>
+							<a href="#" class="links-group__link">
+								Заказать звонок
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Кнопки с референсами конец -->
+				<!-- Плитки -->
+				<div class="col-xl-9">
+					<div class="reference__bars bars">
+						<div class="bars__item bars__item--dark">
+							<p class="bars__title">
+								Ассортимент
+							</p>
+							<p class="bars__text">
+								Полный каталог товаров на сайте
+							</p>
+						</div>
+						<div class="bars__item bars__item--light">
+							<p class="bars__title">
+								Для всех
+							</p>
+							<p class="bars__text">
+								Поставка металла компаниям и частным лицам
+							</p>
+						</div>
+						<div class="bars__item bars__item--dark">
+							<p class="bars__title">
+								Объемы
+							</p>
+							<p class="bars__text">
+								Заказы любого объема оптом и в розницу без наценки
+							</p>
+						</div>
+						<div class="bars__item bars__item--light">
+							<p class="bars__title">
+								Доставка
+							</p>
+							<p class="bars__text">
+								Круглосуточная доставка без выходных и праздников
+							</p>
+						</div>
+						<div class="bars__item bars__item--dark">
+							<p class="bars__title">
+								Оплата
+							</p>
+							<p class="bars__text">
+								Оплата заказа удобным для клиента способом
+							</p>
+						</div>
+						<div class="bars__item bars__item--light">
+							<p class="bars__title">
+								Отсрочка
+							</p>
+							<p class="bars__text">
+								Предоставляем отсрочку платежа до 60 календарных дней
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Плитки конец -->
+			</div>
+		</div>
+	</section>
 
-    <section class="popular">
-      <div class="container">
-        <div class="row">
-          <!-- Заголовок -->
-          <div class="col-xl-12">
-            <h2 class="h2 popular__title">
-              Популярные товары
-            </h2>
-          </div>
-          <!-- Заголовок конец -->
-        </div>
-        <div class="row">
-          <!-- Слайдер -->
-          <div class="shop-slider__wrapper">
-            <div class="popular__shop-slider shop-slider">
+	<section class="popular">
+		<div class="container">
+			<div class="row">
+				<!-- Заголовок -->
+				<div class="col-xl-12">
+					<h2 class="h2 popular__title">
+						Популярные товары
+					</h2>
+				</div>
+				<!-- Заголовок конец -->
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Слайдер -->
+					<div class="shop-slider__wrapper">
+						<!-- Большой слайдер -->
+						<div class="popular__shop-slider shop-slider">
+							<!-- Слайд -->
 							<div class="shop-slider__item">
 								<div class="shop-slider__picture">
 									Pic
@@ -272,21 +318,564 @@
 									</p>
 									<span class="shop-slider__price">от 1 999 руб.</span>
 									<p class="shop-slider__text">
-											Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и кровельного материала.
-											<p>
-													Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный лист производится методом холодного проката в основном из стали, реже из меди...
-											</p>
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
+									</p>
+									<a href="#" class="shop-slider__link">Купить сейчас</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="shop-slider__item">
+								<div class="shop-slider__picture">
+									Pic
+								</div>
+								<div class="shop-slider__info">
+									<p class="shop-slider__title">
+										Профнастил
+									</p>
+									<span class="shop-slider__price">от 1 999 руб.</span>
+									<p class="shop-slider__text">
+										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
+										кровельного
+										материала.
+										<p>
+											Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
+											лист производится методом холодного проката в основном из стали, реже из меди...
+										</p>
 									</p>
 									<a href="#" class="shop-slider__link">Купить сейчас</a>
 								</div>
 							</div>
 						</div>
-          </div>
-          <!-- Слайдер конец -->
-        </div>
-      </div>
-    </section>
+						<!-- Миниатюры слайдер -->
+						<div class="popular__shop-navigation shop-navigation">
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+							<!-- Миниатюра -->
+							<div class="shop-navigation__item">
+								<img src="img/slider-truba.png" alt="Арматура">
+								<p class="shop-navigation__title">
+									Арматура
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Слайдер конец -->
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <script src="js/scripts.min.js"></script>
-  </body>
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<!-- Заголовок -->
+				<div class="col-xl-6">
+					<h2 class="h2 news__title">
+						Важные новости индустрии
+					</h2>
+				</div>
+				<!-- Заголовок конец -->
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Слайдер -->
+					<div class="news__news-slider news-slider">
+						<!-- Большой слайд -->
+						<div class="news-slider__product-show product-show">
+							<!-- Слайд -->
+							<div class="product-show__item">
+								<span class="product-show__data">
+									11.12.16
+								</span>
+								<p class="product-show__title">
+									Металл-Дон подписал первый контракт на поставку
+									конструкций Таманскому терминалу навалочных грузов
+								</p>
+								<p class="product-show__text">
+									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
+									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
+								</p>
+								<div class="product-show__links">
+									<a href="#" class="product-show__link">
+										Читать новости
+									</a>
+									<a href="#" class="product-show__archive">
+										<svg width="18px" height="18px">
+											<use xlink:href="#archive-icon"></use>
+										</svg>
+										Архви
+									</a>
+								</div>
+							</div>
+							<!-- Слайд конец -->
+							<!-- Слайд -->
+							<div class="product-show__item">
+								<span class="product-show__data">
+									11.12.16
+								</span>
+								<p class="product-show__title">
+									Металл-Дон подписал первый контракт на поставку
+									конструкций Таманскому терминалу навалочных грузов
+								</p>
+								<p class="product-show__text">
+									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
+									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
+								</p>
+								<div class="product-show__links">
+									<a href="#" class="product-show__link">
+										Читать новости
+									</a>
+									<a href="#" class="product-show__archive">
+										<svg width="18px" height="18px">
+											<use xlink:href="#archive-icon"></use>
+										</svg>
+										Архви
+									</a>
+								</div>
+							</div>
+							<!-- Слайд конец -->
+							<!-- Слайд -->
+							<div class="product-show__item">
+								<span class="product-show__data">
+									11.12.16
+								</span>
+								<p class="product-show__title">
+									Металл-Дон подписал первый контракт на поставку
+									конструкций Таманскому терминалу навалочных грузов
+								</p>
+								<p class="product-show__text">
+									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
+									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
+								</p>
+								<div class="product-show__links">
+									<a href="#" class="product-show__link">
+										Читать новости
+									</a>
+									<a href="#" class="product-show__archive">
+										<svg width="18px" height="18px">
+											<use xlink:href="#archive-icon"></use>
+										</svg>
+										Архви
+									</a>
+								</div>
+							</div>
+							<!-- Слайд конец -->
+							<!-- Слайд -->
+							<div class="product-show__item">
+								<span class="product-show__data">
+									11.12.16
+								</span>
+								<p class="product-show__title">
+									Металл-Дон подписал первый контракт на поставку
+									конструкций Таманскому терминалу навалочных грузов
+								</p>
+								<p class="product-show__text">
+									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
+									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
+								</p>
+								<div class="product-show__links">
+									<a href="#" class="product-show__link">
+										Читать новости
+									</a>
+									<a href="#" class="product-show__archive">
+										<svg width="18px" height="18px">
+											<use xlink:href="#archive-icon"></use>
+										</svg>
+										Архви
+									</a>
+								</div>
+							</div>
+							<!-- Слайд конец -->
+							<!-- Слайд -->
+							<div class="product-show__item">
+								<span class="product-show__data">
+									11.12.16
+								</span>
+								<p class="product-show__title">
+									Металл-Дон подписал первый контракт на поставку
+									конструкций Таманскому терминалу навалочных грузов
+								</p>
+								<p class="product-show__text">
+									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
+									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
+								</p>
+								<div class="product-show__links">
+									<a href="#" class="product-show__link">
+										Читать новости
+									</a>
+									<a href="#" class="product-show__archive">
+										<svg width="18px" height="18px">
+											<use xlink:href="#archive-icon"></use>
+										</svg>
+										Архви
+									</a>
+								</div>
+							</div>
+							<!-- Слайд конец -->
+						</div>
+						<!-- Навигация для хеш-слайдера -->
+						<div class="news-slider__news-navigation news-navigation">
+							<button class="news-navigation__prev">
+								<svg width="15px" height="20px">
+									<use xlink:href="#angle-left-icon"></use>
+								</svg>
+							</button>
+							<button class="news-navigation__next">
+								<svg width="15px" height="20px">
+									<use xlink:href="#angle-right-icon"></use>
+								</svg>
+							</button>
+						</div>
+						<!-- Хеш-слайды слайд -->
+						<div class="news-slider__hash-nav hash-nav">
+							<!-- Хеш -->
+							<div class="hash-nav__item hash-nav__item--active">
+								<p class="hash-nav__text">
+									Металл-Дон подписал
+									первый контракт на поставку
+									конструкций Таманскому
+									терминалу навалочных грузов
+								</p>
+								<div class="hash-nav__info">
+									<span class="hash-nav__data">
+										13.12.18
+									</span>
+									<a href="#" class="hash-nav__link">
+										<svg width="30px" height="15px">
+											<use xlink:href="#arrow-right-icon"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Хеш конец -->
+							<!-- Хеш -->
+							<div class="hash-nav__item">
+								<p class="hash-nav__text">
+									Металл-Дон подписал
+									первый контракт на поставку
+									конструкций Таманскому
+									терминалу навалочных грузов
+								</p>
+								<div class="hash-nav__info">
+									<span class="hash-nav__data">
+										13.12.18
+									</span>
+									<a href="#" class="hash-nav__link">
+										<svg width="30px" height="15px">
+											<use xlink:href="#arrow-right-icon"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Хеш конец -->
+							<!-- Хеш -->
+							<div class="hash-nav__item">
+								<p class="hash-nav__text">
+									Металл-Дон подписал
+									первый контракт на поставку
+									конструкций Таманскому
+									терминалу навалочных грузов
+								</p>
+								<div class="hash-nav__info">
+									<span class="hash-nav__data">
+										13.12.18
+									</span>
+									<a href="#" class="hash-nav__link">
+										<svg width="30px" height="15px">
+											<use xlink:href="#arrow-right-icon"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Хеш конец -->
+							<!-- Хеш -->
+							<div class="hash-nav__item">
+								<p class="hash-nav__text">
+									Металл-Дон подписал
+									первый контракт на поставку
+									конструкций Таманскому
+									терминалу навалочных грузов
+								</p>
+								<div class="hash-nav__info">
+									<span class="hash-nav__data">
+										13.12.18
+									</span>
+									<a href="#" class="hash-nav__link">
+										<svg width="30px" height="15px">
+											<use xlink:href="#arrow-right-icon"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Хеш конец -->
+							<!-- Хеш -->
+							<div class="hash-nav__item">
+								<p class="hash-nav__text">
+									Металл-Дон подписал
+									первый контракт на поставку
+									конструкций Таманскому
+									терминалу навалочных грузов
+								</p>
+								<div class="hash-nav__info">
+									<span class="hash-nav__data">
+										13.12.18
+									</span>
+									<a href="#" class="hash-nav__link">
+										<svg width="30px" height="15px">
+											<use xlink:href="#arrow-right-icon"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Хеш конец -->
+						</div>
+
+					</div>
+					<!-- Слайдер конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<!-- Контакты -->
+					<div class="contacts__contact-info contact-info">
+						<!-- Заголовок -->
+						<h2 class="h2 contact-info__title">
+							Контакты
+						</h2>
+						<!-- Контактная информация -->
+						<div class="contact-info__links">
+							<!-- Адересс -->
+							<div class="contact-info__item contact-info__c-adress c-adress">
+								<p class="c-title c-adress__title">
+									Адрес
+								</p>
+								<p class="c-text c-adress__info">
+									г. Москва, Рязанский проскет, 6c2
+								</p>
+							</div>
+							<!-- Емаил -->
+							<div class="contact-info__item contact-info__c-email c-email">
+								<p class="c-title c-email__title">
+									e-mail
+								</p>
+								<p class="c-text c-email__info">
+									zakaz@metallcore.ru
+								</p>
+							</div>
+							<!-- Телефон -->
+							<div class="contact-info__item contact-info__c-phone c-phone">
+								<p class="c-title c-phone__title">
+									Телефон
+								</p>
+								<p class="c-text c-phone__info">
+									+7 (495) 532-78-10
+								</p>
+							</div>
+							<!-- Социальные сети -->
+							<div class="contact-info__item contact-info__c-social c-social">
+								<p class="c-title c-social__title">
+									соцальные сети
+								</p>
+								<div class="c-social__wrapper">
+									<a href="#" class="c-social__link">1</a>
+									<a href="#" class="c-social__link">2</a>
+									<a href="#" class="c-social__link">3</a>
+								</div>
+							</div>
+						</div>
+						<!-- Форма связи -->
+						<div class="contacts__contact-form contact-form">
+							<p class="c-title contact-form__title">Оставить заявку</p>
+							<p class="c-text contact-form__text">
+								Наш менеджер свяжется с вами в ближайшее время:
+							</p>
+							<a href="#" class="contact-form__link">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="contacts__contact-map contact-map">
+						<img src="img/Layer_3.png" alt="Карта">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<p class="footer__text">
+						Политика конфиденциальности
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
 </html>

@@ -55,6 +55,9 @@ strong {
   font-weight: bold;
 }
 
+// Фикс проблемы со Slick
+.slick-slider div { transition: none; }
+
 // Сброс стилей
 p,
 h1,
@@ -92,5 +95,8 @@ li {
 @import "_custom/first-screen";
 @import "_custom/reference";
 @import "_custom/popular";
+@import "_custom/news";
+@import "_custom/contacts";
+@import "_custom/footer";
 
 @import "media"; // Always at the end

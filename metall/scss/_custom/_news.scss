@@ -1,0 +1,181 @@
+.news {
+  padding: 50px 0px;
+	background-color: rgba(24, 40, 56, 0.4);
+	background-image: url(../img/news-bg.png);
+	background-size: cover;
+	&__title {
+		color: $white;
+	}
+}
+
+.news-slider {
+	position: relative;
+	margin-top: 35px;
+  display: flex;
+	flex-direction: column;
+}
+
+.product-show {
+  &__data {
+    padding: 3px 5px;
+    color: $text;
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: -0.17px;
+    background-color: $white;
+  }
+  &__title {
+		margin-top: 10px;
+    color: $white;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.34px;
+  }
+  &__text {
+		margin-top: 15px;
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  &__links {
+		margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__link {
+    padding: 10px 65px;
+    max-width: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    border: 2px solid $white;
+    background-color: transparent;
+    &:hover {
+      text-decoration: none;
+      background-color: $accent;
+      color: $white;
+      border: 2px solid $accent;
+    }
+  }
+  &__archive {
+		margin-left: 27px;
+    padding: 8px 54px 8px 20px;
+    max-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    border: 2px solid $white;
+		background-color: transparent;
+		svg {
+			fill: $white;
+			margin-right: 20px;
+		}
+    &:hover {
+      text-decoration: none;
+      background-color: $accent;
+      color: $white;
+      border: 2px solid $accent;
+    }
+  }
+}
+
+.hash-nav {
+	margin-top: 50px;
+  &__item {
+    margin-right: 29px;
+    max-width: 255px;
+    height: 172px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(46, 72, 129, 0.1);
+		background-color: #212529;
+		&:hover {
+			background-color: $accent;
+		}
+  }
+  &__text {
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  &__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__data {
+    padding: 3px 5px;
+    color: $text;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    background-color: $white;
+  }
+  &__link {
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.hash-nav__item.slick-current {
+		background-color: $accent;
+}
+
+.news-navigation {
+  display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	&__prev {
+		left: -45px;
+		top: 80%;
+		margin-top: -20px;
+	}
+	&__next {
+		right: -45px;
+		top: 80%;
+		margin-top: -20px;
+	}
+  &__prev,
+  &__next {
+		position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 43px;
+    border: 2px solid $white;
+    background-color: transparent;
+    svg {
+      fill: $white;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      outline: none;
+		}
+		&:hover {
+			cursor: pointer;
+      background-color: $accent;
+			border: 2px solid $accent;
+			svg {
+				fill: $white;
+			}
+		}
+  }
+  &__next {
+    margin-left: 10px;
+  }
+}
