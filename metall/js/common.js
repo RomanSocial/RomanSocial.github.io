@@ -12,7 +12,7 @@ $(function () {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		asNavFor: '.product-show',
-		dots: true,
+		dots: false,
 		// centerMode: true,
 		// centerPadding: '20px',
 		focusOnSelect: true,
@@ -25,14 +25,14 @@ $(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
-		asNavFor: '.shop-navigation'
+		asNavFor: '.shop-hash'
 	});
-	$('.shop-navigation').slick({
+	$('.shop-hash').slick({
 		infinite: true,
 		slidesToShow: 6,
 		slidesToScroll: 1,
 		asNavFor: '.shop-slider',
-		dots: true,
+		dots: false,
 		centerMode: true,
 		focusOnSelect: true,
 		prevArrow: $('.shop-navigation__prev'),

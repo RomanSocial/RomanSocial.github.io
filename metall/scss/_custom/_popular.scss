@@ -1,3 +1,122 @@
 .popular {
-	padding: 50px 0px;
+  padding: 50px 0px;
+}
+
+.shop-slider {
+  position: relative;
+  &__wrapper {
+    margin-top: 50px;
+    padding: 0px 55px;
+  }
+  &__item {
+    display: flex !important;
+    flex-direction: row;
+  }
+  &__title {
+    color: $text;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.34px;
+  }
+  &__price {
+    display: inline-block;
+    color: $accent;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-top: 15px;
+    color: $text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  &__link {
+    margin-top: 30px;
+    padding: 10px 65px;
+    max-width: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    border: 2px solid $accent;
+    background-color: transparent;
+    &:hover {
+      text-decoration: none;
+      background-color: $accent;
+      color: $white;
+      border: 2px solid $accent;
+    }
+  }
+}
+
+.shop-navigation {
+  display: flex;
+  &__prev {
+    left: 0;
+    top: 35%;
+  }
+  &__next {
+    right: 0;
+    top: 35%;
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 43px;
+    border: 2px solid $accent;
+    background-color: transparent;
+    svg {
+      fill: $accent;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $accent;
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.shop-hash {
+  &__item {
+		margin: 10px;
+		padding: 20px 0px;
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    // width: 160px;
+    // height: 184px;
+    box-shadow: 0 8px 40px 8px rgba(46, 72, 129, 0.05);
+		background-color: $white;
+		img {
+			width: 100%;
+		}
+  }
+  &__title {
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+  }
 }
