@@ -38,4 +38,17 @@ $(function () {
 		prevArrow: $('.shop-navigation__prev'),
 		nextArrow: $('.shop-navigation__next'),
 	});
+
+	$(".js-range-slider").ionRangeSlider({
+		postfix: " т",
+		skin: "flat",
+		type: "single",
+		step: 5,
+		min: 0,
+		max: 20,
+		from: 0,
+		to: 20,
+		grid: true,
+	});
+
 });

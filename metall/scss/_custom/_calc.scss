@@ -1,3 +1,73 @@
 .calc {
-	padding: 50px 0px;
+  padding: 50px 0px;
+}
+
+.contact-form {
+  &__item {
+    &:nth-child(2) {
+      margin-top: 25px;
+    }
+    &:nth-child(3) {
+      margin-top: 25px;
+    }
+  }
+  &__title {
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+  &__line {
+    margin-top: 10px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #cccccc;
+    background-color: transparent;
+    svg {
+      margin-right: 10px;
+    }
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+    input::placeholder {
+      color: $text;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+  }
+}
+
+.range-form {
+	margin-top: 40px;
+	.irs .irs-bar {
+		background-color: $accent;
+	}
+	.irs-handle {
+		i:first-child {
+			background-color: transparent;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+  &__title {
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+  &__links {
+    color: $text;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
 }
