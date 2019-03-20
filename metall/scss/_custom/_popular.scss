@@ -123,3 +123,12 @@
     letter-spacing: -0.2px;
   }
 }
+
+@include media-breakpoint-down(md) {
+	.shop-slider {
+		&__item {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
