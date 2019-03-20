@@ -1,5 +1,6 @@
 .popular {
-  padding: 50px 0px;
+	padding: 50px 0px 20px;
+	background-color: $white;
 }
 
 .shop-slider {
@@ -100,6 +101,8 @@
   &__item {
 		margin: 10px;
 		padding: 20px 0px;
+		margin-top: 20px;
+		margin-bottom: 40px;
 		display: flex !important;
 		flex-direction: column;
 		justify-content: center;

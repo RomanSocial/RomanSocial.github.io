@@ -47,12 +47,31 @@
   &__item {
     padding: 30px;
     flex: 33%;
-    height: 153px;
+		height: 153px;
+		background-size: cover;
     &--dark {
       background-color: rgba(33, 37, 41, 0.75);
     }
     &--light {
       background-color: rgba(44, 68, 122, 0.75);
+		}
+		&--range {
+			background-image: url(../img/catalogue-brochure-design-gold-coast-2a.png);
+		}
+		&--all {
+			background-image: url(../img/bigstock-wholesale-logistic-people-an-118565333-e1470073530425.png);
+		}
+		&--size {
+			background-image: url(../img/storage-london-002.png);
+		}
+		&--delivery {
+			background-image: url(../img/delivery-support1-497x323.png);
+		}
+		&--pay {
+			background-image: url(../img/72300.png);
+		}
+		&--date {
+			background-image: url(../img/otsrochka_credit.png);
 		}
 		&:hover {
 			cursor: pointer;

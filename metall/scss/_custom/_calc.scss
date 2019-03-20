@@ -1,5 +1,6 @@
 .calc {
   padding: 50px 0px;
+  background-color: $hint-of-red;
 }
 
 .contact-form {
@@ -30,6 +31,7 @@
       margin-right: 10px;
     }
     input {
+      background-color: transparent;
       width: 100%;
       border: none;
       outline: none;
@@ -44,30 +46,175 @@
 }
 
 .range-form {
-	margin-top: 40px;
-	.irs .irs-bar {
-		background-color: $accent;
-	}
-	.irs-handle {
-		i:first-child {
-			background-color: transparent;
-		}
-	}
-	&__item {
-		display: flex;
-		flex-direction: column;
-	}
+  margin-top: 40px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+      .range-form__title {
+        margin-bottom: 10px;
+      }
+      margin-top: 15px;
+    }
+    &:nth-child(3) {
+      margin-top: 25px;
+    }
+  }
   &__title {
     color: $text;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: -0.2px;
   }
+  &__vars {}
   &__links {
+    display: flex;
+    flex-direction: row;
+  }
+  &__container {
+    flex: 33%;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    :hover input~.range-form__checkmark {
+      background-color: #ccc;
+    }
+    input:checked~.range-form__checkmark {
+      border: 2px solid $accent;
+      background-color: $accent;
+      z-index: 1;
+    }
+    input:checked~.range-form__text {
+      color: $white;
+    }
+    input:checked~.range-form__checkmark:after {
+      display: block;
+    }
+  }
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    &:after {
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 38px;
+      background: transparent;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
     color: $text;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: -0.2px;
+  }
+}
+
+.range-form__weight {
+  .irs .irs-bar {
+    background-color: $accent;
+  }
+  .irs-handle {
+    i:first-child {
+      background-color: transparent;
+    }
+  }
+  .irs-handle:hover {
+    i:first-child {
+      background-color: transparent;
+    }
+  }
+  .irs .irs-single {
+    display: none;
+  }
+}
+
+.range-form__sale {
+  .irs .irs-bar {
+    background-color: $accent;
+  }
+  .irs-handle {
+    i:first-child {
+      background-color: transparent;
+    }
+  }
+  .irs-handle:hover {
+    i:first-child {
+      background-color: transparent;
+    }
+  }
+  .irs .irs-single {
+    background-color: transparent;
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.order-form {
+	margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  &__chek {
+    label {
+      color: $text;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: -0.2px;
+			input {
+				margin-right: 15px;
+			}
+		}
+  }
+  &__link {
+    align-self: center;
+    margin-top: 30px;
+    padding: 10px 50px;
+    max-width: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    border: 2px solid $accent;
+    background-color: transparent;
+    &:hover {
+      text-decoration: none;
+      background-color: $accent;
+      color: $white;
+      border: 2px solid $accent;
+    }
   }
 }

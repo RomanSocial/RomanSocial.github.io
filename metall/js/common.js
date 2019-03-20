@@ -29,7 +29,7 @@ $(function () {
 	});
 	$('.shop-hash').slick({
 		infinite: true,
-		slidesToShow: 6,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		asNavFor: '.shop-slider',
 		dots: false,
@@ -39,15 +39,27 @@ $(function () {
 		nextArrow: $('.shop-navigation__next'),
 	});
 
-	$(".js-range-slider").ionRangeSlider({
+	$(".js-range-form__weight").ionRangeSlider({
 		postfix: " т",
 		skin: "flat",
 		type: "single",
 		step: 5,
 		min: 0,
 		max: 20,
-		from: 0,
+		from: 5,
 		to: 20,
+		grid: true,
+	});
+
+	$(".js-range-form__sale").ionRangeSlider({
+		postfix: " %",
+		skin: "flat",
+		type: "single",
+		step: 5,
+		min: 0,
+		max: 100,
+		from: 5,
+		to: 5,
 		grid: true,
 	});
 
