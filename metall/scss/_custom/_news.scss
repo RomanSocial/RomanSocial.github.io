@@ -94,7 +94,7 @@
 	margin-top: 50px;
   &__item {
     margin-right: 29px;
-    max-width: 255px;
+    // max-width: 255px;
     height: 172px;
     padding: 25px;
     box-shadow: 0 10px 40px rgba(46, 72, 129, 0.1);
@@ -178,4 +178,22 @@
   &__next {
     margin-left: 10px;
   }
+}
+
+@include media-breakpoint-down(sm) {
+	.hash-nav {
+		&__item {
+			margin: 0px 45px;
+		}
+	}
+	.news-navigation {
+		&__next {
+			top: 65%;
+			right: 0px;
+		}
+		&__prev {
+			top: 65%;
+			left: 0px;
+		}
+	}
 }

@@ -5,7 +5,7 @@ $(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
-		asNavFor: '.hash-nav'
+		asNavFor: '.hash-nav',
 	});
 	$('.hash-nav').slick({
 		infinite: true,
@@ -20,8 +20,6 @@ $(function () {
 			{
 				breakpoint: 1198,
 				settings: {
-					centerMode: true,
-					centerPadding: '40px',
 					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
@@ -30,8 +28,6 @@ $(function () {
 			{
 				breakpoint: 990,
 				settings: {
-					centerMode: true,
-					centerPadding: '40px',
 					slidesToShow: 2,
 					slidesToScroll: 1
 				}
@@ -39,21 +35,10 @@ $(function () {
 			{
 				breakpoint: 759,
 				settings: {
-					centerMode: false,
-					centerPadding: '40px',
 					slidesToScroll: 1,
 					slidesToShow: 1
 				}
 			},
-			{
-				breakpoint: 480,
-				settings: {
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
 		]
 	});
 
