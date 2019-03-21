@@ -137,3 +137,11 @@
 		}
 	}
 }
+
+@include media-breakpoint-down(xs) {
+.shop-slider {
+	&__link {
+		padding: 10px 35px;
+	}
+}
+}
