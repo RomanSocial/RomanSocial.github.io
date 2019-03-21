@@ -52,11 +52,17 @@
     letter-spacing: -0.22px;
   }
   &__offer {
+		border: solid 2px #fff;
+    padding: 5px;
     font-weight: 700;
     margin-top: 60px;
     text-align: center;
     color: $white;
-    letter-spacing: -0.22px;
+		letter-spacing: -0.22px;
+		&:hover {
+			cursor: pointer;
+			background-color: $accent;
+		}
   }
   &__video {
     position: relative;
@@ -150,9 +156,9 @@
   .first-screen {
     &__title {
 			text-align: center;
-      font-size: 35px;
+      font-size: 25px;
       span {
-        font-size: 20px;
+        font-size: 16px;
 			}
 			&:before {
 				top: -10px;
@@ -170,6 +176,7 @@
       text-align: center;
 		}
 		&__offer {
+			margin-top: 30px;
 			font-size: 14px;
 		}
 	}
