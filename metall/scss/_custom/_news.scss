@@ -182,8 +182,10 @@
 
 @include media-breakpoint-down(sm) {
 	.hash-nav {
+		margin-top: 70px;
 		&__item {
 			margin: 0px 45px;
+			height: auto;
 		}
 	}
 	.news-navigation {
@@ -198,7 +200,11 @@
 	}
 	.product-show {
 		&__link {
+			font-size: 14px;
 			padding: 10px 14px;
+		}
+		&__archive {
+			padding-right: 25px;
 		}
 	}
 }

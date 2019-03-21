@@ -95,6 +95,11 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-	
+@include media-breakpoint-down(xs) {
+.bars {
+	&__item {
+		min-width: 165px;
+		height: auto;
+	}
+}
 }

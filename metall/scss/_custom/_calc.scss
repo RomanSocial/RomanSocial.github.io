@@ -218,3 +218,14 @@
     }
   }
 }
+
+@include media-breakpoint-down(xs) {
+	.range-form {
+		&__links {
+			flex-wrap: wrap;
+		}
+		&__container {
+			min-width: 178px;
+		}
+	}
+}
