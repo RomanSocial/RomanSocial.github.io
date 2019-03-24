@@ -61,16 +61,6 @@ $(function () {
 		nextArrow: $('.shop-navigation__next'),
 		responsive: [
 			{
-				breakpoint: 1198,
-				settings: {
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					infinite: true,
-				}
-			},
-			{
 				breakpoint: 990,
 				settings: {
 					centerMode: true,
@@ -85,14 +75,13 @@ $(function () {
 					centerMode: true,
 					centerPadding: '40px',
 					slidesToShow: 3,
-					slidesToScroll: 2
+					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 480,
 				settings: {
-					centerMode: true,
-					centerPadding: '0px',
+					centerMode: false,
 					slidesToShow: 2,
 					slidesToScroll: 1
 				}
