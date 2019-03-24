@@ -2,1176 +2,899 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8" />
+
+	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
-	<meta name="description" content="" />
+	<title>«Сила Тайги»</title>
+	<meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg" />
-	<link rel="icon" href="img/favicon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000" />
+	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css/main.min.css" />
+	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
-	<!-- SVG спрайты -->
+
 	<div class="svg-container" style="display:none;">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			width="0" height="0" style="position: absolute;">
-			<!-- Arrow-right иконка -->
-			<symbol id="arrow-right-icon" viewBox="0 0 32.635 32.635">
+			<!-- Цитата иконка -->
+			<symbol id="quote-icon" viewBox="0 0 508.044 508.044">
 				<g>
-					<path d="M32.135,16.817H0.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h31.635c0.276,0,0.5,0.224,0.5,0.5
-									S32.411,16.817,32.135,16.817z" />
-					<path d="M19.598,29.353c-0.128,0-0.256-0.049-0.354-0.146c-0.195-0.195-0.195-0.512,0-0.707l12.184-12.184L19.244,4.136
-									c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0l12.537,12.533c0.094,0.094,0.146,0.221,0.146,0.354
-									s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z" />
+					<path d="M507.93,155.673c0-0.055,0.006-0.11,0.006-0.165c0-66.793-54.145-120.938-120.938-120.938S266.061,88.714,266.061,155.508
+			c0,66.794,54.15,120.938,120.938,120.938c13.727,0,26.867-2.393,39.162-6.609c-27.209,156.09-148.93,256.752-36.096,173.905
+			C515.182,351.874,508.07,159.198,507.93,155.673z" />
+					<path d="M120.938,276.445c13.727,0,26.867-2.393,39.168-6.609c-27.216,156.09-148.937,256.752-36.102,173.905
+			c125.117-91.867,118.006-284.543,117.865-288.068c0-0.055,0.006-0.11,0.006-0.165c0-66.793-54.144-120.938-120.937-120.938
+			C54.144,34.57,0,88.714,0,155.508C0,222.302,54.15,276.445,120.938,276.445z" />
 				</g>
 			</symbol>
-			<!-- Arrow-right иконка -->
-			<!-- Angle-left иконка -->
-			<symbol id="angle-left-icon" viewBox="0 0 284.935 284.936">
-				<g>
-					<path d="M110.488,142.468L222.694,30.264c1.902-1.903,2.854-4.093,2.854-6.567c0-2.474-0.951-4.664-2.854-6.563L208.417,2.857
-						C206.513,0.955,204.324,0,201.856,0c-2.475,0-4.664,0.955-6.567,2.857L62.24,135.9c-1.903,1.903-2.852,4.093-2.852,6.567
-						c0,2.475,0.949,4.664,2.852,6.567l133.042,133.043c1.906,1.906,4.097,2.857,6.571,2.857c2.471,0,4.66-0.951,6.563-2.857
-						l14.277-14.267c1.902-1.903,2.851-4.094,2.851-6.57c0-2.472-0.948-4.661-2.851-6.564L110.488,142.468z" />
-				</g>
-			</symbol>
-			<!-- Angle-left иконка конец -->
-			<!-- Angle-right иконка -->
-			<symbol id="angle-right-icon" viewBox="0 0 284.935 284.936">
-				<g>
-					<path
-						d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
-					c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677
-					c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
-					c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z" />
-				</g>
-			</symbol>
-			<!-- Angle-right иконка конец -->
-			<!-- Archive иконка -->
-			<symbol id="archive-icon" viewBox="0 0 512 512">
-				<g>
-					<g>
-						<path d="M155.999,370.002c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10
-								C165.999,374.482,161.519,370.002,155.999,370.002z" />
-					</g>
-					<g>
-						<path d="M450.143,190.001l58.929-58.929c2.479-2.479,3.478-6.075,2.635-9.477c-0.843-3.403-3.407-6.115-6.757-7.149L361.45,70.156
-									c-12.936-41.581-51.384-70.154-95.451-70.154c-40.964,0-77.6,24.965-92.763,62.625L7.022,114.455
-									c-3.341,1.042-5.895,3.756-6.732,7.155c-0.837,3.398,0.163,6.988,2.638,9.463l60.479,60.479l-38.144,63.575
-									c-1.561,2.601-1.856,5.77-0.804,8.615c1.052,2.845,3.339,5.058,6.217,6.017l55.323,18.44v153.802c0,4.168,2.586,7.899,6.489,9.363
-									c33.827,12.684,159.512,59.822,160.187,60.061c1.984,0.699,4.219,0.794,6.398,0.089c0.029-0.01,0.059-0.016,0.088-0.026l180-60
-									c4.083-1.361,6.838-5.183,6.838-9.487v-157.92l58.998-18.54c3.336-1.048,5.882-3.762,6.715-7.158
-									c0.832-3.396-0.169-6.98-2.641-9.453L450.143,190.001z M365.999,100.002c0-2.541-0.107-5.076-0.298-7.603l117.494,36.265
-									l-49.897,49.896l-81.528-27.173C361.002,135.956,365.999,118.15,365.999,100.002z M190.326,73.974
-									c11.101-32.282,41.512-53.972,75.673-53.972c36.801,0,68.719,24.892,77.618,60.532c1.581,6.333,2.382,12.883,2.382,19.468
-									c0,18.574-6.164,35.983-17.828,50.352c-15.277,18.842-37.938,29.648-62.172,29.648c-26.196,0-50.767-12.858-65.733-34.404
-									c-9.333-13.406-14.267-29.174-14.267-45.596C185.999,91.071,187.454,82.314,190.326,73.974z M28.764,128.625l138.3-43.124
-									c-0.694,4.778-1.065,9.618-1.065,14.5c0,16.101,3.814,31.696,11.084,45.767L78.7,178.56L28.764,128.625z M48.827,254.727
-									l31.62-52.702l160.563,53.521l-31.619,52.702C192.246,302.533,67.133,260.828,48.827,254.727z M245.999,487.572l-140-52.5V294.866
-									c110.15,36.522,104.771,35.407,107.838,35.407c3.438,0,6.73-1.779,8.577-4.856l23.585-39.311V487.572z M255.999,239.461
-									l-148.376-49.458l80.794-26.93c18.91,23.247,47.377,36.929,77.582,36.929c27.942,0,54.203-11.499,73.092-31.759l65.284,21.759
-									L255.999,239.461z M425.999,434.794l-160,53.333v-209.62l35.451,44.31c2.579,3.223,6.872,4.529,10.807,3.293l113.742-35.743
-									V434.794z M312.791,304.979l-40.024-50.026l160.531-53.51l49.964,49.964L312.791,304.979z" />
-					</g>
-					<g>
-						<path d="M219.511,392.198l-22.24-8.34c-5.171-1.938-10.935,0.681-12.875,5.852c-1.939,5.172,0.681,10.936,5.852,12.875l22.24,8.34
-										c5.182,1.942,10.939-0.69,12.875-5.852C227.302,399.902,224.682,394.137,219.511,392.198z" />
-					</g>
-					<g>
-						<path
-							d="M219.51,434.918l-60-22.5c-5.171-1.939-10.935,0.681-12.875,5.852c-1.94,5.171,0.681,10.936,5.852,12.875l60,22.5
-											c1.157,0.434,2.343,0.64,3.51,0.64c4.049,0,7.859-2.477,9.365-6.492C227.302,442.621,224.682,436.857,219.51,434.918z" />
-					</g>
-					<g>
-						<path d="M323.071,62.93c-3.905-3.906-10.237-3.905-14.143,0l-52.929,52.93l-12.929-12.929c-3.905-3.905-10.237-3.905-14.143,0
-												c-3.906,3.905-3.905,10.237,0,14.143l20.001,19.999c3.905,3.905,10.237,3.905,14.143,0l60-60
-												C326.976,73.168,326.976,66.836,323.071,62.93z" />
-					</g>
-				</g>
-			</symbol>
-			<!-- Archive иконка конец -->
-			<!-- Maill иконка -->
-			<symbol id="maill-icon" viewBox="0 0 512 512">
-				<g>
-					<g>
-						<path d="M257,210c-24.814,0-45,20.186-45,45c0,24.814,20.186,45,45,45c24.814,0,45-20.186,45-45C302,230.186,281.814,210,257,210z
-						" />
-					</g>
-					<g>
-						<path d="M255,0C114.39,0,0,114.39,0,255s114.39,257,255,257s257-116.39,257-257S395.61,0,255,0z M362,330
-						c-20.273,0-38.152-10.161-49.017-25.596C299.23,319.971,279.354,330,257,330c-41.353,0-75-33.647-75-75c0-41.353,33.647-75,75-75
-						c16.948,0,32.426,5.865,45,15.383V195c0-8.291,6.709-15,15-15c8.291,0,15,6.709,15,15c0,33.36,0,41.625,0,75
-						c0,16.538,13.462,30,30,30c16.538,0,30-13.462,30-30c0-100.391-66.432-150-135-150c-74.443,0-135,60.557-135,135
-						s60.557,135,135,135c30,0,58.374-9.609,82.061-27.803c15.822-12.078,33.94,11.765,18.281,23.789
-						C328.353,408.237,293.665,420,257,420c-90.981,0-165-74.019-165-165S166.019,90,257,90c82.897,0,165,61.135,165,180
-						C422,303.091,395.091,330,362,330z" />
-					</g>
-				</g>
-			</symbol>
-			<!-- Mail иконка конец -->
-			<!-- Call иконка -->
-			<symbol id="call-icon" viewBox="0 0 348.077 348.077">
-				<g>
-					<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
-				c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
-				c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
-				C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
-				C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
-				c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
-				C350.631,303.527,350.95,285.795,340.273,275.083z" />
-				</g>
-			</symbol>
-			<!-- Call иконка конец -->
-			<!-- User иконка -->
-			<symbol id="user-icon" viewBox="0 0 350 350">
-				<g>
-					<path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
-				C104.535,132.855,136.084,171.173,175,171.173z" />
-					<path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z" />
-					<path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z" />
-					<path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
-				s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
-				c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
-				c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z" />
-				</g>
-			</symbol>
-			<!-- User иконка конец -->
-			<!-- Facebook иконка -->
-			<symbol id="facebook-icon" viewBox="0 0 430.1 430.1">
-			<g>
-				<path id="Facebook" d="M158.1,83.3c0,10.8,0,59.2,0,59.2h-43.4v72.4h43.4v215.2h89.1V214.9H307c0,0,5.6-34.7,8.3-72.7
-				c-7.8,0-67.8,0-67.8,0s0-42.1,0-49.5c0-7.4,9.7-17.4,19.3-17.4c9.6,0,29.8,0,48.6,0c0-9.9,0-43.9,0-75.4c-25,0-53.5,0-66,0
-				C155.9,0,158.1,72.5,158.1,83.3z"/>
-			</g>
-			</symbol>
-			<!-- Facebook иконка конец -->
-			<!-- Instagram иконка -->
-			<symbol id="instagram-icon" viewBox="0 0 97.4 97.4">
-			<g>
-				<path d="M12.5,0h72.4c6.9,0,12.5,5.1,12.5,12.5v72.4c0,7.4-5.6,12.5-12.5,12.5H12.5C5.6,97.4,0,92.3,0,84.9V12.5
-				C0,5.1,5.6,0,12.5,0L12.5,0z M70.9,10.8c-2.4,0-4.4,2-4.4,4.4v10.5c0,2.4,2,4.4,4.4,4.4h11c2.4,0,4.4-2,4.4-4.4V15.2
-				c0-2.4-2-4.4-4.4-4.4H70.9L70.9,10.8z M86.4,41.2h-8.6c0.8,2.6,1.2,5.5,1.2,8.4c0,16.2-13.6,29.3-30.3,29.3
-				c-16.7,0-30.3-13.1-30.3-29.3c0-2.9,0.4-5.7,1.2-8.4h-8.9v41.1c0,2.1,1.7,3.9,3.9,3.9h67.8c2.1,0,3.9-1.7,3.9-3.9L86.4,41.2
-				L86.4,41.2z M48.8,29.5c-10.8,0-19.6,8.5-19.6,19s8.8,19,19.6,19c10.8,0,19.6-8.5,19.6-19S59.6,29.5,48.8,29.5z"/>
-			</g>
-			</symbol>
-			<!-- Instagram иконка конец -->
-			<!-- Vkontakte иконка -->
-			<symbol id="vkontakte-icon" viewBox="0 0 304.4 304.4">
-			<g>
-				<path  d="M261.9,175.6c10.1,9.9,20.8,19.1,29.8,30c4,4.8,7.8,9.8,10.7,15.4c4.1,8,0.4,16.7-6.7,17.2
-				l-44.3,0c-11.4,0.9-20.6-3.7-28.2-11.5c-6.1-6.3-11.8-12.9-17.7-19.4c-2.4-2.6-5-5.1-8-7.1c-6.1-3.9-11.3-2.7-14.8,3.6
-				c-3.5,6.4-4.3,13.5-4.7,20.7c-0.5,10.4-3.6,13.2-14.1,13.7c-22.4,1.1-43.7-2.3-63.4-13.6c-17.4-10-30.9-24-42.7-40
-				c-22.9-31-40.4-65.1-56.2-100.1c-3.5-7.9-1-12.1,7.8-12.3c14.5-0.3,28.9-0.3,43.4,0c5.9,0.1,9.8,3.5,12,9
-				c7.8,19.2,17.4,37.6,29.4,54.5c3.2,4.5,6.5,9,11.1,12.2c5.1,3.5,9.1,2.4,11.5-3.4c1.5-3.6,2.2-7.5,2.6-11.4
-				c1.1-13.4,1.3-26.7-0.7-40.1c-1.2-8.3-5.9-13.7-14.2-15.3c-4.2-0.8-3.6-2.4-1.6-4.8c3.6-4.2,6.9-6.8,13.6-6.8h50.1
-				c7.9,1.6,9.6,5.1,10.7,13l0,55.7c-0.1,3.1,1.5,12.2,7.1,14.2c4.4,1.4,7.4-2.1,10-4.9c12-12.7,20.6-27.8,28.2-43.4
-				c3.4-6.9,6.3-14,9.1-21.1c2.1-5.3,5.4-7.9,11.3-7.8l48.2,0c1.4,0,2.9,0,4.3,0.3c8.1,1.4,10.4,4.9,7.8,12.8
-				c-4,12.5-11.6,22.8-19.2,33.3c-8,11.1-16.6,21.9-24.6,33.1C252.3,161.5,252.8,166.7,261.9,175.6L261.9,175.6z"/>
-			</g>
-			</symbol>
-			<!-- Vkontakte иконка конец -->
+			<!-- Цитата иконка конец -->
 		</svg>
 	</div>
-	<!-- SVG спрайты конец -->
 
-	<section class="first-screen">
+	<!-- Описание  -->
+	<section class="description">
 		<div class="container">
 			<div class="row">
-				<!-- Заголовок -->
-				<div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-10 offset-1">
-					<div class="first-screen__wrapper">
-						<h1 class="h1 first-screen__title">
-							Металлопрокат
-							<span>
-								Оптом и в розницу
-							</span>
-						</h1>
-						<p class="first-screen__text">
-							По лучшим ценам с доставкой без выходных и праздников
-						</p>
-					</div>
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="description__decor decor"></div>
+					<!-- Декоративный элемент конец -->
 				</div>
-				<!-- Заголовок конец -->
-			</div>
-			<div class="row">
-				<!-- Преимущества -->
-				<div class="col-xl-3 offset-xl-0 col-lg-4 offset-lg-3 col-md-4 offset-md-2 col-sm-5 col-5 offset-1">
-					<div class="first-screen__plus plus">
-						<p class="plus__text">
-							10 000
-							<span>позиций</span>
-						</p>
-						<a href="#" class="plus__link">Каталог
-							<svg width="15px" height="9px">
-								<use xlink:href="#arrow-right-icon"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-5 col-md-6 col-sm-6 col-6">
-					<div class="first-screen__plus plus">
-						<p class="plus__text">
-							Более 3 000
-							<span>заказов за 2018 г</span>
-						</p>
-						<a href="#" class="plus__link">Услуги
-							<svg width="15px" height="9px">
-								<use xlink:href="#arrow-right-icon"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="col-xl-3 offset-xl-0 col-lg-4 offset-lg-3 col-md-4 offset-md-2 col-sm-5 col-5 offset-1">
-					<div class="first-screen__plus plus">
-						<p class="plus__text">
-							2 000 000 т.
-							<span>отгружено</span>
-						</p>
-						<a href="#" class="plus__link">Доставка
-							<svg width="15px" height="9px">
-								<use xlink:href="#arrow-right-icon"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="col-xl-2 col-lg-5 col-md-6 col-sm-6 col-6">
-					<div class="first-screen__plus plus plus--tar">
-						<p class="plus__text">
-							11 лет
-							<span>на рынке</span>
-						</p>
-						<a href="#" class="plus__link">Контакты
-							<svg width="15px" height="9px">
-								<use xlink:href="#arrow-right-icon"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<!-- Преимущества конец -->
-			</div>
-			<div class="row">
-				<!-- Предложение -->
-				<div class="col-xl-4 offset-xl-4 col-lg-12 col-12">
-					<p class="first-screen__offer">
-						*Рассчитайте заказ прямо сейчас и получите бесплатную доставку
-						вашей продукции
-					</p>
-				</div>
-				<!-- Предложение конец -->
-			</div>
-		</div>
-		<div class="first-screen__video">
-			<video autoplay loop>
-				<source src="img/video/DJI_0006_4.mp4" type="video/mp4">
-				<source src="img/video/DJI_0006_3.webm" type="video/webm">
-				<source src="img/video/DJI_0006_2.ogg" type="video/ogg">
-			</video>
-		</div>
-	</section>
-
-	<section class="reference">
-		<div class="container">
-			<div class="row">
-				<!-- Заголовок -->
-				<div class="col-xl-8">
-					<h2 class="h2 reference__title">
-						MetallCore – ваш надежный поставщик в сфере металлопроката!
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 description__title">
+						<span>Для всех возрастов</span>
+						Описание
 					</h2>
+					<!-- Заголовок конец -->
 				</div>
-				<!-- Заголовок -->
 			</div>
 			<div class="row">
-				<!-- Кнопки с референсами -->
-				<div class="col-xl-3 col-lg-6">
-					<div class="reference__links-group links-group">
-						<div class="links-group__item">
-							<p class="links-group__text">
-								Предоставляем полный асортимент продукции металлопроката, а
-								также доборные элементы.
-							</p>
-							<a href="#" class="links-group__link">
-								Перейти в каталог
-							</a>
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="description__item">
+						<!-- Картинка -->
+						<div class="block-image what-fir__image">
+							<img src="img/family.png" alt="Что такое пихтовый вар?">
 						</div>
-						<div class="links-group__item">
-							<p class="links-group__text">
-								Гарантируем безупречный сервис, индивидуальный подход и
-								лояльность к каждому клиенту.
-							</p>
-							<a href="#" class="links-group__link">
-								Заказать звонок
-							</a>
-						</div>
+						<!-- Картинка конец -->
 					</div>
+					<!-- Контейнер конец -->
 				</div>
-				<!-- Кнопки с референсами конец -->
-				<!-- Плитки -->
-				<div class="col-xl-9 col-lg-6">
-					<div class="reference__bars bars">
-						<div class="bars__item bars__item--dark bars__item--range">
-							<p class="bars__title">
-								Ассортимент
-							</p>
-							<p class="bars__text">
-								Полный каталог товаров на сайте
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="description__item what-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number what-fir__number">
+							01.
+						</div>
+						<div class="what-fir__wrapper">
+							<p class="block-title what-fir__title">Что это такое?</p>
+							<p class="block-text what-fir__text">
+								Пихтовый вар <b>«Сила Тайги»</b>– это биологически активное вещество из пихты, изготавливаемое <b>по
+									старинному рецепту</b> вдалеке от городов в экологически чистом регионе (предгорье Саян в Сибири)
+								методом экстрагирования из молодых побегов пихты сибирской, с исключительными свойствами.
 							</p>
 						</div>
-						<div class="bars__item bars__item--light bars__item--all">
-							<p class="bars__title">
-								Для всех
-							</p>
-							<p class="bars__text">
-								Поставка металла компаниям и частным лицам
-							</p>
-						</div>
-						<div class="bars__item bars__item--dark bars__item--size">
-							<p class="bars__title">
-								Объемы
-							</p>
-							<p class="bars__text">
-								Заказы любого объема оптом и в розницу без наценки
-							</p>
-						</div>
-						<div class="bars__item bars__item--light bars__item--delivery">
-							<p class="bars__title">
-								Доставка
-							</p>
-							<p class="bars__text">
-								Круглосуточная доставка без выходных и праздников
-							</p>
-						</div>
-						<div class="bars__item bars__item--dark bars__item--pay">
-							<p class="bars__title">
-								Оплата
-							</p>
-							<p class="bars__text">
-								Оплата заказа удобным для клиента способом
-							</p>
-						</div>
-						<div class="bars__item bars__item--light bars__item--date">
-							<p class="bars__title">
-								Отсрочка
-							</p>
-							<p class="bars__text">
-								Предоставляем отсрочку платежа до 60 календарных дней
-							</p>
-						</div>
+						<!-- О Силе Тайги конец -->
 					</div>
+					<!-- Контейнер конец -->
 				</div>
-				<!-- Плитки конец -->
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="description__item what-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number what-fir__number">
+							02.
+						</div>
+						<div class="what-fir__wrapper">
+							<p class="block-title what-fir__title">Как выглядит?</p>
+							<p class="block-text what-fir__text">
+								Внешне это вещество темно-коричневого цвета, имеющее густую однородную консистенцию и характерный
+								неповторимый хвойный аромат.
+							</p>
+							<p class="block-text what-fir__text">
+								При добавлении в кружку с горячей водой вы получаете <b>ценный хвойный напиток</b>, который наполняет
+								всю
+								комнату природным запахом тайги!
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="description__item">
+						<!-- Картинка -->
+						<div class="block-image what-fir__image">
+							<img src="img/pihta-look.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<!-- Цитата -->
+					<div class="description__quote quote">
+						<!-- Иконка цитаты -->
+						<span class="quote__symbol">
+							<svg width="34px" height="30px">
+								<use xlink:href="#quote-icon"></use>
+							</svg>
+						</span>
+						<!-- Иконка цитаты конец -->
+						<!-- Текст цитаты -->
+						<p class="quote__text">
+							Пихтовый вар «Сила Тайги» <br>
+							соответствует СанПин 2.3.2.1078-91
+						</p>
+						<!-- Текст цитаты конец -->
+					</div>
+					<!-- Цитата конец -->
+				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Описание  конец -->
 
-	<section class="popular">
+	<!-- Известность  -->
+	<section class="fame">
 		<div class="container">
 			<div class="row">
-				<!-- Заголовок -->
-				<div class="col-xl-12">
-					<h2 class="h2 popular__title">
-						Популярные товары
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="fame__decor decor"></div>
+					<!-- Декоративный элемент конец -->
+				</div>
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 fame__title">
+						<span>Продукт которому доверяют</span>
+						Известность
 					</h2>
+					<!-- Заголовок конец -->
 				</div>
-				<!-- Заголовок конец -->
 			</div>
 			<div class="row">
-				<div class="col-xl-12">
-					<!-- Слайдер -->
-					<div class="shop-slider__wrapper">
-						<!-- Большой слайдер -->
-						<div class="popular__shop-slider shop-slider">
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/09-profnastil.png">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Профнастил
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/01-armatura.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Арматура
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/02-balka.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Балка
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/03-shveler.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Швеллер
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/04-trubi.png">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Трубы
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/05-list.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Лист
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/06-krug.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Круг
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/07-polosa.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Полоса
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
-							<!-- Слайд -->
-							<div class="shop-slider__item">
-								<div class="shop-slider__picture">
-									<img src="img/08-ugolok.png" alt="Профнастил">
-								</div>
-								<div class="shop-slider__info">
-									<p class="shop-slider__title">
-										Уголок
-									</p>
-									<span class="shop-slider__price">от 1 999 руб.</span>
-									<p class="shop-slider__text">
-										Профнастил - профилированный стальной лист, широко используемый в качестве облицовочного и
-										кровельного
-										материала.
-									</p>
-									<p class="shop-slider__text">
-										Изгибы придают ему устойчивость и жесткость, обеспечивают высокую несущую способность. Профильный
-										лист производится методом холодного проката в основном из стали, реже из меди...
-									</p>
-									<a href="#" class="shop-slider__link">Купить сейчас</a>
-								</div>
-							</div>
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="fame__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/fun-family.png" alt="Что такое пихтовый вар?">
 						</div>
-						<!-- Миниатюры слайдер -->
-						<div class="popular__shop-hash shop-hash">
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/09-profnastil.png" alt="Профнастил">
-								<p class="shop-hash__title">
-									Профнастил
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/01-armatura.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Арматура
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/02-balka.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Балка
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/03-shveler.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Швеллер
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/04-trubi.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Трубы
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/05-list.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Лист
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/06-krug.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Круг
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/07-polosa.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Полоса
-								</p>
-							</div>
-							<!-- Миниатюра -->
-							<div class="shop-hash__item">
-								<img src="img/08-ugolok.png" alt="Арматура">
-								<p class="shop-hash__title">
-									Уголок
-								</p>
-							</div>
-						</div>
-						<!-- Навигация -->
-						<div class="shop-navigation">
-							<button class="shop-navigation__prev">
-								<svg width="15px" height="20px">
-									<use xlink:href="#angle-left-icon"></use>
-								</svg>
-							</button>
-							<button class="shop-navigation__next">
-								<svg width="15px" height="20px">
-									<use xlink:href="#angle-right-icon"></use>
-								</svg>
-							</button>
-						</div>
+						<!-- Картинка конец -->
 					</div>
-					<!-- Слайдер конец -->
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="fame__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							01.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">История появления</p>
+							<p class="block-text story-fir__text">
+								Вытяжку из пихты использовали с давних времен. Первые упоминания встречаются в славянских летописях
+								Древней руси. Пихта, которую часто <b>называют лесным доктором</b>, даёт людям здоровье и молодость.
+								Пихтовый вар вырабатывается из молодой весенней хвои сибирской пихты. Самое эффективное средство для
+								восстановления здоровья, заживления ран и очищения организма.
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<!-- Цитата -->
+					<div class="fame__quote quote">
+						<!-- Иконка цитаты -->
+						<span class="quote__symbol">
+							<svg width="34px" height="30px">
+								<use xlink:href="#quote-icon"></use>
+							</svg>
+						</span>
+						<!-- Иконка цитаты конец -->
+						<!-- Текст цитаты -->
+						<p class="quote__text">
+							Хвойный пихтовый вар считался
+							самым эффективным, его использовали
+							для поднятия на ноги даже тяжелобольных.
+						</p>
+						<!-- Текст цитаты конец -->
+					</div>
+					<!-- Цитата конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="fame__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							02.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">Место изготовления</p>
+							<p class="block-text story-fir__text">
+								Позднее рецепты знахарей был забыты и возрождены только в настоящее время из далекой сибирской глубинки
+								на севере Красноярского края.
+							</p>
+							<p class="block-text story-fir__text">
+								Спрос на пихтовый оказался настолько высоким, что его попросту не успевали изготоваливать для всех
+								желающих ведь
+								он производится вручную.
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="fame__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/cook-place.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<!-- Цитата -->
+					<div class="fame__quote quote">
+						<!-- Иконка цитаты -->
+						<span class="quote__symbol">
+							<svg width="34px" height="30px">
+								<use xlink:href="#quote-icon"></use>
+							</svg>
+						</span>
+						<!-- Иконка цитаты конец -->
+						<!-- Текст цитаты -->
+						<p class="quote__text">
+							Пихтовый вар «Сила Тайги» помог многим людям
+							обрести здоровье и вернутся к нормально жизни.
+							Помог другим – неприменно <span class="quote__accent">поможет и вам!</span>
+						</p>
+						<!-- Текст цитаты конец -->
+					</div>
+					<!-- Цитата конец -->
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Известность  конец -->
 
-	<section class="calc">
+	<!-- Действие  -->
+	<section class="action">
 		<div class="container">
 			<div class="row">
-				<!-- Заголовок -->
-				<div class="col-xl-8">
-					<h2 class="h2 calc__title">
-						Рассчитайте заказ и получите доставку
-						металла в любое удобное для вас время
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="action__decor decor"></div>
+					<!-- Декоративный элемент конец -->
+				</div>
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 action__title">
+						<span>Как это работает</span>
+						Действие
 					</h2>
+					<!-- Заголовок конец -->
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-4 col-lg-5">
-					<form action="#" class="calc__contact-form contact-form">
-						<!-- Полоса формы -->
-						<div class="contact-form__item">
-							<p class="contact-form__title">
-								Введите ваше имя:
-							</p>
-							<!-- Полоса формы -->
-							<div class="contact-form__line">
-								<svg width="14px" height="14px">
-									<use xlink:href="#user-icon"></use>
-								</svg>
-								<input type="text" placeholder="Кузнецов Игорь Васильевич">
-							</div>
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="action__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/freedome.png" alt="Что такое пихтовый вар?">
 						</div>
-						<!-- Полоса формы -->
-						<div class="contact-form__item">
-							<p class="contact-form__title">
-								Ваш номер телефона:
-							</p>
-							<!-- Полоса формы -->
-							<div class="contact-form__line">
-								<svg width="14px" height="14px">
-									<use xlink:href="#call-icon"></use>
-								</svg>
-								<input type="tel" placeholder="+7 (495) 532-78-10">
-							</div>
-						</div>
-						<!-- Полоса формы -->
-						<div class="contact-form__item">
-							<p class="contact-form__title">
-								Адрес электронной почты:
-							</p>
-							<!-- Полоса формы -->
-							<div class="contact-form__line">
-								<svg width="14px" height="14px">
-									<use xlink:href="#maill-icon"></use>
-								</svg>
-								<input type="text" placeholder="5327810@list.ru">
-							</div>
-						</div>
-					</form>
-				</div>
-				<!-- Ползунки -->
-				<div class="col-xl-8 col-lg-7">
-					<!-- Форма с ползунками -->
-					<form action="#" class="calc__range-form range-form">
-						<!-- Ползунок "Тоннаж груза" -->
-						<div class="range-form__item">
-							<p class="range-form__title">
-								Тоннаж груза:
-							</p>
-							<div class="range-form__vars range-form__weight">
-								<input type="text" class="js-range-form__weight" name="my_range" value="" />
-							</div>
-						</div>
-						<!-- Радио кнопки "Подходящий транспорт" -->
-						<div class="range-form__item">
-							<p class="range-form__title">
-								Подходящий автотранспорт:
-							</p>
-							<div class="range-form__vars range-form__links">
-								<!-- Радио "Газель" -->
-								<label class="range-form__container">
-									<input type="radio" name="radio">
-									<span class="range-form__checkmark"></span>
-									<span class="range-form__text">Газель до 2 т/дл.6м</span>
-								</label>
-								<!-- Радио "Man" -->
-								<label class="range-form__container">
-									<input type="radio" checked name="radio">
-									<span class="range-form__checkmark"></span>
-									<span class="range-form__text">Man до 10т/дл.6м</span>
-								</label>
-								<!-- Радио "Маз" -->
-								<label class="range-form__container">
-									<input type="radio" name="radio">
-									<span class="range-form__checkmark"></span>
-									<span class="range-form__text">Маз/Man до 20 т/дл.13м</span>
-								</label>
-							</div>
-						</div>
-						<!-- Ползунок "Скидка на доставку" -->
-						<div class="range-form__item">
-							<p class="range-form__title">
-								Скидка на доставку %:
-							</p>
-							<div class="range-form__vars range-form__sale">
-								<input type="text" class="js-range-form__sale" name="my_range" value="" />
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xl-12">
-					<div class="calc__order-form order-form">
-						<div class="order-form__chek">
-							<label for="">
-								<input type="checkbox" name="" id="">
-								Я ознакомлен (ознакомлена) с политикой конфиденциальности и даю согласие на обработку своих личных данных
-							</label>
-						</div>
-						<a href="#" class="order-form__link">
-								Заказать доставку
-						</a>
+						<!-- Картинка конец -->
 					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="action__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							01.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">Фитонициды</p>
+							<p class="block-text story-fir__text">
+								Довольно часто их называют <b>антибиотиками природного происхождения</b>. Они подавляют рост и развитие
+								бактерий, убивают простые микроскопические гриби, способствуют выведению из организма, солей тяжелых
+								металлов, радионуклидов.
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
 				</div>
 			</div>
-		
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="action__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							02.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">B-каротин</p>
+							<p class="block-text story-fir__text">
+								Мощный <b>природный антиоксидант</b>. Обладает иммуностимулирующим и адаптогенным действием. Укрепляет
+								организм и иммунитет.
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="action__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/b-karrotin.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="action__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/mirror-face.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="action__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							03.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">Растительные полифенолы</p>
+							<p class="block-text story-fir__text">
+								Защищают организм от агрессивного воздействия внешних факторов, помогая бороться с повреждениями клеток
+								нанесенных свободными радикалы. Эта функция <b>защищает клетки от окисления и старения</b>.
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="action__item story-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number story-fir__number">
+							04.
+						</div>
+						<div class="story-fir__wrapper">
+							<p class="block-title story-fir__title">Дубильные вещества</p>
+							<p class="block-text story-fir__text">
+								Оказывают бактерицидные, P-витаминные,
+								вяжущие и кровоостанавливающие свойства. Это сказывается на <b>противовоспалительном действии</b>
+								слизистой оболочки кишечника и снижении секреторной функции ЖКТ.
+
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="action__item">
+						<!-- Картинка -->
+						<div class="block-image story-fir__image">
+							<img src="img/dub-items.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
 		</div>
 	</section>
+	<!-- Действие  конец -->
 
-	<section class="news">
+	<!-- Показания  -->
+	<section class="indications">
 		<div class="container">
 			<div class="row">
-				<!-- Заголовок -->
-				<div class="col-xl-6">
-					<h2 class="h2 news__title">
-						Важные новости индустрии
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="indications__decor decor"></div>
+					<!-- Декоративный элемент конец -->
+				</div>
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 indications__title">
+						<span>при каких болезнях</span>
+						Показания
 					</h2>
+					<!-- Заголовок конец -->
 				</div>
-				<!-- Заголовок конец -->
 			</div>
 			<div class="row">
-				<div class="col-xl-12">
-					<!-- Слайдер -->
-					<div class="news__news-slider news-slider">
-						<!-- Большой слайд -->
-						<div class="news-slider__product-show product-show">
-							<!-- Слайд -->
-							<div class="product-show__item">
-								<span class="product-show__data">
-									11.12.16
-								</span>
-								<p class="product-show__title">
-									Металл-Дон подписал первый контракт на поставку
-									конструкций Таманскому терминалу навалочных грузов
-								</p>
-								<p class="product-show__text">
-									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
-									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
-								</p>
-								<div class="product-show__links">
-									<a href="#" class="product-show__link">
-										Читать новости
-									</a>
-									<a href="#" class="product-show__archive">
-										<svg width="18px" height="18px">
-											<use xlink:href="#archive-icon"></use>
-										</svg>
-										Архив
-									</a>
-								</div>
-							</div>
-							<!-- Слайд конец -->
-							<!-- Слайд -->
-							<div class="product-show__item">
-								<span class="product-show__data">
-									11.12.16
-								</span>
-								<p class="product-show__title">
-									Металл-Дон подписал первый контракт на поставку
-									конструкций Таманскому терминалу навалочных грузов
-								</p>
-								<p class="product-show__text">
-									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
-									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
-								</p>
-								<div class="product-show__links">
-									<a href="#" class="product-show__link">
-										Читать новости
-									</a>
-									<a href="#" class="product-show__archive">
-										<svg width="18px" height="18px">
-											<use xlink:href="#archive-icon"></use>
-										</svg>
-										Архив
-									</a>
-								</div>
-							</div>
-							<!-- Слайд конец -->
-							<!-- Слайд -->
-							<div class="product-show__item">
-								<span class="product-show__data">
-									11.12.16
-								</span>
-								<p class="product-show__title">
-									Металл-Дон подписал первый контракт на поставку
-									конструкций Таманскому терминалу навалочных грузов
-								</p>
-								<p class="product-show__text">
-									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
-									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
-								</p>
-								<div class="product-show__links">
-									<a href="#" class="product-show__link">
-										Читать новости
-									</a>
-									<a href="#" class="product-show__archive">
-										<svg width="18px" height="18px">
-											<use xlink:href="#archive-icon"></use>
-										</svg>
-										Архив
-									</a>
-								</div>
-							</div>
-							<!-- Слайд конец -->
-							<!-- Слайд -->
-							<div class="product-show__item">
-								<span class="product-show__data">
-									11.12.16
-								</span>
-								<p class="product-show__title">
-									Металл-Дон подписал первый контракт на поставку
-									конструкций Таманскому терминалу навалочных грузов
-								</p>
-								<p class="product-show__text">
-									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
-									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
-								</p>
-								<div class="product-show__links">
-									<a href="#" class="product-show__link">
-										Читать новости
-									</a>
-									<a href="#" class="product-show__archive">
-										<svg width="18px" height="18px">
-											<use xlink:href="#archive-icon"></use>
-										</svg>
-										Архив
-									</a>
-								</div>
-							</div>
-							<!-- Слайд конец -->
-							<!-- Слайд -->
-							<div class="product-show__item">
-								<span class="product-show__data">
-									11.12.16
-								</span>
-								<p class="product-show__title">
-									Металл-Дон подписал первый контракт на поставку
-									конструкций Таманскому терминалу навалочных грузов
-								</p>
-								<p class="product-show__text">
-									На прошлой неделе компания «Металл-Дон» подписала с группой компаний «ОТЭКО» первый контракт
-									на поставку конструкций для Таманского терминала навалочных грузов (ТТНГ) на сумму 9,3 млн. руб.
-								</p>
-								<div class="product-show__links">
-									<a href="#" class="product-show__link">
-										Читать новости
-									</a>
-									<a href="#" class="product-show__archive">
-										<svg width="18px" height="18px">
-											<use xlink:href="#archive-icon"></use>
-										</svg>
-										Архив
-									</a>
-								</div>
-							</div>
-							<!-- Слайд конец -->
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="indications__item">
+						<!-- Картинка -->
+						<div class="block-image illness__image">
+							<img src="img/kashel.png" alt="Что такое пихтовый вар?">
 						</div>
-						<!-- Навигация для хеш-слайдера -->
-						<div class="news-slider__news-navigation news-navigation">
-							<button class="news-navigation__prev">
-								<svg width="15px" height="20px">
-									<use xlink:href="#angle-left-icon"></use>
-								</svg>
-							</button>
-							<button class="news-navigation__next">
-								<svg width="15px" height="20px">
-									<use xlink:href="#angle-right-icon"></use>
-								</svg>
-							</button>
-						</div>
-						<!-- Хеш-слайды слайд -->
-						<div class="news-slider__hash-nav hash-nav">
-							<!-- Хеш -->
-							<div class="hash-nav__item hash-nav__item--active">
-								<p class="hash-nav__text">
-									Металл-Дон подписал
-									первый контракт на поставку
-									конструкций Таманскому
-									терминалу навалочных грузов
-								</p>
-								<div class="hash-nav__info">
-									<span class="hash-nav__data">
-										13.12.18
-									</span>
-									<a href="#" class="hash-nav__link">
-										<svg width="30px" height="15px">
-											<use xlink:href="#arrow-right-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<!-- Хеш конец -->
-							<!-- Хеш -->
-							<div class="hash-nav__item">
-								<p class="hash-nav__text">
-									Металл-Дон подписал
-									первый контракт на поставку
-									конструкций Таманскому
-									терминалу навалочных грузов
-								</p>
-								<div class="hash-nav__info">
-									<span class="hash-nav__data">
-										13.12.18
-									</span>
-									<a href="#" class="hash-nav__link">
-										<svg width="30px" height="15px">
-											<use xlink:href="#arrow-right-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<!-- Хеш конец -->
-							<!-- Хеш -->
-							<div class="hash-nav__item">
-								<p class="hash-nav__text">
-									Металл-Дон подписал
-									первый контракт на поставку
-									конструкций Таманскому
-									терминалу навалочных грузов
-								</p>
-								<div class="hash-nav__info">
-									<span class="hash-nav__data">
-										13.12.18
-									</span>
-									<a href="#" class="hash-nav__link">
-										<svg width="30px" height="15px">
-											<use xlink:href="#arrow-right-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<!-- Хеш конец -->
-							<!-- Хеш -->
-							<div class="hash-nav__item">
-								<p class="hash-nav__text">
-									Металл-Дон подписал
-									первый контракт на поставку
-									конструкций Таманскому
-									терминалу навалочных грузов
-								</p>
-								<div class="hash-nav__info">
-									<span class="hash-nav__data">
-										13.12.18
-									</span>
-									<a href="#" class="hash-nav__link">
-										<svg width="30px" height="15px">
-											<use xlink:href="#arrow-right-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<!-- Хеш конец -->
-							<!-- Хеш -->
-							<div class="hash-nav__item">
-								<p class="hash-nav__text">
-									Металл-Дон подписал
-									первый контракт на поставку
-									конструкций Таманскому
-									терминалу навалочных грузов
-								</p>
-								<div class="hash-nav__info">
-									<span class="hash-nav__data">
-										13.12.18
-									</span>
-									<a href="#" class="hash-nav__link">
-										<svg width="30px" height="15px">
-											<use xlink:href="#arrow-right-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<!-- Хеш конец -->
-						</div>
-
+						<!-- Картинка конец -->
 					</div>
-					<!-- Слайдер конец -->
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="indications__item illness illness--pt">
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								01.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Хронический</p>
+								<p class="block-text illness__text">
+									Кашель, бронхит, трахеит, ларингит
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								02.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Постоянная</p>
+								<p class="block-text illness__text">
+									Усталость, упадок сил истрессы
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								03.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Интоксикация</p>
+								<p class="block-text illness__text">
+									Пищевыми и химическими продуктами
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="indications__item illness illness--pt">
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								04.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Половые</p>
+								<p class="block-text illness__text">
+									Простатит, аденома, вагинальные кольпиты
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								05.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Ротовая полость</p>
+								<p class="block-text illness__text">
+									Стоматит, пародонтоз, пародонтит, кандидоз
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								06.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Опороно-двигательные</p>
+								<p class="block-text illness__text">
+									Артрит, остеохондроз, боли в мышцах
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="indications__item">
+						<!-- Картинка -->
+						<div class="block-image illness__image">
+							<img src="img/koleni.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="indications__item">
+						<!-- Картинка -->
+						<div class="block-image illness__image">
+							<img src="img/zhivot.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="indications__item illness illness--pt">
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								07.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Женские заболевания</p>
+								<p class="block-text illness__text">
+									Эрозия, цистит, молочница, вульвит
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								08.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Мочеполовые органы</p>
+								<p class="block-text illness__text">
+									Уретрит, простатит, воспалительноые
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								09.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Болезни ЖКТ</p>
+								<p class="block-text illness__text">
+									Воспальени желчевывод. путей, гастрит, язва
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="indications__item illness illness--pt">
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								10.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Психология</p>
+								<p class="block-text illness__text">
+									Бессонница, депрессия, подавленность
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								11.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Востановление</p>
+								<p class="block-text illness__text">
+									Восстановительный период после операции
+
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="illness__item">
+							<div class="block-number illness__number">
+								12.
+							</div>
+							<div class="illness__wrapper">
+								<p class="block-title illness__title">Кожные заболевания</p>
+								<p class="block-text illness__text">
+									Экзема, лишаи, грибки, псориаз, сыпь
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="indications__item">
+						<!-- Картинка -->
+						<div class="block-image illness__image">
+							<img src="img/spat.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Показания  конец -->
 
-	<section class="contacts">
+	<!-- Нам доверяют  -->
+	<section class="trust">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-6">
-					<!-- Контакты -->
-					<div class="contacts__contact-info contact-info">
-						<!-- Заголовок -->
-						<h2 class="h2 contact-info__title">
-							Контакты
-						</h2>
-						<!-- Контактная информация -->
-						<div class="contact-info__links">
-							<!-- Адересс -->
-							<div class="contact-info__item contact-info__c-adress c-adress">
-								<p class="c-title c-adress__title">
-									Адрес
-								</p>
-								<p class="c-text c-adress__info">
-									г. Москва, Рязанский проскет, 6c2
-								</p>
-							</div>
-							<!-- Емаил -->
-							<div class="contact-info__item contact-info__c-email c-email">
-								<p class="c-title c-email__title">
-									e-mail
-								</p>
-								<p class="c-text c-email__info">
-									zakaz@metallcore.ru
-								</p>
-							</div>
-							<!-- Телефон -->
-							<div class="contact-info__item contact-info__c-phone c-phone">
-								<p class="c-title c-phone__title">
-									Телефон
-								</p>
-								<p class="c-text c-phone__info">
-									+7 (495) 532-78-10
-								</p>
-							</div>
-							<!-- Социальные сети -->
-							<div class="contact-info__item contact-info__c-social c-social">
-								<p class="c-title c-social__title">
-									соцальные сети
-								</p>
-								<div class="c-social__wrapper">
-									<a href="#" class="c-social__link">
-										<svg width="15px" height="15px">
-										<use xlink:href="#facebook-icon"></use>
-										</svg>
-									</a>
-									<a href="#" class="c-social__link">
-										<svg width="15px" height="15px">
-										<use xlink:href="#instagram-icon"></use>
-										</svg>
-									</a>
-									<a href="#" class="c-social__link">
-										<svg width="15px" height="15px">
-										<use xlink:href="#vkontakte-icon"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="trust__decor decor"></div>
+					<!-- Декоративный элемент конец -->
+				</div>
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 trust__title">
+						<span>Что говорят врачи о «силе тайги»</span>
+						Нам доверяют
+					</h2>
+					<!-- Заголовок конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="trust__item">
+						<!-- Картинка -->
+						<div class="block-image doctor-fir__image">
+							<img src="img/doctor.png" alt="Что такое пихтовый вар?">
 						</div>
-						<!-- Форма связи -->
-						<div class="contacts__contact-form contact-form">
-							<p class="c-title contact-form__title">Оставить заявку</p>
-							<p class="c-text contact-form__text">
-								Наш менеджер свяжется с вами в ближайшее время:
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="trust__item doctor-fir">
+						<!-- О Силе Тайги -->
+						<div class="block-number doctor-fir__number">
+							01.
+						</div>
+						<div class="doctor-fir__wrapper">
+							<p class="block-title doctor-fir__title">Пронин Владимир Семенович</p>
+							<p class="block-info doctor-fir__info">
+								Терапевт, врач высшей категории,
+								кандидат медецинских наук
 							</p>
-							<a href="#" class="contact-form__link">Оставить заявку</a>
+							<p class="block-text doctor-fir__text">
+								Был приятно удивлен эффективностью и действием пихтового вара. Клинические испытания показали, что <b>он
+									действительно помогает</b> бороться с самым широким кругом заболеваний и делает организм более
+								крепким.
+							</p>
+							<p class="block-text doctor-fir__text">
+								Сочетая эффективность химических препаратов и безопасность натуральных компонентов пихтового вара
+								<b>«Сила Тайги»</b>, открываются широкие возможности для борьбы с заболеваниями в домашних условиях.
+							</p>
+							<p class="block-text doctor-fir__text">
+								Я стал рекомендовать пихтовый вар своим пациентам, <b>динамика выздоровлений значительно улучшилась</b>,
+								что является непосредственным доказательством полезности этого средства.
+							</p>
 						</div>
+						<!-- О Силе Тайги конец -->
 					</div>
+					<!-- Контейнер конец -->
 				</div>
-				<div class="col-xl-6">
-					<div class="contacts__contact-map contact-map">
-						<img src="img/Layer_3.png" alt="Карта">
+			</div>
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="trust__item doctor-fir doctor-fir--pn">
+						<!-- О Силе Тайги -->
+						<div class="doctor-fir__wrapper">
+							<p class="block-title doctor-fir__title">Пихтовы вар «Сила Тайги» - это продукт, которому доверяют</p>
+							<p class="block-text doctor-fir__text">
+								Получен развернутый химический анализ в Институте Химии г. Сыктывкар подтвержденный состав: 100% водный
+								экстракт пихты сибирской (витамины (А, В, С, Е), микроэлементы K, Ca, Mg, P, Mn , Na, S, Fe, Si ,Cl, Zn,
+								фитонциды, комплекс растительных полифенолов, β-каротин, хлорофилл, дубильные вещества).
+							</p>
+						</div>
+						<!-- О Силе Тайги конец -->
 					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<!-- Цитата -->
+					<div class="trust__quote quote">
+						<!-- Иконка цитаты -->
+						<span class="quote__symbol">
+							<svg width="34px" height="30px">
+								<use xlink:href="#quote-icon"></use>
+							</svg>
+						</span>
+						<!-- Иконка цитаты конец -->
+						<!-- Текст цитаты -->
+						<p class="quote__text">
+							Может использоваться как основное,
+							так и как вспомогательное средство для
+							избавления от самых различных недугов
+						</p>
+						<!-- Текст цитаты конец -->
+					</div>
+					<!-- Цитата конец -->
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Нам доверяют конец -->
 
-	<section class="footer">
+	<!-- Как принимать  -->
+	<section class="method">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-12">
-					<p class="footer__text">
-						Политика конфиденциальности
-					</p>
+				<div class="col-1">
+					<!-- Декоративный элемент -->
+					<div class="method__decor decor"></div>
+					<!-- Декоративный элемент конец -->
+				</div>
+				<div class="col-xl-11">
+					<!-- Заголовок -->
+					<h2 class="h2 method__title">
+						<span>рецепт приготовление</span>
+						Как принимать
+					</h2>
+					<!-- Заголовок конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-1">
+					<!-- Контейнер -->
+					<div class="method__item">
+						<!-- Картинка -->
+						<div class="block-image cook-fir__image">
+							<img src="img/cook-fir.png" alt="Что такое пихтовый вар?">
+						</div>
+						<!-- Картинка конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+				<div class="col-xl-5">
+					<!-- Контейнер -->
+					<div class="method__item cook-fir">
+						<!-- О Силе Тайги -->
+						<div class="cook-fir__item">
+							<div class="block-number cook-fir__number">
+								01.
+							</div>
+							<div class="cook-fir__wrapper">
+								<p class="block-title cook-fir__title">Заварить</p>
+								<p class="block-text cook-fir__text">
+										На одну чайнуйю ложку пихтового вара <b>«Сила Тайги»</b>необходимо залить в чашку
+										200 миллилитров кипятка.
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+						<!-- О Силе Тайги -->
+						<div class="cook-fir__item">
+							<div class="block-number cook-fir__number">
+								02.
+							</div>
+							<div class="cook-fir__wrapper">
+								<p class="block-title cook-fir__title">Принимать</p>
+								<p class="block-text cook-fir__text">
+										Полученный в результате напиток <b>пить два раза в день</b>. Утром – натощак и вечером – за 30 минут до начала приема пищи. 
+								</p>
+							</div>
+						</div>
+						<!-- О Силе Тайги конец -->
+					</div>
+					<!-- Контейнер конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<!-- Цитата -->
+					<div class="method__quote quote">
+						<!-- Иконка цитаты -->
+						<span class="quote__symbol">
+							<svg width="34px" height="30px">
+								<use xlink:href="#quote-icon"></use>
+							</svg>
+						</span>
+						<!-- Иконка цитаты конец -->
+						<!-- Текст цитаты -->
+						<p class="quote__text">
+								Улучшения самочувствия заметны уже через несколько дней
+								после начала приема пихтового вара. Прогресс в избавлении от болезней
+								(в том числе и хронических), как правило, проявляется в течение нескольких недель.
+								Бывали случаи, когда с помощью этого сбора проходили самые тяжелые заболевания.
+						</p>
+						<!-- Текст цитаты конец -->
+					</div>
+					<!-- Цитата конец -->
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Как принимать конец -->
 
 	<script src="js/scripts.min.js"></script>
+
 </body>
 
 </html>
