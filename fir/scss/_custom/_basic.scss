@@ -1,0 +1,28 @@
+.basic {
+  padding: 80px 0px;
+  background-image: url(../img/png-sun.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center bottom;
+}
+
+.key-act {
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 50px;
+  flex: 1;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  background-color: #ffffff;
+  &__number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -15px;
+    width: 36px;
+  }
+}
