@@ -1,0 +1,28 @@
+@keyframes button-animation {
+  0% {
+    left: -30px;
+    margin-left: 0
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px
+  }
+  to {
+    left: 110%;
+    margin-left: 80px
+  }
+}
+
+@keyframes pulse {
+  0% {
+		transform: scale(.8);
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  to {
+    transform: scale(1);
+    opacity: 0
+  }
+}
