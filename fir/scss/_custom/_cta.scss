@@ -71,10 +71,11 @@
   background-image: url(../img/fir-video.png);
   background-size: cover;
   background-position: 0 0;
-	background-repeat: no-repeat;
-	&:hover {
-		text-decoration: none;
-	}
+  background-repeat: no-repeat;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   &__button {
     position: relative;
@@ -128,7 +129,7 @@
   }
 
   &__duration {
-		margin-top: 20px;
+    margin-top: 20px;
     color: $accent;
     font-size: 16px;
     font-weight: 700;
@@ -143,4 +144,43 @@
     line-height: 30px;
     letter-spacing: -0.32px;
   }
+}
+
+.cta-form {
+  &__item {
+		max-width: 350px;
+		margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 17px 0px 17px 32px;
+    border-radius: 20px;
+    border: 1px solid #cecece;
+    background-color: $white;
+
+    svg {
+      margin-right: 15px;
+    }
+
+    input {
+      outline: none;
+      background-color: transparent;
+      border: none;
+
+      &::placeholder {
+        opacity: 0.2;
+        color: $text;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+      }
+    }
+	}
+	&__link {
+		max-width: 350px;
+	}
+	&__text {
+		margin-top: 0px;
+	}
 }

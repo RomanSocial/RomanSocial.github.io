@@ -234,6 +234,17 @@ a {
   letter-spacing: -0.32px;
 }
 
+//
+// Большой жирный текст
+.big-b-text {
+  color: $text;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+
 @import "_custom/description";
 @import "_custom/fame";
 @import "_custom/action";
@@ -245,4 +256,7 @@ a {
 @import "_custom/cta";
 @import "_custom/piece";
 @import "animation";
+@import "_custom/making";
+@import "_custom/points";
+@import "_custom/del-pay";
 @import "media"; // Always at the end
