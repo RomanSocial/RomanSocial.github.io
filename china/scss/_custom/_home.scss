@@ -1,0 +1,142 @@
+.home {
+  padding: 22px 0px;
+  background-image: url(../img/bg.png);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__link {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__phone {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  &__text {
+    margin-top: 5px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.11px;
+    line-height: 13px;
+  }
+
+  &__image {
+    margin-top: 13px;
+  }
+}
+
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 61px;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+    line-height: 19px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 61px;
+    max-width: 362px;
+    box-shadow: 0 10px 40px rgba(1, 175, 239, 0.45);
+    background-color: $accent;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($accent, 8);
+      text-decoration: none;
+    }
+  }
+}
+
+.ad-video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 10px 40px rgba(33, 33, 33, 0.35);
+		background-color: #ffffff;
+		border-radius: 50%;
+  }
+
+  &__text {
+		text-align: center;
+		max-width: 300px;
+    color: #212121;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

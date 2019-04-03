@@ -1,0 +1,97 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+
+    &:focus:required:invalid {
+      border-color: red;
+    }
+
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+//
+// Общие стили
+.h2 {
+  color: #212121;
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 800;
+  &:after {
+    content: '';
+    display: block;
+		margin: 0px auto;
+		border-top-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+    width: 84px;
+    height: 5px;
+    background-color: $accent;
+  }
+}
+
+
+
+@import "_custom/home";
+@import "_custom/sale";
+@import "media"; // Always at the end
