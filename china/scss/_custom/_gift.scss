@@ -1,6 +1,40 @@
 .gift {
-  padding: 60px 0px;
-  background-color: $mercury;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-color: $mercury;
+	position: relative;
+	&:before {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: '';
+    display: block;
+    height: 130px;
+    width: 100%;
+    background-image: url(../img/why-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+	}
+	&:after {
+		z-index: 2;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: '';
+		display: block;
+		height: 130px;
+		width: 100%;
+		background-image: url(../img/gift-bottom.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 65%;
+	}
+	&__title {
+		position: relative;
+		z-index: 2;
+	}
 }
 
 .g-card {

@@ -1,0 +1,30 @@
+.guest {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__link {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    color: $white;
+    font-size: 17px;
+    font-weight: 700;
+    box-shadow: 0px 10px 40px rgba(33, 33, 33, 0.35);
+    background-color: $text;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      background-color: lighten($text, 8);
+    }
+	}
+
+	&__button {
+		text-transform: uppercase;
+	}
+	
+}

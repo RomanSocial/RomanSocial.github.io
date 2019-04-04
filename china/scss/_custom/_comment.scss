@@ -1,6 +1,35 @@
 .comment {
-  padding: 60px 0px;
-  background-color: $mercury;
+  padding: 160px 0px 160px;
+	background-color: $mercury;
+	position: relative;
+	&:before {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		display: block;
+		height: 108px;
+		width: 100%;
+		background-image: url(../img/sale-bottom-2nd.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 65%;
+	}
+	&:after {
+		z-index: 2;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: '';
+		display: block;
+		height: 100px;
+		width: 100%;
+		background-image: url(../img/guest-top.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 65%;
+	}
 
   &__wrapper {
     margin-top: 15px;

@@ -1,0 +1,19 @@
+.logo-sec {
+	position: relative;
+	background-color: $mercury;
+	padding-top: 100px;
+	&:before {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: '';
+    display: block;
+    height: 70px;
+    width: 100%;
+    background-image: url(../img/guest-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+  }
+}
