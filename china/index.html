@@ -28,17 +28,125 @@
 
 <body>
 
+	<div class="svg-container" style="display:none;">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			width="0" height="0" style="position: absolute;">
+			<!-- Кнопка видео иконка -->
+			<symbol id="video-icon" viewBox="0 0 41.999 41.999">
+				<g>
+					<path
+						d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40  c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20  c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z">
+					</path>
+				</g>
+			</symbol>
+			<!-- Кнопка видео иконка конец -->
+			<!-- Штрих-код иконка -->
+			<symbol id="bar-code-icon" viewBox="0 0 18 18">
+				<g>
+					<path d="M0.745223 0.916992H0V17.0826H0.745223V0.916992Z" />
+					<path d="M2.78022 0.916992H1.40442V17.0826H2.78022V0.916992Z" />
+					<path d="M4.32799 0.916992H3.29614V17.0826H4.32799V0.916992Z" />
+					<path d="M5.81849 0.916992H5.24524V17.0826H5.81849V0.916992Z" />
+					<path d="M7.73881 0.916992H6.76428V17.0826H7.73881V0.916992Z" />
+					<path d="M9.42989 0.916992H8.5127V17.0826H9.42989V0.916992Z" />
+					<path d="M10.949 0.916992H10.4331V17.0826H10.949V0.916992Z" />
+					<path d="M13.0987 0.916992H11.7229V17.0826H13.0987V0.916992Z" />
+					<path d="M14.6178 0.916992H13.6433V17.0826H14.6178V0.916992Z" />
+					<path d="M16.137 0.916992H15.5637V17.0826H16.137V0.916992Z" />
+					<path d="M18 0.916992H17.1401V17.0826H18V0.916992Z" />
+				</g>
+			</symbol>
+			<!-- Штрих-код иконка конец -->
+			<!-- Количество иконка -->
+			<symbol id="sort-icon" viewBox="0 0 18 18">
+				<g>
+					<path
+						d="M9.16477 7.71451H13.6647C13.7585 7.71451 13.8356 7.68443 13.8956 7.62409C13.956 7.56383 13.9862 7.48688 13.9862 7.39305V5.46452C13.9862 5.37069 13.956 5.29375 13.8956 5.23348C13.8356 5.17329 13.7585 5.14307 13.6647 5.14307H9.16477C9.07098 5.14307 8.99403 5.17315 8.93373 5.23348C8.87357 5.29375 8.84338 5.37069 8.84338 5.46452V7.39305C8.84338 7.48688 8.87346 7.56383 8.93373 7.62409C8.99403 7.68432 9.07098 7.71451 9.16477 7.71451Z" />
+					<path
+						d="M9.16489 2.57141H11.7362C11.83 2.57141 11.9071 2.54133 11.9671 2.48106C12.0276 2.42076 12.0573 2.34382 12.0573 2.25002V0.321422C12.0573 0.227732 12.0275 0.150684 11.9671 0.0903822C11.9071 0.0302212 11.83 0 11.7362 0H9.16489C9.0711 0 8.99415 0.0300805 8.93385 0.0903471C8.87373 0.150684 8.84351 0.227732 8.84351 0.321386V2.24999C8.84351 2.34378 8.87359 2.42072 8.93385 2.48103C8.99419 2.54119 9.0711 2.57141 9.16489 2.57141Z" />
+					<path
+						d="M6.91471 14.1428H4.98614V0.321422C4.98614 0.227732 4.9561 0.150578 4.8958 0.0903822C4.83549 0.0302212 4.75855 0 4.66472 0H2.73612C2.64243 0 2.56528 0.0300805 2.50508 0.0903471C2.44496 0.150684 2.41473 0.227732 2.41473 0.321386V14.1428H0.486134C0.338933 14.1428 0.238453 14.2097 0.184836 14.3436C0.131184 14.471 0.154756 14.5881 0.255094 14.6953L3.46935 17.9097C3.54302 17.9697 3.61996 17.9998 3.70039 17.9998C3.78743 17.9998 3.86451 17.9697 3.93142 17.9097L7.13565 14.7054C7.20271 14.6252 7.23613 14.5445 7.23613 14.4646C7.23613 14.3704 7.20591 14.2936 7.14578 14.2329C7.08552 14.1729 7.00857 14.1428 6.91471 14.1428Z" />
+					<path
+						d="M17.753 15.5192C17.6927 15.4588 17.6158 15.4287 17.522 15.4287H9.16489C9.0711 15.4287 8.99415 15.4588 8.93385 15.5192C8.87373 15.5794 8.84351 15.6565 8.84351 15.7502V17.6787C8.84351 17.7727 8.87359 17.8494 8.93385 17.9098C8.99419 17.97 9.0711 18.0001 9.16489 18.0001H17.522C17.6158 18.0001 17.6927 17.97 17.753 17.9098C17.8132 17.8494 17.8433 17.7727 17.8433 17.6787V15.7502C17.8434 15.6565 17.8132 15.5794 17.753 15.5192Z" />
+					<path
+						d="M9.16477 12.8573H15.5934C15.6871 12.8573 15.7642 12.8272 15.8246 12.767C15.8847 12.7068 15.9147 12.6297 15.9147 12.5361V10.6073C15.9147 10.5137 15.8847 10.4366 15.8246 10.3764C15.7641 10.3162 15.6871 10.2861 15.5934 10.2861H9.16477C9.07098 10.2861 8.99403 10.3162 8.93373 10.3764C8.87357 10.4366 8.84338 10.5137 8.84338 10.6073V12.5361C8.84338 12.6297 8.87346 12.7068 8.93373 12.767C8.99403 12.8272 9.07098 12.8573 9.16477 12.8573Z" />
+				</g>
+			</symbol>
+			<!-- Количество иконка конец -->
+			<!-- Электронная почта иконка -->
+			<symbol id="email-icon" viewBox="0 0 18 18">
+				<g>
+					<path
+						d="M15.8906 2.39062H2.10938C0.946266 2.39062 0 3.33689 0 4.5V13.5C0 14.6631 0.946266 15.6094 2.10938 15.6094H15.8906C17.0537 15.6094 18 14.6631 18 13.5V4.5C18 3.33689 17.0537 2.39062 15.8906 2.39062ZM16.5938 13.5C16.5938 13.8877 16.2783 14.2031 15.8906 14.2031H2.10938C1.72167 14.2031 1.40625 13.8877 1.40625 13.5V4.5C1.40625 4.1123 1.72167 3.79688 2.10938 3.79688H15.8906C16.2783 3.79688 16.5938 4.1123 16.5938 4.5V13.5Z" />
+					<path
+						d="M16.4744 3.26709L9.00008 8.82658L1.52572 3.26709L0.686401 4.39543L9.00008 10.5792L17.3138 4.39543L16.4744 3.26709Z" />
+				</g>
+			</symbol>
+			<!-- Электронная почта иконка конец -->
+			<!-- Загрузка иконка -->
+			<symbol id="download-icon" viewBox="0 0 18 18">
+				<g>
+					<path
+						d="M15.2884 11.4712V15.583H2.71095V11.4712H0.293579V16.7917C0.293579 17.4588 0.833975 17.9998 1.50407 17.9998H16.4953C17.1648 17.9998 17.7057 17.4594 17.7057 16.7917V11.4712H15.2884Z" />
+					<path
+						d="M8.77842 11.0637L5.31748 6.88165C5.31748 6.88165 4.79089 6.38448 5.36191 6.38448C5.93293 6.38448 7.31214 6.38448 7.31214 6.38448C7.31214 6.38448 7.31214 6.05004 7.31214 5.53426C7.31214 4.06378 7.31214 1.38762 7.31214 0.296618C7.31214 0.296618 7.23468 0 7.68141 0C8.13174 0 10.1042 0 10.4266 0C10.7485 0 10.7413 0.249783 10.7413 0.249783C10.7413 1.30776 10.7413 4.07639 10.7413 5.49883C10.7413 5.95997 10.7413 6.25899 10.7413 6.25899C10.7413 6.25899 11.8473 6.25899 12.5414 6.25899C13.2343 6.25899 12.7125 6.77957 12.7125 6.77957C12.7125 6.77957 9.76794 10.6884 9.35724 11.0985C9.06182 11.3958 8.77842 11.0637 8.77842 11.0637Z" />
+				</g>
+			</symbol>
+			<!-- Загрузка иконка конец -->
+			<!-- Местоположение иконка -->
+			<symbol id="map-icon" viewBox="0 0 18 18">
+				<g>
+					<path
+						d="M8.99968 0C5.346 0 2.37317 2.97283 2.37317 6.62688C2.37317 7.58 2.56825 8.49001 2.9527 9.33186C4.60951 12.9574 7.78608 16.7851 8.72041 17.8718C8.79041 17.953 8.89247 17.9998 8.99986 17.9998C9.10726 17.9998 9.20931 17.953 9.27931 17.8718C10.2133 16.7853 13.3898 12.9577 15.0472 9.33186C15.4318 8.49001 15.6267 7.58 15.6267 6.62688C15.6264 2.97283 12.6535 0 8.99968 0ZM8.99968 10.0689C7.10173 10.0689 5.55747 8.52464 5.55747 6.62669C5.55747 4.72856 7.10173 3.18431 8.99968 3.18431C10.8976 3.18431 12.4419 4.72856 12.4419 6.62669C12.4421 8.52464 10.8978 10.0689 8.99968 10.0689Z" />
+				</g>
+			</symbol>
+			<!-- Местоположение иконка конец -->
+			<!-- Whatsapp иконка -->
+			<symbol id="whatsapp-icon" viewBox="0 0 18 18">
+				<g>
+					<path
+						d="M13.319 10.3431C13.284 10.3262 11.9717 9.68006 11.7385 9.59614C11.6433 9.56195 11.5413 9.52858 11.4329 9.52858C11.2557 9.52858 11.1068 9.61688 10.9909 9.79034C10.8598 9.98518 10.463 10.449 10.3404 10.5876C10.3244 10.6059 10.3025 10.6277 10.2894 10.6277C10.2777 10.6277 10.0746 10.5441 10.0131 10.5174C8.60542 9.90593 7.53693 8.43549 7.39042 8.18752C7.3695 8.15187 7.36862 8.13568 7.36844 8.13568C7.37359 8.11681 7.42092 8.06935 7.44535 8.04486C7.51683 7.97415 7.59426 7.88093 7.66918 7.79076C7.70466 7.74804 7.74019 7.70526 7.77508 7.66493C7.88378 7.53847 7.93217 7.44028 7.98827 7.32656L8.01767 7.26747C8.15466 6.99531 8.03766 6.76564 7.99985 6.69147C7.96881 6.62941 7.41473 5.29215 7.35582 5.15166C7.21416 4.81264 7.02697 4.65479 6.76685 4.65479C6.74271 4.65479 6.76685 4.65479 6.66563 4.65905C6.54237 4.66425 5.87117 4.75262 5.57441 4.93969C5.2597 5.1381 4.72729 5.77055 4.72729 6.88281C4.72729 7.88386 5.36255 8.82903 5.6353 9.18851C5.64208 9.19756 5.65453 9.21597 5.67259 9.24239C6.71711 10.7678 8.01925 11.8983 9.33927 12.4256C10.6101 12.9333 11.2119 12.9919 11.554 12.9919C11.554 12.9919 11.554 12.9919 11.554 12.9919C11.6978 12.9919 11.8129 12.9807 11.9144 12.9707L11.9788 12.9645C12.4178 12.9256 13.3825 12.4257 13.602 11.8159C13.7749 11.3355 13.8204 10.8107 13.7054 10.6203C13.6267 10.4908 13.4909 10.4256 13.319 10.3431Z" />
+					<path
+						d="M9.16002 0C4.28505 0 0.318971 3.93627 0.318971 8.77459C0.318971 10.3395 0.737764 11.8713 1.53111 13.2119L0.0126202 17.6912C-0.0156655 17.7747 0.00537343 17.867 0.0671462 17.9299C0.111737 17.9755 0.172224 18 0.233997 18C0.257666 18 0.28151 17.9964 0.30477 17.989L4.97542 16.5048C6.25354 17.1877 7.6981 17.5482 9.16008 17.5482C14.0346 17.5482 18.0002 13.6124 18.0002 8.77459C18.0002 3.93627 14.0346 0 9.16002 0ZM9.16002 15.7204C7.78436 15.7204 6.45195 15.3232 5.30661 14.5716C5.2681 14.5463 5.22339 14.5334 5.17839 14.5334C5.1546 14.5334 5.13076 14.537 5.10756 14.5443L2.76785 15.2881L3.52315 13.0598C3.54758 12.9876 3.53536 12.9081 3.49036 12.8466C2.61818 11.6549 2.15714 10.2469 2.15714 8.77459C2.15714 4.94416 5.29861 1.82782 9.15996 1.82782C13.0208 1.82782 16.162 4.94416 16.162 8.77459C16.162 12.6046 13.021 15.7204 9.16002 15.7204Z" />
+				</g>
+			</symbol>
+			<!-- Whatsapp иконка конец -->
+			<!-- Цитата иконка -->
+			<symbol id="quote-icon" viewBox="0 0 48 48">
+				<g>
+					<path d="M44 42V6L27.5 24V42H44Z" />
+					<path d="M16.5 42V6L0 24V42H16.5Z" />
+				</g>
+			</symbol>
+			<!-- Цитата иконка конец -->
+			<!-- Стрелка влево иконка -->
+			<symbol id="left-icon" viewBox="0 0 32 18">
+			<g>
+				<path d="M1.15147 8.15147C0.68284 8.6201 0.68284 9.3799 1.15147 9.84853L8.78822 17.4853C9.25685 17.9539 10.0167 17.9539 10.4853 17.4853C10.9539 17.0167 10.9539 16.2569 10.4853 15.7882L3.69705 9L10.4853 2.21177C10.9539 1.74315 10.9539 0.983348 10.4853 0.514718C10.0167 0.0460892 9.25685 0.0460892 8.78822 0.514718L1.15147 8.15147ZM32 7.8L2 7.8V10.2L32 10.2V7.8Z"/>
+			</g>
+			</symbol>
+			<!-- Стрелка влево иконка конец -->
+			<!-- Стрелка вправо иконка -->
+			<symbol id="right-icon" viewBox="0 0 32 18">
+			<g>
+				<path d="M30.8485 9.84853C31.3172 9.3799 31.3172 8.6201 30.8485 8.15147L23.2118 0.514718C22.7431 0.0460892 21.9833 0.0460892 21.5147 0.514718C21.0461 0.983348 21.0461 1.74315 21.5147 2.21177L28.3029 9L21.5147 15.7882C21.0461 16.2569 21.0461 17.0167 21.5147 17.4853C21.9833 17.9539 22.7431 17.9539 23.2118 17.4853L30.8485 9.84853ZM0 10.2H30V7.8H0V10.2Z"/>
+			</g>
+			</symbol>
+			<!-- Стрелка вправо иконка конец -->
+		</svg>
+	</div>
+
 
 	<section class="home">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-3">
-					<div class="header__logo logo">
+					<div class="home__logo logo">
 						<img src="img/Logo.png" alt="RealOpt ">
 					</div>
 				</div>
 				<div class="col-xl-6">
-					<nav class="header__main-nav main-nav">
+					<nav class="home__main-nav main-nav">
 						<ul class="main-nav__list">
 							<li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
 							<li class="main-nav__item"><a href="#" class="main-nav__link">Почему мы</a></li>
@@ -49,7 +157,7 @@
 					</nav>
 				</div>
 				<div class="col-xl-3">
-					<div class="header__main-phone main-phone phone">
+					<div class="home__main-phone main-phone phone">
 						<div class="phone__wrapper">
 							<span class="phone__phone">+7 910 110 35 95</span>
 							<span class="phone__text">Бессплатно с мобильного</span>
@@ -74,15 +182,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="home__ad-video ad-video">
-				<a href="#" class="ad-video__button">
-					>
-				</a>
-				<p class="ad-video__text">
-					Китай 21 века - это новые возможности,
-					новые технологии, новые условия бизнеса!
-				</p>
-			</div>
+		</div>
+	</section>
+
+	<section class="ad-video">
+		<div class="ad-video__wrapper">
+			<a href="#" class="ad-video__button">
+				<svg width="18px" height="18px">
+					<use xlink:href="#video-icon"></use>
+				</svg>
+			</a>
+			<p class="ad-video__text">
+				Китай 21 века - это новые возможности,
+				новые технологии, новые условия бизнеса!
+			</p>
 		</div>
 	</section>
 
@@ -110,10 +223,10 @@
 									*Название товара:
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#bar-code-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="Аксессуары для смартфонов и планшетов">
 								</div>
 							</div>
 							<!-- Элемент конец -->
@@ -123,10 +236,10 @@
 									*Количество (шт):
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#sort-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="Введите количество штук">
 								</div>
 							</div>
 							<!-- Элемент конец -->
@@ -136,10 +249,10 @@
 									*Ваш контактный e-mail:
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#email-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="veleriy.filatov.1234@gmail.com">
 								</div>
 							</div>
 							<!-- Элемент конец -->
@@ -151,23 +264,23 @@
 									*Фото товара:
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#download-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="Прикрепить изображение">
 								</div>
 							</div>
 							<!-- Элемент конец -->
 							<!-- Элемент -->
-							<div class="calculation__item">
+							<div class="calculation__item" data-content="hello">
 								<p class="calculation__title">
 									*Город доставки:
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#map-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="Россия, г. Ростов-на-Дону">
 								</div>
 							</div>
 							<!-- Элемент конец -->
@@ -177,15 +290,32 @@
 									*Ваш Telegram или WhatsApp:
 								</p>
 								<div class="calculation__input">
-									<svg width="15px" height="15px">
-										<use xlink:href=""></use>
+									<svg width="18px" height="18px">
+										<use xlink:href="#whatsapp-icon"></use>
 									</svg>
-									<input type="text">
+									<input type="text" placeholder="Россия, г. Ростов-на-Дону">
 								</div>
 							</div>
 							<!-- Элемент конец -->
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 offset-xl-4">
+					<!-- Кнопка -->
+					<div class="calculation__wrapper link-timer">
+						<a href="#" class="link-timer__link calculation__link">Отправить заявку</a>
+						<p class="link-timer__text calculation__text">
+							Минимальная сумма заказа - 1000$
+						</p>
+					</div>
+					<!-- Кнопка конец -->
+					<!-- Таймер -->
+					<div class="calculation__timer link-timer__timer">
+
+					</div>
+					<!-- Таймер конец -->
 				</div>
 			</div>
 		</div>
@@ -194,15 +324,17 @@
 	<section class="why">
 		<div class="container">
 			<div class="row">
-				<h2 class="h2 why__title">
-					Почему выбирают Real Opt Co
-				</h2>
+				<div class="col-xl-8 offset-2">
+					<h2 class="h2 why__main-title">
+						Почему выбирают Real Opt Co
+					</h2>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-5 offset-xl-1">
 					<div class="why__item">
 						<div class="why__image">
-							<img src="" alt="Официальная регистрация">
+							<img src="img/official.png" alt="Официальная регистрация">
 						</div>
 					</div>
 				</div>
@@ -217,7 +349,7 @@
 								<p class="why__text">
 									Без подводных камней – квалифицированная команда грамотных специалистов и хороших управленцев всегда к
 									вашим услугам!
-									<p>
+									<p class="why__sub-text">
 										Работаем с частными предпринимателями, с физическими и юредическими лицами.
 									</p>
 								</p>
@@ -237,7 +369,7 @@
 								</p>
 								<p class="why__text">
 									Оперативно обрабатываем вопросы и предоставляем готовую информацию в самые кратчайшие сроки.
-									<p>
+									<p class="why__sub-text">
 										Техническая поддержка осуществляется 24 часа в сутки, 7 дней в неделю без выходных и перерывов.
 									</p>
 								</p>
@@ -248,7 +380,7 @@
 				<div class="col-xl-5">
 					<div class="why__item">
 						<div class="why__image">
-							<img src="" alt="Всегда на связи">
+							<img src="img/call.png" alt="Всегда на связи">
 						</div>
 					</div>
 				</div>
@@ -257,7 +389,7 @@
 				<div class="col-xl-5 offset-xl-1">
 					<div class="why__item">
 						<div class="why__image">
-							<img src="" alt="Гарантия качества">
+							<img src="img/qual.png" alt="Гарантия качества">
 						</div>
 					</div>
 				</div>
@@ -288,7 +420,7 @@
 								</p>
 								<p class="why__text">
 									В нашей теме 6 лет, мы знаем о работе с Китаем все!
-									<p>
+									<p class="why__sub-text">
 										В 2018 доставили 78,3% заказов быстрее оговоренных сроков, 13,5% ровно в срок, 8,2% с просрочкой не
 										более 5 дней, с выплатой компенсации в размере 1-2% от суммы заказа за каждый день (согласно
 										договору)
@@ -301,7 +433,7 @@
 				<div class="col-xl-5">
 					<div class="why__item">
 						<div class="why__image">
-							<img src="" alt="Колоссальный опыт">
+							<img src="img/oput.png" alt="Колоссальный опыт">
 						</div>
 					</div>
 				</div>
@@ -310,7 +442,7 @@
 				<div class="col-xl-5 offset-xl-1">
 					<div class="why__item">
 						<div class="why__image">
-							<img src="" alt="Работаем «под ключ»">
+							<img src="img/work.png" alt="Работаем «под ключ»">
 						</div>
 					</div>
 				</div>
@@ -324,7 +456,7 @@
 								</p>
 								<p class="why__text">
 									Самое сложное, любую деталь и даже самые мелкие рабочие вопросы - мы берём на себя! Все «под ключ!»
-									<p>
+									<p class="why__sub-text">
 										Закупка, проверка, упаковка товара, логистика, таможня (экспорт из Китая, импорт в вашу страну),
 										доставка до вашего склада - все это делает одна компания, одна команда, мы - RealOpt CO!
 									</p>
@@ -340,10 +472,10 @@
 	<section class="gift">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-6 offset-3">
+				<div class="col-xl-8 offset-2">
 					<h2 class="h2 gift__tile">
-							Отправь нам заявку за
-							13 минут и получи подарок
+						Отправь нам заявку за
+						13 минут и получи подарок
 					</h2>
 				</div>
 			</div>
@@ -351,45 +483,45 @@
 				<div class="col-xl-4">
 					<div class="gift__item g-card">
 						<div class="g-card__image">
-							<img src="" alt="Сайт">
+							<img src="img/site.png" alt="Сайт">
 						</div>
 						<p class="g-card__title">Собственный сайт</p>
 						<p class="g-card__text">
-								Бесплатная разработка продающего веб-сайта landing-типа за счёт RealOpt Co
+							Бесплатная разработка продающего веб-сайта landing-типа за счёт RealOpt Co
 						</p>
 					</div>
 				</div>
 				<div class="col-xl-4">
 					<div class="gift__item g-card">
 						<div class="g-card__image">
-							<img src="" alt="Сайт">
+							<img src="img/smm.png" alt="Сайт">
 						</div>
 						<p class="g-card__title">SMM-консультация</p>
 						<p class="g-card__text">
-								Полностью бесплатная консультация профессионального SMM-специалиста
+							Полностью бесплатная консультация профессионального SMM-специалиста
 						</p>
 					</div>
 				</div>
 				<div class="col-xl-4">
 					<div class="gift__item g-card">
 						<div class="g-card__image">
-							<img src="" alt="Сайт">
+							<img src="img/qua.png" alt="Сайт">
 						</div>
 						<p class="g-card__title">Консультация по трафику</p>
 						<p class="g-card__text">
-								Бесплатная консультация по увеличению количеста посетителей на сайте
+							Бесплатная консультация по увеличению количеста посетителей на сайте
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-4 offset-xl-4">
-					<div class="gift__item">
-						<a href="#" class="gift__link">Отправить заявку</a>
-						<p class="gift__text">
+					<div class="gift__item link-timer">
+						<a href="#" class="gift__link link-timer__link">Отправить заявку</a>
+						<p class="gift__text link-timer__text">
 							Минимальная сумма заказа - 1000$
 						</p>
-						<div class="gift__timer g-timer">
+						<div class="gift__timer g-timer link-timer__timer">
 							<div class="g-timer__item g-timer__houer">
 								16
 								<span>Час</span>
@@ -410,138 +542,341 @@
 	</section>
 
 	<section class="sale">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<h2 class="h2 sale__title">
-							Дадим расчёт всего за 24 часа!
-						</h2>
-						<p class="sale__text">
-							Узнайте сколько <b>денег</b> может ежедневно <b>экономить</b> ваша компания на закупке товаров для вашей
-							компании!
-							Мы отправим вам всего одно сообщение с полной информацией. <b>Никаких звонков</b> – все очень просто!
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<h2 class="h2 sale__title">
+						Дадим расчёт всего за 24 часа!
+					</h2>
+					<p class="sale__text">
+						Узнайте сколько <b>денег</b> может ежедневно <b>экономить</b> ваша компания на закупке товаров для вашей
+						компании!
+						Мы отправим вам всего одно сообщение с полной информацией. <b>Никаких звонков</b> – все очень просто!
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="sale__calculation calculation">
+						<div class="calculation__left">
+							<!-- Элемент -->
+							<div class="calculation__item">
+								<p class="calculation__title">
+									*Название товара:
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#bar-code-icon"></use>
+									</svg>
+									<input type="text" placeholder="Аксессуары для смартфонов и планшетов">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+							<!-- Элемент -->
+							<div class="calculation__item">
+								<p class="calculation__title">
+									*Количество (шт):
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#sort-icon"></use>
+									</svg>
+									<input type="text" placeholder="Введите количество штук">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+							<!-- Элемент -->
+							<div class="calculation__item">
+								<p class="calculation__title">
+									*Ваш контактный e-mail:
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#email-icon"></use>
+									</svg>
+									<input type="text" placeholder="veleriy.filatov.1234@gmail.com">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+						</div>
+						<div class="calculation__right">
+							<!-- Элемент -->
+							<div class="calculation__item">
+								<p class="calculation__title">
+									*Фото товара:
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#download-icon"></use>
+									</svg>
+									<input type="text" placeholder="Прикрепить изображение">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+							<!-- Элемент -->
+							<div class="calculation__item" data-content="hello">
+								<p class="calculation__title">
+									*Город доставки:
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#map-icon"></use>
+									</svg>
+									<input type="text" placeholder="Россия, г. Ростов-на-Дону">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+							<!-- Элемент -->
+							<div class="calculation__item">
+								<p class="calculation__title">
+									*Ваш Telegram или WhatsApp:
+								</p>
+								<div class="calculation__input">
+									<svg width="18px" height="18px">
+										<use xlink:href="#whatsapp-icon"></use>
+									</svg>
+									<input type="text" placeholder="Россия, г. Ростов-на-Дону">
+								</div>
+							</div>
+							<!-- Элемент конец -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 offset-xl-4">
+					<!-- Кнопка -->
+					<div class="calculation__wrapper link-timer">
+						<a href="#" class="calculation__link link-timer__link">Отправить заявку</a>
+						<p class="calculation__text link-timer__text">
+							Минимальная сумма заказа - 1000$
 						</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<div class="sale__calculation calculation">
-							<div class="calculation__left">
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Название товара:
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Количество (шт):
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Ваш контактный e-mail:
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-							</div>
-							<div class="calculation__right">
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Фото товара:
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Город доставки:
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-								<!-- Элемент -->
-								<div class="calculation__item">
-									<p class="calculation__title">
-										*Ваш Telegram или WhatsApp:
-									</p>
-									<div class="calculation__input">
-										<svg width="15px" height="15px">
-											<use xlink:href=""></use>
-										</svg>
-										<input type="text">
-									</div>
-								</div>
-								<!-- Элемент конец -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+					<!-- Кнопка конец -->
+					<!-- Таймер -->
+					<div class="calculation__timer timer link-timer__timer">
 
-		<section class="guest">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 offset-xl-3">
-						<h2 class="h2 guest__title">
-								Заходи к нам в гости
-						</h2>
 					</div>
+					<!-- Таймер конец -->
 				</div>
-				<div class="row">
-					<div class="col-xl-4">
-						<div class="guest__item">
-							<a href="#" class="guest__link">Построить маршрут</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="comment">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2">
+					<h2 class="h2 comment__title">
+						Отзывы наших клиентов
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="comment__wrapper">
+						<div class="comment__c-slider c-slider owl-carousel owl-theme">
+							<div class="c-slider__item">
+								<!-- Тексовый отзыв -->
+								<div class="c-slider__c-reviews c-reviews">
+									<!-- Кавычки -->
+									<div class="c-reviews__quot">
+										<svg width="48px" height="48px">
+											<use xlink:href="#quote-icon"></use>
+										</svg>
+									</div>
+									<!-- Кавычки конец -->
+									<!-- Отзыв -->
+									<div class="c-reviews__wrapper">
+										<p class="c-reviews__title">
+											Увеличил прибыль в 2 раза
+											за несколько месяцев
+										</p>
+										<p class="c-reviews__text">
+											В то время некий безымянный печатник создал большую коллекцию размеров, форм, шрифтов, используя
+											Lorem Ipsum для печати образцов.
+										</p>
+										<p class="c-reviews__sub-text">
+											большую коллекцию размеров, форм, шрифтов, используя Lorem Ipsum для печати образцов.
+										</p>
+										<div class="c-reviews__people c-people">
+											<div class="c-people__photo">
+												<img src="img/avatar.png" alt="Аватар">
+											</div>
+											<div class="c-people__info">
+												<p class="c-people__name">Сергей Бодров</p>
+												<p class="c-people__text">
+													Аксессуары для смартфонов
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- Отзыв конец -->
+								</div>
+								<!-- Тексовый отзыв конец -->
+								<!-- Видео отзыв -->
+								<div class="c-slider__c-video c-video">
+									<a href="#" class="c-video__link">
+										<svg width="28px" height="28px">
+											<use xlink:href="#video-icon"></use>
+										</svg>
+									</a>
+									<p class="c-video__text">
+										2:51 сек
+									</p>
+								</div>
+								<!-- Видео отзыв конец -->
+							</div>
+							<div class="c-slider__item">
+								<!-- Тексовый отзыв -->
+								<div class="c-slider__c-reviews c-reviews">
+									<!-- Кавычки -->
+									<div class="c-reviews__quot">
+										<svg width="48px" height="48px">
+											<use xlink:href="#quote-icon"></use>
+										</svg>
+									</div>
+									<!-- Кавычки конец -->
+									<!-- Отзыв -->
+									<div class="c-reviews__wrapper">
+										<p class="c-reviews__title">
+											Увеличил прибыль в 2 раза
+											за несколько месяцев
+										</p>
+										<p class="c-reviews__text">
+											В то время некий безымянный печатник создал большую коллекцию размеров, форм, шрифтов, используя
+											Lorem Ipsum для печати образцов.
+										</p>
+										<p class="c-reviews__sub-text">
+											большую коллекцию размеров, форм, шрифтов, используя Lorem Ipsum для печати образцов.
+										</p>
+										<div class="c-reviews__people c-people">
+											<div class="c-people__photo">
+												<img src="img/avatar.png" alt="Аватар">
+											</div>
+											<div class="c-people__info">
+												<p class="c-people__name">Сергей Бодров</p>
+												<p class="c-people__text">
+													Аксессуары для смартфонов
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- Отзыв конец -->
+								</div>
+								<!-- Тексовый отзыв конец -->
+								<!-- Видео отзыв -->
+								<div class="c-slider__c-video c-video">
+									<a href="#" class="c-video__link">
+										<svg width="28px" height="28px">
+											<use xlink:href="#video-icon"></use>
+										</svg>
+									</a>
+									<p class="c-video__text">
+										2:51 сек
+									</p>
+								</div>
+								<!-- Видео отзыв конец -->
+							</div>
+							<div class="c-slider__item">
+								<!-- Тексовый отзыв -->
+								<div class="c-slider__c-reviews c-reviews">
+									<!-- Кавычки -->
+									<div class="c-reviews__quot">
+										<svg width="48px" height="48px">
+											<use xlink:href="#quote-icon"></use>
+										</svg>
+									</div>
+									<!-- Кавычки конец -->
+									<!-- Отзыв -->
+									<div class="c-reviews__wrapper">
+										<p class="c-reviews__title">
+											Увеличил прибыль в 2 раза
+											за несколько месяцев
+										</p>
+										<p class="c-reviews__text">
+											В то время некий безымянный печатник создал большую коллекцию размеров, форм, шрифтов, используя
+											Lorem Ipsum для печати образцов.
+										</p>
+										<p class="c-reviews__sub-text">
+											большую коллекцию размеров, форм, шрифтов, используя Lorem Ipsum для печати образцов.
+										</p>
+										<div class="c-reviews__people c-people">
+											<div class="c-people__photo">
+												<img src="img/avatar.png" alt="Аватар">
+											</div>
+											<div class="c-people__info">
+												<p class="c-people__name">Сергей Бодров</p>
+												<p class="c-people__text">
+													Аксессуары для смартфонов
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- Отзыв конец -->
+								</div>
+								<!-- Тексовый отзыв конец -->
+								<!-- Видео отзыв -->
+								<div class="c-slider__c-video c-video">
+									<a href="#" class="c-video__link">
+										<svg width="28px" height="28px">
+											<use xlink:href="#video-icon"></use>
+										</svg>
+									</a>
+									<p class="c-video__text">
+										2:51 сек
+									</p>
+								</div>
+								<!-- Видео отзыв конец -->
+							</div>
+							
 						</div>
-					</div>
-					<div class="col-xl-4">
-						<div class="guest__item">
-							<a href="#" class="guest__link">Построить маршрут</a>
-						</div>
-					</div>
-					<div class="col-xl-4">
-						<div class="guest__item">
-							<a href="#" class="guest__link">Построить маршрут</a>
+						<div class="c-slider__navigation">
+							<button class="c-slider__prev c-slider__nav-button">
+								<svg width="30px" height="30px">
+								<use xlink:href="#left-icon"></use>
+								</svg>
+							</button>
+							<button class="c-slider__next c-slider__nav-button">
+								<svg width="30px" height="30px">
+									<use xlink:href="#right-icon"></use>
+									</svg>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
+
+	<section class="guest">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<h2 class="h2 guest__title">
+						Заходи к нам в гости
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="guest__item">
+						<a href="#" class="guest__link link-timer__link">Построить маршрут</a>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="guest__item">
+						<a href="#" class="guest__link link-timer__link">Построить маршрут</a>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="guest__item">
+						<a href="#" class="guest__link link-timer__link">Построить маршрут</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 

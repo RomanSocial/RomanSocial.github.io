@@ -1,24 +1,80 @@
 .sale {
-	padding: 60px 0px;
-	&__title {
-		text-align: center;
-	}
-	&__text {
-		margin-top: 30px;
-		text-align: center;
-	}
+  background-color: $mercury;
+  padding: 60px 0px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 30px;
+    text-align: center;
+  }
 }
 
 .calculation {
-	display: flex;
-	&__left {
-		display: flex;
-		flex: 1;
-		flex-direction: column;
-	}
-	&__right {
-		display: flex;
-		flex: 1;
-		flex-direction: column;
-	}
+  margin-top: 18px;
+  display: flex;
+
+  &__item {
+    margin-top: 22px;
+  }
+
+  &__left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  &__right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  &__input {
+    background-color: $white;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    padding: 15px 29px;
+    flex: 1;
+    border: 1px solid rgba(33, 33, 33, 0.3);
+
+    &:hover {
+      border: 1px solid $accent;
+    }
+    &:hover svg {
+      fill: $accent;
+    }
+    &:hover input::placeholder {
+      color : $accent;
+    }
+
+    input {
+      margin-left: 12px;
+      flex: 1;
+      background-color: transparent;
+      border: none;
+
+      &::placeholder {
+        color: $text;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 19px;
+      }
+
+      &:focus+[data-content="hello"] {
+        border: 1px solid $accent;
+      }
+    }
+  }
 }

@@ -1,6 +1,15 @@
 .home {
+	position: relative;
+	z-index: 3;
   padding: 22px 0px;
-  background-image: url(../img/bg.png);
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	&__main-screen {
+		margin-top: 130px;
+		margin-bottom: 126px;
+	}
 }
 
 .main-nav {
@@ -17,8 +26,7 @@
   }
 
   &__link {
-    color: #ffffff;
-    font-family: "Proxima Nova";
+    color: $white;
     font-size: 15px;
     font-weight: 700;
     line-height: 18px;
@@ -47,8 +55,7 @@
   }
 
   &__phone {
-    color: #ffffff;
-    font-family: "Proxima Nova";
+    color: $white;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
@@ -56,8 +63,7 @@
 
   &__text {
     margin-top: 5px;
-    color: #ffffff;
-    font-family: "Proxima Nova";
+    color: $white;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.11px;
@@ -77,16 +83,15 @@
 
   &__title {
     text-align: center;
-    color: #ffffff;
-    font-family: "Proxima Nova";
-    font-size: 52px;
+    color: $white;
+    font-size: 45px;
     font-weight: 800;
     line-height: 61px;
   }
 
   &__text {
-    color: #ffffff;
-    font-family: "Proxima Nova";
+		margin-top: 20px;
+    color: $white;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.32px;
@@ -94,6 +99,7 @@
   }
 
   &__link {
+		margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,42 +107,15 @@
     max-width: 362px;
     box-shadow: 0 10px 40px rgba(1, 175, 239, 0.45);
     background-color: $accent;
-    color: #ffffff;
-    font-family: "Proxima Nova";
+    color: $white;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
 
-    &:hover {
-      color: #fff;
+    &:hover {	
+			color: $white;
       background-color: lighten($accent, 8);
       text-decoration: none;
     }
-  }
-}
-
-.ad-video {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 56px;
-    box-shadow: 0 10px 40px rgba(33, 33, 33, 0.35);
-		background-color: #ffffff;
-		border-radius: 50%;
-  }
-
-  &__text {
-		text-align: center;
-		max-width: 300px;
-    color: #212121;
-    font-family: "Proxima Nova";
-    font-size: 12px;
-    font-weight: 700;
   }
 }

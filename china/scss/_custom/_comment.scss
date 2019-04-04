@@ -1,0 +1,167 @@
+.comment {
+  padding: 60px 0px;
+  background-color: $mercury;
+
+  &__wrapper {
+    margin-top: 15px;
+  }
+}
+
+.c-slider {
+  &__item {
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.c-reviews {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  &__quot {
+    margin-right: 24px;
+
+    svg {
+      fill: $accent;
+    }
+  }
+
+  &__title {
+    color: $text;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 31px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: $text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  &__sub-text {
+    margin-top: 10px;
+    color: $text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.c-people {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+
+  &__photo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin-left: 22px;
+  }
+
+  &__name {
+    color: $text;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  &__text {
+    color: $text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.c-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1.2;
+  box-shadow: 0 10px 60px rgba(33, 33, 33, 0.35);
+  background-image: url(../img/reviews.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 10px 60px rgba(33, 33, 33, 0.45);
+  }
+
+  &__text {
+    margin-top: 12px;
+    color: $white;
+  }
+}
+
+//
+// Стили для слайдера
+.c-slider {
+  .owl-dots {
+    .owl-dot {
+      &:hover span {
+        background-color: $text;
+      }
+
+      span {
+        width: 15px;
+        height: 15px;
+        background-color: $text;
+      }
+    }
+  }
+
+  .owl-dots {
+    .owl-dot.active {
+      span {
+        background-color: $accent;
+      }
+    }
+  }
+}
+
+.c-slider {
+  &__navigation {
+		position: absolute;
+		bottom: -2px;
+		left: 50%;
+		display: flex;
+		justify-content: space-between;
+		width: 200px;
+		margin-left: -100px;
+		z-index: 1;
+    .owl-next,
+    .owl-prev {
+      display: none;
+    }
+  }
+	&__nav-button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		&:focus, &:active {
+			border: none;
+			outline: none;
+		}
+	}
+}

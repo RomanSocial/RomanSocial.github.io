@@ -2,3 +2,7 @@
 
 @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+// Proxima Nova шрифт
+@include font-face("proxima-n", "../fonts/ProximaNivaBlack/ProximaNivaBlack", 800);
+@include font-face("proxima-n", "../fonts/ProximaNivaBold/ProximaNivaBold", bold);
+@include font-face("proxima-n", "../fonts/ProximaNivaRegular/ProximaNivaRegular", 400);
