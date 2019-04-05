@@ -1,0 +1,28 @@
+.footer {
+	position: relative;
+	&:before {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 168px;
+    width: 100%;
+    background-image: url(../img/footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+	}
+	&__wrapper {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		padding: 13px 0px;
+	}
+	&__text {
+		font-size: 12px;
+		color: $white;
+		font-weight: bold;
+	}
+}

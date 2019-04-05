@@ -1,6 +1,6 @@
 .sale {
-  background-color: $mercury;
-	padding-bottom: 120px;
+	background-color: $mercury;
+	padding-bottom: 160px;
 	position: relative;
 
   &__title {
@@ -13,12 +13,15 @@
   }
 }
 
+.sale-1st {
+	padding-top: 70px; 
+}
 .sale-2nd {
 	background-color: $white; 
 }
 
 .calculation {
-  margin-top: 18px;
+  margin-top: 35px;
   display: flex;
 
   &__item {
@@ -52,34 +55,41 @@
     align-items: center;
     padding: 15px 29px;
     flex: 1;
-    border: 1px solid rgba(33, 33, 33, 0.3);
+		border: 1px solid rgba(33, 33, 33, 0.3);
+		transition: all .3s ease;
 
     &:hover {
       border: 1px solid $accent;
     }
     &:hover svg {
+			transition: all .3s ease;
       fill: $accent;
     }
     &:hover input::placeholder {
+			transition: all .3s ease;
       color : $accent;
     }
 
     input {
+			transition: all .3s ease;
       margin-left: 12px;
       flex: 1;
       background-color: transparent;
       border: none;
 
       &::placeholder {
+				transition: all .3s ease;
         color: $text;
         font-size: 15px;
         font-weight: 600;
         line-height: 19px;
       }
-
-      &:focus+[data-content="hello"] {
-        border: 1px solid $accent;
-      }
     }
   }
+}
+
+.link-timer {
+	&__text {
+		opacity: 0.6;
+	}
 }

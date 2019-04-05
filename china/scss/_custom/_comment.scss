@@ -19,13 +19,13 @@
 	&:after {
 		z-index: 2;
 		position: absolute;
-		bottom: 0;
+		bottom: -2px;
 		left: 0;
 		content: '';
 		display: block;
 		height: 100px;
 		width: 100%;
-		background-image: url(../img/guest-top.svg);
+		background-image: url(../img/guest-top1.svg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center 65%;

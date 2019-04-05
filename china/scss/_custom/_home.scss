@@ -1,7 +1,7 @@
 .home {
 	position: relative;
 	z-index: 3;
-  padding: 22px 0px;
+  padding: 22px 0px 70px;
 	background-image: url(../img/bg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -71,7 +71,7 @@
   }
 
   &__image {
-    margin-top: 13px;
+    margin-top: 8px;
   }
 }
 
@@ -118,4 +118,42 @@
       text-decoration: none;
     }
   }
+}
+
+.social {
+	position: absolute;
+	right: -48px;
+	bottom: 0;
+	z-index: 4;
+	&__item {
+		margin-bottom: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		svg {
+			fill: $white;
+		}
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:hover {
+			opacity: 0.9;
+			cursor: pointer;
+		}
+	}
+	&__fb {
+		background-color: #4267B2;
+	}
+	&__ws {
+		background-color: #1EBEA5;
+	}
+	&__tg {
+		background-color: #32A8E0;
+	}
+	&__vb {
+		background-color: #655CAC;
+	}
 }

@@ -47,7 +47,10 @@
     height: 56px;
     box-shadow: 0 10px 40px rgba(33, 33, 33, 0.35);
     background-color: $white;
-    border-radius: 50%;
+		border-radius: 50%;
+		svg {
+			margin-left: 3px;
+		}
   }
 
   &__text {
