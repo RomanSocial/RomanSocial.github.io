@@ -15,7 +15,9 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+	.h2 {
+		font-size: 30px;
+	}
 }
 
 // ≥576px

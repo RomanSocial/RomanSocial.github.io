@@ -1,5 +1,12 @@
 $(function () {
 
+	//  Гамбургер открывашка
+	$('.hamburger-toggle').click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass('open');
+		$('.hamburger-menu').toggleClass('menu-open');
+	});
+
 	//Карусель отзывов
 	$('.c-slider').owlCarousel({
 		items: 1,

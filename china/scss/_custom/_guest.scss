@@ -28,3 +28,11 @@
 	}
 	
 }
+
+@include media-breakpoint-down(lg) {
+	.guest {
+		&__item {
+			margin-top: 20px;
+		}
+	}
+}

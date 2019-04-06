@@ -63,3 +63,10 @@
     line-height: 19px;
   }
 }
+
+@include media-breakpoint-down(lg) {
+	.g-card {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
