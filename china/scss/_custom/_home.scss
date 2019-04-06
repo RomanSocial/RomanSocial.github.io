@@ -5,7 +5,8 @@
   background-image: url(../img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right bottom;
+	background-position: right bottom;
+	overflow: hidden;
 
   &__main-screen {
     margin-top: 130px;
@@ -132,7 +133,8 @@
   position: absolute;
   right: -48px;
   bottom: 0;
-  z-index: 4;
+	z-index: 4;
+	
 
   &__item {
     margin-bottom: 12px;
