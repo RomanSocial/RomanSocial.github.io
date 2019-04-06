@@ -21,3 +21,11 @@
 		}
 	}
 }
+
+@include media-breakpoint-down(xs) {
+.map {
+	&__wrapper {
+		padding-top: 50px;
+	}
+}
+}

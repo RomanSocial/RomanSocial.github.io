@@ -229,3 +229,16 @@
 	}
 }
 
+@include media-breakpoint-down(xs) {
+	.c-slider {
+		&__item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.c-reviews {
+		&__quot {
+			display: none;
+		}
+	}
+}

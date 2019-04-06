@@ -102,9 +102,11 @@
 @include media-breakpoint-down(sm) {
 	.why {
 		&__item {
+			
 			margin-top: 20px;
 		}
 		&__t-item {
+			height: auto;
 			margin-top: 0;
 		}
 	}

@@ -26,3 +26,11 @@
 		font-weight: bold;
 	}
 }
+
+@include media-breakpoint-down(xs) {
+.footer {
+	&:before {
+		height: 188px;
+	}
+}
+}

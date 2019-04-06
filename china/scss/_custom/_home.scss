@@ -177,7 +177,7 @@
 //
 // Гамбургер
 .hamburger-toggle {
-	display: none;
+  display: none;
 }
 
 @include media-breakpoint-down(lg) {
@@ -222,45 +222,53 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-	.logo {
-		&__big {
-			display: none;
-		}
-		&__mini {
-			display: block;
-		}
-	}
-	.phone {
-		justify-content: flex-end;
-		&__phone {
-			font-size: 16px;
-		}
-		&__text {
-			text-align: center;
-			font-size: 11px;
-		}
-	}
-	.main-nav {
+  .logo {
+    &__big {
+      display: none;
+    }
 
-	}
-	//
-	// Меню гамбургера
+    &__mini {
+      display: block;
+    }
+  }
+
+  .phone {
+    justify-content: flex-end;
+
+    &__phone {
+      font-size: 16px;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 11px;
+    }
+  }
+
+  .main-nav {
+    height: auto;
+  }
+
+  //
+  // Меню гамбургера
   .hamburger-menu {
-		transition: all .3s ease;
+    transition: all .3s ease;
     position: absolute;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    top: 100px;
-    right: 0;
+    top: 50px;
+    right: 0px;
     padding: 15px 0px;
     background-color: #fff;
     box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.192);
     z-index: 3;
+
     .main-nav__list {
       display: flex;
       flex-direction: column;
     }
+
     .main-nav__item {
       &:after {
         content: '';
@@ -270,24 +278,28 @@
         display: block;
         margin: 0 auto;
       }
+
       &:last-child:after {
         display: none;
       }
     }
+
     .main-nav__link {
+			color: $text;
       padding: 0px 20px;
       line-height: 30px;
       font-size: 13px;
-      font-weight: 400;
-      &:hover {
-        background-color: #f6f7f7;
-      }
+			font-weight: 400;
+			&:hover {
+				color: $accent;
+			}
     }
+
     &:before {
       -webkit-filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, .15));
       filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, .15));
       bottom: 100%;
-      right: 2px;
+      right: 0px;
       border: 7px solid transparent;
       border-bottom-color: transparent;
       content: " ";
@@ -298,9 +310,10 @@
       border-bottom-color: #fff;
       margin-left: 0;
     }
-	}
-	// 
-	// Кнопка гамбургера
+  }
+
+  // 
+  // Кнопка гамбургера
   .hamburger-toggle {
     display: block;
     transition: .3s ease-in-out;
@@ -308,46 +321,55 @@
     height: 20px;
     position: relative;
     cursor: pointer;
+
     &--sm-right {
       display: flex;
       justify-content: flex-end;
     }
+
     .hamburger-line {
-			transition: all .3s ease;
+      transition: all .3s ease;
       display: block;
       background-color: $white;
       border-radius: 2px;
     }
+
     .hamburger {
       position: absolute;
       height: 100%;
-			width: 100%;
-			transition: all .3s ease;
+      width: 100%;
+      transition: all .3s ease;
+
       .hamburger-line {
-				transition: all .3s ease;
+        transition: all .3s ease;
         width: 20px;
         height: 2px;
         position: relative;
         top: 3px;
         left: 0px;
         margin-bottom: 3px;
+
         &:nth-child(1) {
           transition-delay: .5s;
         }
+
         &:nth-child(2) {
           transition-delay: .625s;
         }
+
         &:nth-child(3) {
           transition-delay: .75s;
           margin-bottom: 0;
         }
       }
     }
+
     .cross {
       position: absolute;
       height: 100%;
       width: 100%;
       transform: rotate(45deg);
+
       .hamburger-line {
         &:nth-child(1) {
           height: 0%;
@@ -357,6 +379,7 @@
           right: 8.5px;
           transition-delay: 0s;
         }
+
         &:nth-child(2) {
           width: 0%;
           height: 3px;
@@ -367,24 +390,29 @@
         }
       }
     }
-	} 
-	//
-	// Открытие кнопки гамбургера
+  }
+
+  //
+  // Открытие кнопки гамбургера
   .hamburger-toggle.open {
     .hamburger {
       .hamburger-line {
         width: 0%;
+
         &:nth-child(1) {
           transition-delay: 0s;
         }
+
         &:nth-child(2) {
           transition-delay: .125s;
         }
+
         &:nth-child(3) {
           transition-delay: .25s;
         }
       }
     }
+
     .cross {
       .hamburger-line {
         &:nth-child(1) {
@@ -392,6 +420,7 @@
           transition-delay: .625s;
         }
       }
+
       .hamburger-line {
         &:nth-child(2) {
           width: 80%;
@@ -399,13 +428,34 @@
         }
       }
     }
-	}
-	// 
-	// Класс открытия меню
+  }
+
+  // 
+  // Класс открытия меню
   .menu-open {
     opacity: 1;
-    visibility: visible;
+		visibility: visible;
     top: 30px;
     pointer-events: auto;
-	} 
+	}
+	.main-screen {
+		&__title {
+			font-size: 25px;
+			line-height: 1.4;
+		}
+		&__link {
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 14px;
+		}
+	}
+
+	.social {
+		bottom: 250px;
+		right: -25px;
+		transition: all .3s ease;
+		&:hover, &:active {
+			right: 0;
+		}
+	}
 }
