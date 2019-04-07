@@ -1,13 +1,21 @@
 .points {
-	padding: 80px 0px;
+  padding: 80px 0px;
 }
 
 .profit {
-	margin-top: 60px;
-	&__image {
-		height: 80px;
-	}
-	&__text {
-		margin-top: 25px;
-	}
+  margin-top: 60px;
+
+  // &__image {
+  //   height: 80px;
+  // }
+
+  &__text {
+		text-align: center;
+    color: $text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.32px;
+    margin-top: 25px;
+  }
 }
