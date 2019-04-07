@@ -190,9 +190,6 @@
      line-height: 24px;
      letter-spacing: 0.24px;
 	 }
-	 &__timer-wrapper {
-		 margin: 15px 0px;
-	 }
 
    &__time-text {
      color: $text;
@@ -200,32 +197,6 @@
      line-height: 24px;
      font-weight: 400;
      letter-spacing: 0.32px;
-   }
-
-   &__timer-wrapper {
-     display: flex;
-     flex-direction: row;
-   }
-
-   &__timer-time {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-right: 16px;
-     width: 54px;
-     height: 54px;
-     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-     border-radius: 20px;
-     background-color: $text;
-     color: $white;
-     font-size: 27px;
-     font-weight: 700;
-     line-height: 24px;
-     letter-spacing: 0.54px;
-
-     &:last-child {
-       margin-right: 0px;
-     }
    }
 
    &__link {
