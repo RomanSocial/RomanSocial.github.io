@@ -76,21 +76,22 @@ p {
 //
 // Общие стили
 .container {
-	position: relative;
+  position: relative;
 }
 
 .h2 {
-	text-align: center;
+  text-align: center;
   color: $text;
   font-size: 40px;
   font-weight: 800;
+
   &:after {
     content: '';
-		display: block;
-		margin: 0px auto;
-		margin-top: 10px;
-		border-top-left-radius: 50px;
-		border-bottom-right-radius: 50px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     width: 84px;
     height: 5px;
     background-color: $accent;
@@ -100,10 +101,12 @@ p {
 //
 // Кнопка с таймером
 .link-timer {
-	margin-top: 50px;
+  margin-top: 50px;
   text-align: center;
-	&__link {
-		display: flex;
+
+  &__link {
+		text-transform: uppercase;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0px;
@@ -113,8 +116,8 @@ p {
     color: $white;
     box-shadow: 0 10px 40px rgba(1, 175, 239, 0.45);
     border: 1px solid transparent;
-		background-color: $accent;
-		transition: all .3s ease;
+    background-color: $accent;
+    transition: all .3s ease;
 
     &:hover {
       text-decoration: none;
@@ -122,12 +125,35 @@ p {
       background-color: $white;
       border: 1px solid $accent;
     }
-	}
-	&__text {
-		margin-top: 22px;
+  }
+
+  &__text {
+    margin-top: 22px;
     color: $text;
     font-size: 13px;
     font-weight: 600;
+  }
+}
+
+.button-anim {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: .1s;
+    animation: button-animation 3s .05s ease-in-out infinite;
   }
 }
 
@@ -145,4 +171,5 @@ p {
 @import "_custom/map";
 @import "_custom/footer";
 @import "animation";
+@import "pop-up";
 @import "media"; // Always at the end

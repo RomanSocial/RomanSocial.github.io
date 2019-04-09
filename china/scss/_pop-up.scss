@@ -1,0 +1,196 @@
+//
+// Общие стили
+.pop-up {
+  position: relative;
+  margin: 0px auto;
+}
+
+//
+// Анимация
+/* overlay at start */
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+//
+// Всплывающая форма
+.mg-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 422px;
+  padding: 40px 30px;
+  background-color: $white;
+  box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.65);
+
+  &__item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(6) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__sub-title {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+
+  &__input {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px 15px 25px;
+    background-color: $alabaster;
+    border: 1px solid rgba(33, 33, 33, 0.3);
+
+    svg {
+      margin-right: 10px;
+    }
+
+    input {
+      border: none;
+      background-color: transparent;
+      width: 100%;
+    }
+
+    &--calendar {
+      flex: 1;
+      margin-right: 10px;
+
+      input {
+        max-width: 108px;
+      }
+    }
+
+    &--time {
+      flex: 1;
+
+      input {
+        max-width: 108px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+    background-color: $accent;
+    box-shadow: 0px 10px 40px rgba(0, 175, 241, 0.45);
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+      background-color: lighten($accent, 0.8);
+    }
+  }
+
+  &__logo {
+    margin-top: 20px;
+    align-self: center;
+    max-width: 200px;
+    max-height: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//
+// Заявка принята
+.mg-end {
+  padding: 40px;
+  max-width: 422px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.65);
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    margin-top: 20px;
+    align-self: center;
+    max-width: 200px;
+    max-height: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
