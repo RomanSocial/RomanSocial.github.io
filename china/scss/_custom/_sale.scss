@@ -1,7 +1,7 @@
 .sale {
-	background-color: $mercury;
-	padding-bottom: 160px;
-	position: relative;
+  background-color: $mercury;
+  padding-bottom: 160px;
+  position: relative;
 
   &__title {
     text-align: center;
@@ -14,15 +14,22 @@
 }
 
 .sale-1st {
-	padding-top: 70px; 
+  padding-top: 70px;
 }
+
 .sale-2nd {
-	background-color: $white; 
+  background-color: $white;
 }
 
 .calculation {
   margin-top: 35px;
   display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 
   &__item {
     margin-top: 22px;
@@ -49,56 +56,89 @@
   }
 
   &__input {
+		position: relative;
     background-color: $white;
     margin-top: 8px;
     display: flex;
-    align-items: center;
+		align-items: center;
     padding: 15px 29px;
     flex: 1;
-		border: 1px solid rgba(33, 33, 33, 0.3);
-		transition: all .3s ease;
+    border: 1px solid rgba(33, 33, 33, 0.3);
+    transition: all .3s ease;
 
     &:hover {
       border: 1px solid $accent;
     }
+
     &:hover svg {
-			transition: all .3s ease;
+      transition: all .3s ease;
       fill: $accent;
     }
+
     &:hover input::placeholder {
-			transition: all .3s ease;
-      color : $accent;
+      transition: all .3s ease;
+      color: $accent;
     }
 
     input {
-			transition: all .3s ease;
+      transition: all .3s ease;
       margin-left: 12px;
       flex: 1;
       background-color: transparent;
-      border: none;
+			border: none;
 
       &::placeholder {
-				transition: all .3s ease;
+        transition: all .3s ease;
         color: $text;
         font-size: 15px;
         font-weight: 600;
         line-height: 19px;
       }
-    }
+		}
+		input.error {
+			border-bottom: 1px solid rgba(245, 47, 87, 0.356);
+		 }
+		label {
+			position: absolute;
+			bottom: -30px;
+			left: 25px;
+			font-weight: bold;
+			color: $radical-red;
+		}
   }
 }
 
 .link-timer {
-	&__text {
-		opacity: 0.6;
-	}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+  &__link {
+    display: flex;
+		flex: 1;
+		width: 100%;
+    max-width: 362px;
+  }
+
+  &__text {
+    opacity: 0.6;
+  }
 }
 
 @include media-breakpoint-down(sm) {
-	.calculation {
-		flex-direction: column;
-		&__left {
-			margin-right: 0;
+  .calculation {
+    &__wrapper {
+			flex-direction: column;
 		}
-	}
+
+		&__input {
+			input {
+				overflow: hidden;
+			}
+		}
+
+    &__left {
+      margin-right: 0;
+    }
+  }
 }

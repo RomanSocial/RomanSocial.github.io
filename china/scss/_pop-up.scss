@@ -54,6 +54,7 @@
   box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.65);
 
   &__item {
+		flex: 1;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -81,6 +82,7 @@
   }
 
   &__input {
+		position: relative;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -104,7 +106,7 @@
       margin-right: 10px;
 
       input {
-        max-width: 108px;
+        max-width: 115px;
       }
     }
 
@@ -112,9 +114,19 @@
       flex: 1;
 
       input {
-        max-width: 108px;
+        max-width: 115px;
       }
-    }
+		}
+		input.error {
+			border-bottom: 1px solid rgba(245, 47, 87, 0.356);
+		 }
+		label.error {
+			position: absolute;
+			bottom: -30px;
+			left: 25px;
+			font-weight: bold;
+			color: $radical-red;
+		}
   }
 
   &__link {
@@ -184,6 +196,47 @@
   }
 
   &__logo {
+    margin-top: 20px;
+    align-self: center;
+    max-width: 200px;
+    max-height: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.mg-timer {
+	padding: 40px;
+  max-width: 422px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.65);
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+	&__logo {
     margin-top: 20px;
     align-self: center;
     max-width: 200px;

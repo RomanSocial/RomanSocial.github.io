@@ -26,3 +26,15 @@
     opacity: 0
   }
 }
+
+@keyframes social-anim {
+  0% {
+		right: -26px;
+  }
+  50% {
+    right: 0px;
+  }
+  to {
+    right: -26px;
+  }
+}
