@@ -1,38 +1,41 @@
 .ad-video {
-	background-color: $mercury;
-	position: relative;
-	margin-top: -70px;
-	&:before {
-		z-index: 2;
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: '';
-		display: block;
-		height: 108px;
-		width: 100%;
-		background-image: url(../img/main-screen-sub-bg-3.svg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center 65%;
-	}
-	&:after {
-		z-index: 1;
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: '';
-		display: block;
-		height: 90px;
-		width: 100%;
-		background-image: url(../img/main-screen-sub-bg-2.svg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center 50%;
-	}
+  background-color: $mercury;
+  position: relative;
+  margin-top: -70px;
+
+  &:before {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 108px;
+    width: 100%;
+    background-image: url(../img/main-screen-sub-bg-3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+  }
+
+  &:after {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 90px;
+    width: 100%;
+    background-image: url(../img/main-screen-sub-bg-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+  }
+
   &__wrapper {
-		position: relative;
-		z-index: 4;
+    position: relative;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +43,7 @@
   }
 
   &__button {
-		position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +51,13 @@
     height: 56px;
     box-shadow: 0 10px 40px rgba(33, 33, 33, 0.35);
     background-color: $white;
-		border-radius: 50%;
-		svg {
-			margin-left: 3px;
-		}
-		&:before {
+    border-radius: 50%;
+
+    svg {
+      margin-left: 3px;
+    }
+
+    &:before {
       content: '';
       position: absolute;
       display: block;
@@ -61,9 +66,10 @@
       width: 87px;
       height: 87px;
       border: 2px solid #fff;
-			opacity: 0.6;
-			animation: pulse infinite ease-in-out 2s;
+      opacity: 0.6;
+      animation: pulse infinite ease-in-out 2s;
     }
+
     &:after {
       content: '';
       position: absolute;
@@ -73,18 +79,29 @@
       height: 110px;
       transform: translate(-50%, -50%);
       border: 2px solid #fff;
-			opacity: 0.3;
-			animation: pulse infinite ease-in-out 2s;
-			animation-delay: 1s;
+      opacity: 0.3;
+      animation: pulse infinite ease-in-out 2s;
+      animation-delay: 1s;
     }
   }
 
   &__text {
-		margin-top: 12px;
+    margin-top: 12px;
     text-align: center;
     max-width: 300px;
     color: $text;
     font-size: 12px;
     font-weight: 700;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .ad-video {
+    &__wrapper {
+      margin-top: 20px;
+		}
+		&__text {
+			margin-top: 30px;
+		}
   }
 }

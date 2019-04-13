@@ -31,6 +31,14 @@
 	<div class="svg-container" style="display:none;">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			width="0" height="0" style="position: absolute;">
+			<!-- Крестик иконка -->
+			<symbol id="cross-icon" viewBox="0 0 31.112 31.112">
+				<g>
+					<polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97 
+										29.698,31.112 31.112,29.698 16.97,15.556 " />
+				</g>
+			</symbol>
+			<!-- Крестик иконка конец -->
 			<!-- Кнопка видео иконка -->
 			<symbol id="video-icon" viewBox="0 0 41.999 41.999">
 				<g>
@@ -229,57 +237,68 @@
 		</svg>
 	</div>
 
-	<div id="clock"></div>
+
 
 	<section class="home" id="home">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-12">
-					<div class="home__logo logo">
-						<img src="img/Logo1.png" alt="RealOpt" width="192px" height="50px" class="logo__big">
-						<img src="img/Logo-mini.png" alt="RealOpt" width="50px" height="50px" class="logo__mini">
+		<!-- Хедер -->
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-9">
+						<div class="home__logo logo">
+							<img src="img/Logo1.png" alt="RealOpt" width="192px" height="50px" class="logo__big">
+						</div>
 					</div>
-				</div>
-				<div
-					class="col-xl-6 order-xl-0 offset-xl-0 col-lg-8 offset-lg-2 order-lg-2 order-xl-0 col-md-12 order-md-2 col-sm-12 order-sm-2 col-3 order-2">
-					<!-- Кнопка гамбургера -->
-					<a href="#" class="hamburger-toggle" id="hamburger-toggle">
-						<div class="hamburger">
-							<span class="hamburger-line"></span>
-							<span class="hamburger-line"></span>
-							<span class="hamburger-line"></span>
+					<div
+						class="col-xl-6 order-xl-0 offset-xl-0 col-lg-8 offset-lg-2 order-lg-2 order-xl-0 col-md-12 order-md-2 col-sm-12 order-sm-2 col-3 order-2">
+						<!-- Контейнер для бургера -->
+						<div class="hamburger-container">
+							<!-- Кнопка гамбургера -->
+							<a href="#" class="hamburger-toggle" id="hamburger-toggle">
+								<div class="hamburger">
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+								</div>
+								<div class="cross">
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+								</div>
+							</a>
+							<!-- Кнопка гамбургера конец -->
+							<nav class="home__main-nav main-nav hamburger-menu">
+								<ul class="main-nav__list">
+									<li class="main-nav__item"><a href="#home" data-target="anchor" class="main-nav__link">Главная</a>
+									</li>
+									<li class="main-nav__item"><a href="#why" data-target="anchor" class="main-nav__link">Почему мы</a>
+									</li>
+									<li class="main-nav__item"><a href="#gift" data-target="anchor"
+											class="main-nav__link">Преимущества</a>
+									</li>
+									<li class="main-nav__item"><a href="#comment" data-target="anchor" class="main-nav__link">Отзывы</a>
+									</li>
+									<li class="main-nav__item"><a href="#guest" data-target="anchor" class="main-nav__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						<div class="cross">
-							<span class="hamburger-line"></span>
-							<span class="hamburger-line"></span>
-						</div>
-					</a>
-					<!-- Кнопка гамбургера конец -->
-					<nav class="home__main-nav main-nav hamburger-menu">
-						<ul class="main-nav__list">
-							<li class="main-nav__item"><a href="#home" data-target="anchor" class="main-nav__link">Главная</a></li>
-							<li class="main-nav__item"><a href="#why" data-target="anchor" class="main-nav__link">Почему мы</a></li>
-							<li class="main-nav__item"><a href="#gift" data-target="anchor" class="main-nav__link">Преимущества</a>
-							</li>
-							<li class="main-nav__item"><a href="#comment" data-target="anchor" class="main-nav__link">Отзывы</a></li>
-							<li class="main-nav__item"><a href="#guest" data-target="anchor" class="main-nav__link">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div
-					class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-6 order-lg-0 col-md-4 order-md-1 offset-md-2 col-sm-5 order-sm-1 offset-sm-0 col-7 order-1 offset-1">
-					<div class="home__main-phone main-phone phone">
-						<div class="phone__wrapper">
-							<span class="phone__phone">+7 910 110 35 95</span>
-							<span class="phone__text">Бессплатно с мобильного</span>
-							<span class="phone__sec-phone">+7 910 110 35 95</span>
-						</div>
-						<div class="phone__image">
-							<img src="img/Arrow.svg" alt="Стрелка вниз">
+						<!-- Контейнер для бургера конец -->
+					</div>
+					<div
+						class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-6 order-lg-0 col-md-4 order-md-1 offset-md-2 col-sm-5 order-sm-1 offset-sm-0 col-4 d-none d-sm-block">
+						<div class="home__main-phone main-phone phone">
+							<div class="phone__wrapper">
+								<span class="phone__phone">+7 910 110 35 95</span>
+								<span class="phone__phone">+7 910 110 35 95</span>
+								<span class="phone__text">Бессплатно с мобильного</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<!-- Хедер конец -->
+		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="home__main-screen main-screen">
@@ -292,28 +311,6 @@
 						</p>
 						<a href="#sale-form-3" class="main-screen__link open-popup-link button-anim">Заказать консультацию</a>
 					</div>
-				</div>
-			</div>
-			<div class="home__social social">
-				<div class="social__item social__fb">
-					<svg width="18px" height="18px">
-						<use xlink:href="#fb-icon"></use>
-					</svg>
-				</div>
-				<div class="social__item social__ws">
-					<svg width="18px" height="18px">
-						<use xlink:href="#ws-icon"></use>
-					</svg>
-				</div>
-				<div class="social__item social__tg">
-					<svg width="18px" height="18px">
-						<use xlink:href="#tg-icon"></use>
-					</svg>
-				</div>
-				<div class="social__item social__vb">
-					<svg width="18px" height="18px">
-						<use xlink:href="#vb-icon"></use>
-					</svg>
 				</div>
 			</div>
 		</div>
@@ -349,7 +346,8 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<form method="post" action="mailer/smart.php" enctype=multipart/form-data" class="sale__calculation calculation" id="sale-form-1">
+					<form data-form-validate="true" method="post" action="mailer/smart.php" enctype=multipart/form-data"
+						class="sale__calculation calculation" id="sale-form-1">
 						<div class="calculation__wrapper">
 							<div class="calculation__left">
 								<!-- Элемент -->
@@ -361,7 +359,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#bar-code-icon"></use>
 										</svg>
-										<input type="text" name="accessories" placeholder="Аксессуары для смартфонов и планшетов" required data-msg-required="Поле обязательно к заполнению">
+										<input type="text" name="accessories" placeholder="Аксессуары для смартфонов и планшетов" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -374,7 +373,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#sort-icon"></use>
 										</svg>
-										<input type="number" name="quantity"  placeholder="Введите количество штук" required data-msg-required="Поле обязательно к заполнению">
+										<input type="number" name="quantity" placeholder="Введите количество штук" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -402,7 +402,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#download-icon"></use>
 										</svg>
-										<input type="file" name="photo"  multiple accept="image/*,image/jpeg" placeholder="Прикрепить изображение">
+										<input type="file" name="photo" multiple accept="image/*,image/jpeg"
+											placeholder="Прикрепить изображение">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -415,7 +416,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#map-icon"></use>
 										</svg>
-										<input type="text" name="location"  placeholder="Россия, г. Ростов-на-Дону" required data-msg-required="Поле обязательно к заполнению">
+										<input type="text" name="location" placeholder="Россия, г. Ростов-на-Дону" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -428,7 +430,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#whatsapp-icon"></use>
 										</svg>
-										<input type="tel" name="telephone" placeholder="+7 (495) 510-55-55" required data-msg-required="Поле обязательно к заполнению">
+										<input type="tel" name="telephone" placeholder="+7 (495) 510-55-55" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -684,7 +687,7 @@
 			<div class="row">
 				<div class="col-xl-4 offset-xl-4">
 					<div class="gift__item link-timer">
-						<a href="#sale-form-3" class="gift__link link-timer__link button-anim open-popup-link"> 
+						<a href="#sale-form-3" class="gift__link link-timer__link button-anim open-popup-link">
 							Заказать консультацию
 						</a>
 						<p class="gift__text link-timer__text">
@@ -717,7 +720,8 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-						<form method="post" class="sale__calculation calculation" id="sale-form-2">
+					<form data-form-validate="true" method="post" action="mailer/smart.php" enctype=multipart/form-data"
+						class="sale__calculation calculation sale-2nd__calculation" id="sale-form-2">
 						<div class="calculation__wrapper">
 							<div class="calculation__left">
 								<!-- Элемент -->
@@ -729,7 +733,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#bar-code-icon"></use>
 										</svg>
-										<input type="text" placeholder="Аксессуары для смартфонов и планшетов" required data-msg-required="Поле обязательно к заполнению">
+										<input type="text" placeholder="Аксессуары для смартфонов и планшетов" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -742,7 +747,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#sort-icon"></use>
 										</svg>
-										<input type="number" placeholder="Введите количество штук" required data-msg-required="Поле обязательно к заполнению">
+										<input type="number" placeholder="Введите количество штук" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -783,7 +789,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#map-icon"></use>
 										</svg>
-										<input type="text" placeholder="Россия, г. Ростов-на-Дону" required data-msg-required="Поле обязательно к заполнению">
+										<input type="text" placeholder="Россия, г. Ростов-на-Дону" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -796,7 +803,8 @@
 										<svg width="18px" height="18px">
 											<use xlink:href="#whatsapp-icon"></use>
 										</svg>
-										<input type="tel" placeholder="Россия, г. Ростов-на-Дону" required data-msg-required="Поле обязательно к заполнению">
+										<input type="tel" placeholder="Россия, г. Ростов-на-Дону" required
+											data-msg-required="Поле обязательно к заполнению">
 									</div>
 								</div>
 								<!-- Элемент конец -->
@@ -804,8 +812,7 @@
 						</div>
 						<!-- Кнопка -->
 						<div class="link-timer">
-							<input type="submit" class="calculation__link link-timer__link button-anim"
-								value="Отправить заявку">
+							<input type="submit" class="calculation__link link-timer__link button-anim" value="Отправить заявку">
 							<p class="calculation__text link-timer__text">
 								Минимальная сумма заказа - 1000$
 							</p>
@@ -1029,13 +1036,42 @@
 				</div>
 				<div class="col-xl-4">
 					<div class="guest__item">
-						<a href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&desc=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&lang=ru&lat=55.616362&lon=37.716192&subtitle=%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2061%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203%D0%90" class="guest__button link-timer__link button-anim">Построить маршрут</a>
+						<a href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&desc=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&lang=ru&lat=55.616362&lon=37.716192&subtitle=%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2061%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203%D0%90"
+							class="guest__button link-timer__link button-anim">Построить маршрут</a>
 					</div>
 				</div>
 				<div class="col-xl-4">
 					<div class="guest__item">
 						<a href="#" class="guest__link">+3 (754) 45 41 88 88</a>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Социальные сети -->
+					<div class="guest__social social">
+						<div class="social__item social__fb">
+							<svg width="18px" height="18px">
+								<use xlink:href="#fb-icon"></use>
+							</svg>
+						</div>
+						<div class="social__item social__ws">
+							<svg width="18px" height="18px">
+								<use xlink:href="#ws-icon"></use>
+							</svg>
+						</div>
+						<div class="social__item social__tg">
+							<svg width="18px" height="18px">
+								<use xlink:href="#tg-icon"></use>
+							</svg>
+						</div>
+						<div class="social__item social__vb">
+							<svg width="18px" height="18px">
+								<use xlink:href="#vb-icon"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- Социальные сети конец -->
 				</div>
 			</div>
 		</div>
@@ -1074,9 +1110,73 @@
 		</div>
 	</footer>
 
+	<!-- Гамбургер меню начало -->
+	<section class="hamburger-menu">
+		<ul class="hamburger-menu__list">
+			<li class="hamburger-menu__item hamburger-menu__title">
+				Навигация
+				<a href="#" class="hamburger-menu__closebtn">
+					<svg width="12" height="12">
+						<use xlink:href="#cross-icon"></use>
+					</svg>
+				</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">Главная</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">Почему мы</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">Преимущества</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">Отзывы</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">Контакты</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">+7 910 110 35 95</a>
+			</li>
+			<li class="hamburger-menu__item">
+				<a href="#" class="hamburger-menu__link">+3 754 45 41 88 88</a>
+			</li>
+			<li class="hamburger-menu__item">
+									<!-- Социальные сети -->
+									<div class="guest__social social">
+											<div class="social__item social__fb">
+												<svg width="18px" height="18px">
+													<use xlink:href="#fb-icon"></use>
+												</svg>
+											</div>
+											<div class="social__item social__ws">
+												<svg width="18px" height="18px">
+													<use xlink:href="#ws-icon"></use>
+												</svg>
+											</div>
+											<div class="social__item social__tg">
+												<svg width="18px" height="18px">
+													<use xlink:href="#tg-icon"></use>
+												</svg>
+											</div>
+											<div class="social__item social__vb">
+												<svg width="18px" height="18px">
+													<use xlink:href="#vb-icon"></use>
+												</svg>
+											</div>
+										</div>
+										<!-- Социальные сети конец -->
+			</li>
+
+		</ul>
+	</section>
+	<!-- Гамбургер меню конец -->
+
 	<section class="extra-content et">
 		<!-- Поп-ап форма -->
-		<form method="post" id="sale-form-3" class="et__mg-form mg-form pop-up mfp-hide">
+		<form method="post" action="mailer/smart.php" enctype=multipart/form-data" id="sale-form-3"
+			class="et__mg-form mg-form pop-up mfp-hide">
 			<!-- Заголовок -->
 			<p class="h2 mg-form__title">
 				Оставьте заявку – перезвоним
@@ -1092,7 +1192,8 @@
 					<svg width="18px" height="18px">
 						<use xlink:href="#user-icon"></use>
 					</svg>
-					<input type="name" placeholder="Лаврентий Павлович Берия" required data-msg-required="Поле Имя обязательно к заполнению">
+					<input type="name" placeholder="Лаврентий Павлович Берия" required
+						data-msg-required="Поле Имя обязательно к заполнению">
 				</label>
 			</div>
 			<!-- Элементы формы конец -->
@@ -1105,7 +1206,8 @@
 					<svg width="18px" height="18px">
 						<use xlink:href="#phone-icon"></use>
 					</svg>
-					<input type="tel" placeholder="+7 (910) 110-35-95" required data-msg-required="Поле Телефон обязательно к заполнению">
+					<input type="tel" placeholder="+7 (910) 110-35-95" required
+						data-msg-required="Поле Телефон обязательно к заполнению">
 				</label>
 			</div>
 			<!-- Элементы формы конец -->
@@ -1132,7 +1234,8 @@
 						<svg width="18px" height="18px">
 							<use xlink:href="#timer-icon"></use>
 						</svg>
-						<input type="time" min="16:00" max="20:00" placeholder="16:00-20:00" required data-msg-required="Поле обязательно к заполнению">
+						<input type="time" min="16:00" max="20:00" placeholder="16:00-20:00" required
+							data-msg-required="Поле обязательно к заполнению">
 					</label>
 				</div>
 				<!-- Элементы формы конец -->
@@ -1244,7 +1347,7 @@
 			</p>
 			<p class="mg-timer__text">
 				Заявка не была отправлена в срок – вы
-не получите бесплатный подарок
+				не получите бесплатный подарок
 			</p>
 			<div class="mg-timer__logo">
 				<img src="img/Logo-big.png" alt="Логотип">

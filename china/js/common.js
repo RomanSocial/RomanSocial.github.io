@@ -4,14 +4,18 @@ $(function () {
 	$('.hamburger-toggle').click(function (e) {
 		e.preventDefault();
 		$(this).toggleClass('open');
-		$('.hamburger-menu').toggleClass('menu-open');
+		$('.hamburger-menu__list').toggleClass('open');
 	});
+	// $('.hamburger-toggle').click(function (e) {
+	// 	e.preventDefault();
+	// 	$(this).toggleClass('open');
+	// 	$('.hamburger-menu').toggleClass('menu-open');
+	// });
 
-	//  Телефо открывашка
-	$('.phone').click(function (e) {
-		e.preventDefault();
-		$('.phone__sec-phone').toggleClass('phone__sec-phone--open');
-		$('.phone__image').toggleClass('phone__image--open');
+	// Кнопка в выезжающем меню
+	$('.hamburger-menu__closebtn').on('click', function () {
+		$('.hamburger-menu__list').removeClass('open');
+		$('.hamburger-toggle').removeClass('open');
 	});
 
 	//Карусель отзывов
@@ -130,23 +134,6 @@ $(function () {
 			mainClass: 'mfp-fade'
 		});
 	};
-	// Функция сброса формы.
-	var resetForm = function () {
-		$('#sale-form-1').trigger('reset');
-	};
-	// Функция сброса формы.
-	var resetForm = function () {
-		$('#sale-form-2').trigger('reset');
-	};
-	// Функция сброса формы.
-	var resetForm = function () {
-		$('#sale-form-3').trigger('reset');
-	};
-
-	// Функции отслеживания событий
-	var submitListener = function () {
-		$('#sale-form-1').on("submit", sendAjax);
-	};
 
 	// Проверка форм
 	$('#sale-form-1').validate({
@@ -164,36 +151,16 @@ $(function () {
 			text: "Поле обязательно к заполнению",
 		}
 	});
-	// Проверка форм
-	$('#sale-form-2').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
-			}
-		},
-		messages: {
-			email: {
-				required: "Поле 'Email' обязательно к заполнению",
-				email: "Необходим формат адреса email"
-			},
-		}
-	});
-	// Проверка форм
-	$('#sale-form-3').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
-			}
-		},
-		messages: {
-			email: {
-				required: "Поле 'Email' обязательно к заполнению",
-				email: "Необходим формат адреса email"
-			},
-		}
-	});
+
+	// Функции отслеживания событий
+	var submitListener1 = function () {
+		$('#sale-form-1').on("submit", sendAjax);
+	};
+
+	// Функция сброса формы.
+	var resetForm1 = function () {
+		$('#sale-form-1').trigger('reset');
+	};
 
 	// Аяксовая отправка форм.
 	var sendAjax = function (event) {
@@ -212,7 +179,7 @@ $(function () {
 				.done(function () {
 					console.log("sucsess");
 					openSucsessPopup();
-					resetForm();
+					resetForm1();
 				})
 				.fail(function () {
 					console.log("error");
@@ -222,6 +189,36 @@ $(function () {
 					submitButton.removeAttr('disabled');
 				});
 	};
+
+	// Инилизация функций.
+	submitListener1();
+
+	// Проверка форм
+	$('.sale__calculation').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2
+			}
+		},
+		messages: {
+			email: {
+				required: "Поле 'Email' обязательно к заполнению",
+				email: "Необходим формат адреса email"
+			},
+		}
+	});
+
+	// Функция сброса формы.
+	var resetForm2 = function () {
+		$('#sale-form-2').trigger('reset');
+	};
+
+	// Функции отслеживания событий
+	var submitListener2 = function () {
+		$('#sale-form-2').on("submit", sendAjax);
+	};
+
 	// Аяксовая отправка форм.
 	var sendAjax = function (event) {
 		event.preventDefault();
@@ -239,7 +236,7 @@ $(function () {
 				.done(function () {
 					console.log("sucsess");
 					openSucsessPopup();
-					resetForm();
+					resetForm2();
 				})
 				.fail(function () {
 					console.log("error");
@@ -249,6 +246,48 @@ $(function () {
 					submitButton.removeAttr('disabled');
 				});
 	};
+
+	// Инилизация функций.
+	submitListener2();
+
+	// Проверка форм
+	$('#sale-form-3').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2
+			},
+			email: {
+				required: true,
+			},
+			text: {
+				required: true,
+			},
+			date: {
+				required: true,
+			},
+			time: {
+				required: true,
+			}
+		},
+		messages: {
+			email: {
+				required: "Поле 'Email' обязательно к заполнению",
+				email: "Необходим формат адреса email"
+			},
+		}
+	});
+
+	// Функция сброса формы.
+	var resetForm3 = function () {
+		$('#sale-form-3').trigger('reset');
+	};
+
+	// Функции отслеживания событий
+	var submitListener3 = function () {
+		$('#sale-form-3').on("submit", sendAjax);
+	};
+
 	// Аяксовая отправка форм.
 	var sendAjax = function (event) {
 		event.preventDefault();
@@ -266,7 +305,7 @@ $(function () {
 				.done(function () {
 					console.log("sucsess");
 					openSucsessPopup();
-					resetForm();
+					resetForm3();
 				})
 				.fail(function () {
 					console.log("error");
@@ -276,9 +315,10 @@ $(function () {
 					submitButton.removeAttr('disabled');
 				});
 	};
-
 	// Инилизация функций.
-	submitListener();
+	submitListener3();
+
+
 
 	// Оповещения о окончании времени
 	// 10 минут

@@ -18,7 +18,19 @@
 }
 
 .sale-2nd {
-  background-color: $white;
+	background-color: $white;
+	.calculation__input {
+		input.error {
+			border-bottom: 1px solid rgba(245, 47, 87, 0.356);
+		 }
+		label {
+			position: absolute;
+			bottom: -30px;
+			left: 25px;
+			font-weight: bold;
+			color: $radical-red;
+		}
+	}
 }
 
 .calculation {

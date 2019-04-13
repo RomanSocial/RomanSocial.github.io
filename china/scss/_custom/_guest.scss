@@ -1,12 +1,14 @@
 .guest {
-	position: relative;
-	padding-top: 30px;
-	padding-bottom: 70px;
-	&__title {
-		margin-bottom: 50px;
-	}
-	&__link {
-		display: flex;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0px;
@@ -21,18 +23,68 @@
       color: $white;
       background-color: lighten($text, 8);
     }
-	}
+  }
 
-	&__button {
-		text-transform: uppercase;
-	}
-	
+  &__button {
+    text-transform: uppercase;
+  }
+
+}
+
+.social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      fill: $white;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  &__fb {
+    background-color: #4267B2;
+  }
+
+  &__ws {
+    background-color: #1EBEA5;
+  }
+
+  &__tg {
+    background-color: #32A8E0;
+  }
+
+  &__vb {
+    background-color: #655CAC;
+  }
 }
 
 @include media-breakpoint-down(lg) {
-	.guest {
-		&__item {
-			margin-top: 20px;
-		}
-	}
+  .guest {
+    &__item {
+      margin-top: 20px;
+    }
+  }
 }
