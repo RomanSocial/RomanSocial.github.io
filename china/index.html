@@ -24,9 +24,10 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+
 </head>
 
-<body>
+<body class="isHome">
 
 	<div class="svg-container" style="display:none;">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -236,8 +237,6 @@
 			<!-- Время звонка иконка конец -->
 		</svg>
 	</div>
-
-
 
 	<section class="home" id="home">
 		<!-- Хедер -->
@@ -694,8 +693,36 @@
 							Минимальная сумма заказа - 1000$
 						</p>
 						<!-- Таймер -->
-						<div class="gift__timer link-timer__timer c-timer">
-							<div id="gift-1st-timer" class="c-timer__wrapper"></div>
+						<div id="timer_wrap">
+							<div id="clock">
+								<div class="gift-hour">
+									<div id='hour'>
+										<p id='hour0'></p>
+										<p id='hour1'></p>
+									</div>
+									<p class="gift-hour__text">
+										Час
+									</p>
+								</div>
+								<div class="gift-hour">
+									<div id='min'>
+										<p id='min0'></p>
+										<p id='min1'></p>
+									</div>
+									<p class="gift-hour__text">
+										Мин
+									</p>
+								</div>
+								<div class="gift-hour">
+									<div id='sec'>
+										<p id='sec0'></p>
+										<p id='sec1'></p>
+									</div>
+									<p class="gift-hour__text">
+										Сек
+									</p>
+								</div>
+							</div>
 						</div>
 						<!-- Таймер конец -->
 					</div>
@@ -1031,7 +1058,7 @@
 			<div class="row">
 				<div class="col-xl-4 col-lg-4">
 					<div class="guest__item">
-						<a href="#" class="guest__link">+3 (754) 45 41 88 88</a>
+						<a href="tel:+79101103595" class="guest__link">+7 910 110 35 95</a>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-4">
@@ -1042,7 +1069,7 @@
 				</div>
 				<div class="col-xl-4 col-lg-4">
 					<div class="guest__item">
-						<a href="#" class="guest__link">+3 (754) 45 41 88 88</a>
+						<a href="tel:+375445418888" class="guest__link">+3 (754) 45 41 88 88</a>
 					</div>
 				</div>
 			</div>
@@ -1050,26 +1077,21 @@
 				<div class="col-xl-12">
 					<!-- Социальные сети -->
 					<div class="guest__social social">
-						<div class="social__item social__fb">
-							<svg width="18px" height="18px">
-								<use xlink:href="#fb-icon"></use>
-							</svg>
-						</div>
-						<div class="social__item social__ws">
+						<a href="https://wa.me/79101103595" class="social__item social__ws">
 							<svg width="18px" height="18px">
 								<use xlink:href="#ws-icon"></use>
 							</svg>
-						</div>
-						<div class="social__item social__tg">
+						</a>
+						<a href="https://t.me/RealoptCO" class="social__item social__tg">
 							<svg width="18px" height="18px">
 								<use xlink:href="#tg-icon"></use>
 							</svg>
-						</div>
-						<div class="social__item social__vb">
+						</a>
+						<a href="" class="social__item social__vb">
 							<svg width="18px" height="18px">
 								<use xlink:href="#vb-icon"></use>
 							</svg>
-						</div>
+						</a>
 					</div>
 					<!-- Социальные сети конец -->
 				</div>
@@ -1122,51 +1144,46 @@
 				</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link">Главная</a>
+				<a href="#home" data-target="anchor" class="hamburger-menu__link">Главная</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link">Почему мы</a>
+				<a href="#why" data-target="anchor" class="hamburger-menu__link">Почему мы</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link">Преимущества</a>
+				<a href="#gift" data-target="anchor" class="hamburger-menu__link">Преимущества</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link">Отзывы</a>
+				<a href="#comment" data-target="anchor" class="hamburger-menu__link">Отзывы</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link">Контакты</a>
+				<a href="#guest" data-target="anchor" class="hamburger-menu__link">Контакты</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link hamburger-menu__phone">
+				<a href="tel:+79101103595" class="hamburger-menu__link hamburger-menu__phone">
 					<img src="img/Russia-icon.png" alt="Россия">+7 910 110 35 95</a>
 			</li>
 			<li class="hamburger-menu__item">
-				<a href="#" class="hamburger-menu__link hamburger-menu__phone">
+				<a href="tel:+375445418888" class="hamburger-menu__link hamburger-menu__phone">
 					<img src="img/Belarus-icon.png" alt="Беларусия">+3 754 45 41 88 88</a>
 			</li>
 			<li class="hamburger-menu__item hamburger-menu__social">
 				<!-- Социальные сети -->
 				<div class="guest__social social">
-					<div class="social__item social__fb">
-						<svg width="18px" height="18px">
-							<use xlink:href="#fb-icon"></use>
-						</svg>
-					</div>
-					<div class="social__item social__ws">
+					<a href="https://wa.me/79101103595" class="social__item social__ws">
 						<svg width="18px" height="18px">
 							<use xlink:href="#ws-icon"></use>
 						</svg>
-					</div>
-					<div class="social__item social__tg">
+					</a>
+					<a href="https://t.me/RealoptCO" class="social__item social__tg">
 						<svg width="18px" height="18px">
 							<use xlink:href="#tg-icon"></use>
 						</svg>
-					</div>
-					<div class="social__item social__vb">
+					</a>
+					<a href="" class="social__item social__vb">
 						<svg width="18px" height="18px">
 							<use xlink:href="#vb-icon"></use>
 						</svg>
-					</div>
+					</a>
 				</div>
 				<!-- Социальные сети конец -->
 			</li>
@@ -1360,7 +1377,28 @@
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFmNNAqwuwFBtSgMiRobvs5thk0qhbtQs&callback=initMap">
 		</script>
+
+
+
 	<script src="js/scripts.min.js"></script>
+
+	<script type="text/javascript">
+		var myDate = new Date();
+
+		function returnEndDate(d, h, m) {
+			myDate.setDate(myDate.getDate() + d);
+			myDate.setHours(myDate.getHours() + h);
+			myDate.setMinutes(myDate.getMinutes() + m);
+			return myDate;
+		}
+
+		if ($.cookie("timer")) {
+			var dateEnd = $.cookie("timer");
+		} else {
+			var dateEnd = returnEndDate(0, 0, 13);
+			$.cookie("timer", dateEnd, { expires: 7 });
+		}
+	</script>
 
 </body>
 

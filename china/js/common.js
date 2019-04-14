@@ -393,23 +393,5 @@ $(function () {
 	// 	.on('finish.countdown', function (event) {
 	// 		openFailPopup();
 	// 	});
-
-	// Задача: Взять время с сервера
-	// get the current time when button clicked
-	// var currentTime = moment();
-	// // add 25 minutes for interval
-	// var timerInterval = moment(currentTime).add(25, 's');
-	// // format interval
-	// var timerIntervalFormatted = moment(timerInterval).format('YYYY/MM/DD HH:mm:ss');
-	// // start the 25 minute timer and at the end popup two buttons for breaks
-	// $timer.removeClass('is-countdown').html('').countdown({
-	// 	until: timerInterval._d,
-	// 	onExpiry: function () {
-	// 		$timerButtons.toggleClass('break');
-	// 	}
-	// });
-
-
-
-
 });
+

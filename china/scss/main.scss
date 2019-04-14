@@ -157,6 +157,11 @@ p {
   }
 }
 
+.bg-o {
+	background-color: #333;
+	opacity: 5;
+}
+
 
 
 @import "_custom/home";
@@ -171,6 +176,7 @@ p {
 @import "_custom/map";
 @import "_custom/footer";
 @import "_custom/hamburger-menu";
+@import "_custom/timer";
 @import "animation";
 @import "pop-up";
 @import "media"; // Always at the end

@@ -1,5 +1,6 @@
 .hamburger-menu {
-  position: relative;
+	position: relative;
+	z-index: 10;
 
   &__list {
     display: flex;
@@ -60,7 +61,7 @@
     justify-content: space-between;
   }
 
-  &__closebtn {
+  &__closebtn {	
     position: absolute;
     top: 20px;
     right: 25px;
@@ -79,5 +80,5 @@
 }
 
 .hamburger-menu .open {
-  width: 250px;
+	width: 250px;
 }
