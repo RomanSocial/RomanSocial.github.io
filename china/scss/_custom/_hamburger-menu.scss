@@ -1,54 +1,83 @@
 .hamburger-menu {
-	position: relative;
-	&__list {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		width: 0px;
-		position: fixed;
-		z-index: 10;
-		top: 0;
-		left: 0;
-		background-color: $white;
-		overflow-x: hidden;
-		transition: .5s;
-	}
-	&__item {
+  position: relative;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: $white;
+    overflow-x: hidden;
+    transition: .5s;
+  }
+
+  &__item {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		padding-left: 20px;
+		border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+		&:last-child {
+			border-bottom: none;
+		}
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    color: $text;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    font-size: 15px;
+    text-decoration: none;
+    color: $text;
+    transition: .3s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $accent;
+    }
 	}
-	&__title {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-	&__link {
+	
+	&__phone {
 		font-size: 16px;
-		text-decoration: none;
-		color: $text;
-		transition: .3s;
-		&:hover {
-			text-decoration: none;
-			color: $accent;
+		font-weight: bold;
+		img {
+			margin-right: 10px;
 		}
 	}
-	&__button {
-		margin-top: 30px;
-		padding: 7px 21px 7px 17px;
-		width: 132px;
-		justify-content: space-between;
+
+  &__button {
+    margin-top: 30px;
+    padding: 7px 21px 7px 17px;
+    width: 132px;
+    justify-content: space-between;
+  }
+
+  &__closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    svg {
+      fill: $text;
+    }
+
+    &:hover svg {
+      fill: $accent;
+    }
 	}
-	&__closebtn {
-		position: absolute;
-		top: 20px;
-		right: 25px;
-		svg {
-			fill: $text;
-		}
-		&:hover svg {
-			fill: $accent;
-		}
+	&__social {
+		padding: 0;
 	}
 }
 
 .hamburger-menu .open {
-	width: 250px;
+  width: 250px;
 }
