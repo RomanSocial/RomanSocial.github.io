@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-prod-card.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.desoslide.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.desoslide.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header class="">
+    <div id="contacts" class="container">
+        <div id="head-email">
+            <span id="email">zagotovkimsk@yandex.ru</span>
+            <a href="" class="cont-link">Есть вопросы – задай их нам</a>
+        </div>
+        <div id="head-phone">
+            <span id="phone">+7 (925) 001-18-04</span>
+            <a href="" class="cont-link">Бесплатно по России</a>
+        </div>
+        <div id="user-cabinet">
+            <span>Личный кабинет</span>
+            <div>
+                <a href="" class="cont-link">Вход</a>
+                <a href="" class="cont-link">Регистрация</a>
+            </div>
+        </div>
+        <div class="soc-group">
+            <a class="btn" href=""><img src="img/Vk-icon-h.png" alt=""></a>
+            <a class="btn" href=""><img src="img/Viber-icon-h.png" alt=""></a>
+            <a class="btn" href=""><img src="img/Telegram-icon-h.png" alt=""></a>
+            <a class="btn" href=""><img src="img/Whatsapp-icon-h.png" alt=""></a>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="catalog">
+            <a href="" class="btn">Каталог товаров</a>
+        </div>
+        <div class="input-group col-md-4">
+            <input aria-label="search" class="form-control py-2 border-right-0 border" type="search"
+                   placeholder="Поиск товара по каталогу" id="header-search-input">
+            <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+        <!--    <select class="" aria-label="" name="select1">-->
+        <!--        <option value="Информация">Информация</option>-->
+        <!--        <option value="Информация">Информация</option>-->
+        <!--        <option value="Информация">Информация</option>-->
+        <!--    </select>-->
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                Small button
+            </button>
+            <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <button type="button">Информация</button>
+                <button type="button">Информация</button>
+                <button type="button">Информация</button>
+                <button type="button">Информация</button>
+                <button type="button">Информация</button>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="breadcrumb" class="breadcrumb container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Главная</a></li>
+        <li class="breadcrumb-item"><a href="">Каталог товаров</a></li>
+        <li class="breadcrumb-item"><a href="">Обложки документов</a></li>
+        <li class="breadcrumb-item active"><a href="">Глянцевая обложка для документов из натуральной кожи темно-синего
+            цвета</a></li>
+    </ol>
+</div>
+
+<div class="content">
+    <span id="cont-title">Глянцевая обложка для документов из натуральной кожи темно-синего цвета</span>
+    <div class="row">
+        <div id="slider-1" class="col-md-6 row">
+            <div id="slide-show-thumbs" class="col-md-3">
+                <ul class="slide_show_thumbs desoslide-thumbs-vertical">
+                    <li><a href="img/Picture-lg.png"><img src="img/Picture-sm.png" alt=""></a>
+                    </li>
+                    <li><a href="img/Picture-lg.png"><img src="img/Picture-sm.png" alt=""></a></li>
+                    <li><a href="img/Picture-lg.png"><img src="img/Picture-sm.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="col-md-9" id="slideshow">
+                <div class="desoslide-wrapper">
+                    <img alt="" src="img/Picture-lg.png" class="img-responsive animated">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="cont-block1" class="col-md-6">
+            <div class="article">
+                <div id="article-num">
+                    <label>Артикул:</label>
+                    <span id="prod-id">1089838</span>
+                </div>
+                <div id="prod-availability">
+                    <div class="prod-color"></div>
+                    <span id="product-availability">Нет в наличии</span>
+                </div>
+            </div>
+            <div class="sel-head-color">
+                <label>Цвет основания:</label>
+                <ul class="head-colors-group">
+                    <li class="color-block "><a href="" class=" btn head-link-color green-color"></a><span
+                            class="head-col-name">Зелёный</span></li>
+                    <li class="color-block"><a href="" class="btn head-link-color black-color"></a><span
+                            class="head-col-name">Черный</span></li>
+                    <li class="color-block"><a href="" class=" btn head-link-color light-gray-color"></a><span
+                            class="head-col-name">Серый</span></li>
+                    <li class="color-block"><a href="" class="btn head-link-color red-color"></a><span
+                            class="head-col-name">Красный</span></li>
+                    <li class="color-block"><a href="" class="btn head-link-color blue-color"></a><span
+                            class="head-col-name">Синий</span></li>
+                    <li class="color-block"><a href="" class="head-link-color yellow-color"></a><span
+                            class="head-col-name">Желтый</span></li>
+                    <li class="color-block-all"><a href="" class="all-color">Все цвета</a></li>
+                </ul>
+            </div>
+            <div class="sel-addition-color">
+                <label>Цвет вставки:</label>
+                <ul class="additional-colors-group">
+                    <li class="color-block "><a href="" class=" btn additional-link-color green-color"></a><span
+                            class="additional-col-name">Зелёный</span></li>
+                    <li class="color-block"><a href="" class="btn additional-link-color black-color"></a><span
+                            class="additional-col-name">Черный</span></li>
+                    <li class="color-block"><a href="" class=" btn additional-link-color light-gray-color"></a><span
+                            class="additional-col-name">Серый</span></li>
+                    <li class="color-block"><a href="" class="btn additional-link-color red-color"></a><span
+                            class="additional-col-name">Красный</span></li>
+                    <li class="color-block"><a href="" class="btn additional-link-color blue-color"></a><span
+                            class="additional-col-name">Синий</span></li>
+                    <li class="color-block"><a href="" class="btn additional-link-color yellow-color"></a><span
+                            class="additional-col-name">Желтый</span></li>
+                    <li class="color-block-all"><a href="" class="all-color">Все цвета</a></li>
+                </ul>
+            </div>
+            <div class="price-block">
+                <span class="sale">699<i class="fa fa-ruble"></i></span>
+                <span class="price">899<i class="fa fa-ruble"></i></span>
+            </div>
+            <br>
+
+            <div id="input-group">
+                <div class="input-group by-btn" id="add-to-cart-btn">
+                    <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                           value="Добавить в корзину">
+                    <span class="input-group-append"><img src="img/Cart-icon-black.png" alt=""></span>
+                </div>
+                <div class="input-group by-btn" id="by-for-one-click">
+                    <input aria-label="Add to cart" class="btn by-for-one-click" type="submit"
+                           value="Добавить в корзину">
+                    <span class="input-group-append">
+              </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-products-block" id="cont-block2">
+        <div id="product-characteristics">
+            <label class="products-block-title">Характеристики товара</label>
+            <ul>
+                <li id="prod-block1">
+                    <label for="prod-block1" class="prod-param-title">Технические параметры</label>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Материал основы</label>
+                    <p class="space"></p>
+                    <span>Натуральная кожа</span>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Фурнитура</label>
+                    <p class="space"></p>
+                    <span>Оцинкованная сталь</span>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Наличие рисунка</label>
+                    <p class="space"></p>
+                    <span>Логотип автомобиля</span>
+                </li>
+                <li id="prod-block2">
+                    <label for="prod-block2" class="prod-param-title">Общие характеристики</label>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Материал основы</label>
+                    <p class="space"></p>
+                    <span>Натуральная кожа</span>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Фурнитура</label>
+                    <p class="space"></p>
+                    <span>Оцинкованная сталь</span>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Наличие рисунка</label>
+                    <p class="space"></p>
+                    <span>Логотип автомобиля</span>
+                </li>
+                <li id="prod-block3">
+                    <label for="prod-block3" class="prod-param-title">Особенности</label>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Материал основы</label>
+                    <p class="space"></p>
+                    <span>Натуральная кожа</span>
+                </li>
+                <li>
+                    <label for="" class="prod-type-val">Фурнитура</label>
+                    <p class="space"></p>
+                    <span>Оцинкованная сталь</span>
+                </li>
+            </ul>
+        </div>
+        <div id="customer-reviews">
+            <label class="products-block-title">Отзывы клиентов</label>
+<section class="reviews-block">
+            <div class="reviews" id="review-1">
+            <div class="comments-block">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                    используя Lorem Ipsum для распечатки образцов...
+                </p>
+                <div class="users-block">
+                <span class="user-name">Валентин Кузнецов</span>
+                <figure class="stars-block">
+                    <i class="fa fa-star star-act"></i>
+                    <i class="fa fa-star star-act"></i>
+                    <i  class="fa fa-star star-act"></i>
+                    <i class="fa fa-star star-deact"></i>
+                    <i class="fa fa-star star-deact"></i>
+            </figure>
+                </div>
+            </div>
+                <span class="down"></span>
+
+            </div>
+            <div class="reviews" id="review-2">
+            <div class="comments-block">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                    используя Lorem Ipsum для распечатки образцов...
+                </p>
+                <div class="users-block">
+                <span class="user-name">Валентин Кузнецов</span>
+                <figure class="stars-block">
+                    <i class="fa fa-star star-act"></i>
+                    <i class="fa fa-star star-act"></i>
+                    <i  class="fa fa-star star-act"></i>
+                    <i class="fa fa-star star-deact"></i>
+                    <i class="fa fa-star star-deact"></i>
+            </figure>
+                </div>
+            </div>
+                <span class="down"></span>
+
+            </div>
+</section>
+        </div>
+    </div>
+</div>
+
+<!--Similar products-->
+<div class="content-block-3">
+
+    <div class="similar-products-navigation">
+        <label>Похожие товары</label>
+        <hr>
+        <ul class="pagination">
+            <li><a href="" class="btn">Показать все</a></li>
+            <li class="arrow"><a href="" style=""><img src="img/arrow-left.png" alt=""></a></li>
+            <li><a href="">1/4</a></li>
+            <li class="arrow"><a href="" style=""><img src="img/arrow-right.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="similar-products-group">
+        <ul class="products-list">
+            <li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">
+                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt="">
+                    
+                    </figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="product-block">
+                <div class="similar-product-block">
+                    <figure class="product-min">                        <img src="img/Product-sale.png" alt="">
+                        <img src="img/Product-min.png" alt=""></figure>
+                    <label class="prod-article-id">0012341</label>
+                    <p class="product-description">
+                        Глянцевая обложка для документов из натуральной кожи темно-синего цвета
+                    </p>
+                    <div class="price-block">
+                        <span class="price-1">624<i class="fa fa-ruble"></i></span>
+                    </div>
+                    <div class="similar-input-group">
+                        <div class="input-group by-btn add-to-cart-btn-block">
+                            <input aria-label="Add to cart" class="btn add-to-cart-btn" type="submit"
+                                   value="Добавить в корзину">
+                            <span class="input-group-append"><img src="img/Cart-icon-white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+<!--Footer begin-->
+<footer class="">
+    <div class="row foot-block">
+        <!--Section 1 begin-->
+        <section id="foot-section-1" class="col-md-6">
+            <div id="foot-cat-list" class="col-md-6">
+                <label class="foot-title">Каталог товаров</label>
+                <ul>
+                    <li><a href="">Обложки для документов</a></li>
+                    <li><a href="">Заготовки под линзу</a></li>
+                    <li><a href="">Заготовки под сублимацию</a></li>
+                    <li><a href="">Расходиник и бумага</a></li>
+                    <li><a href="">Подарочные упаковки</a></li>
+                    <li><a href="">Фурниктура</a></li>
+                    <li><a href="">Скидки и акции</a></li>
+                </ul>
+            </div>
+            <div id="foot-info-list" class="col-md-6">
+                <label class="foot-title">Информация</label>
+                <ul>
+                    <li><a href="">Кто мы такие</a></li>
+                    <li><a href="">Как сделать заказ</a></li>
+                    <li><a href="">Вопросы и ответы</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Section 1 end-->
+        <!--Section 2 begin-->
+
+        <section id="foot-section-2" class="col-md-6">
+            <div class="hot-line-block">
+                <label>Горячая линия</label>
+                <div class="hot-line">
+                    <div id="foot-phone">
+                        <span class="phone">+7 (925) 001-18-04</span>
+                        <a href="" class="cont-link">Бесплатно по России</a>
+                    </div>
+                    <div id="foot-email">
+                        <span class="email">zagotovkimsk@yandex.ru</span>
+                        <a href="" class="cont-link">Есть вопросы – задай их нам</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="soc-group-foot input-group">
+                <label>Социальные сети</label>
+                <div class="soc-block">
+                    <a class="btn" href=""><img class="soc-ico-foot" src="img/Vk-icon-f.png" alt=""></a>
+                    <a class="btn" href=""><img class="soc-ico-foot" src="img/Viber-icon-f.png" alt=""></a>
+                    <a class="btn" href=""><img class="soc-ico-foot" src="img/Telegram-icon-f.png" alt=""></a>
+                    <a class="btn" href=""><img class="soc-ico-foot" src="img/Whatsapp-icon-f.png" alt=""></a>
+                </div>
+            </div>
+
+        </section>
+        <!--Section 2 end-->
+    </div>
+    <div id="req-info">
+        <p>
+            *Данный информационный ресурс не является публичной офертой. Наличие и стоимость товаров уточняйте по
+            телефону.
+            Производители оставляют за собой право изменять технически
+            характеристики и внешний вид товаров без предварительного уведомления.
+        </p>
+    </div>
+</footer>
+<!--Footer end-->
+
+
+
+<script type="text/javascript">
+    $(".similar-products-group").flipster({
+        style: 'flat',
+        spacing: -0.25
+    });
+
+
+
+</script>
+</body>
+</html>
