@@ -1,0 +1,83 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 15px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.2;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+//
+// Общие стили - Структура 1. b-bold, n-normal, l-light, m-medium 2. n-normal, b-big, m-medium, s-small.
+.b-n-text {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+
+//
+// Подключение кастомных стилей
+@import "_custom/header";
+@import "_custom/scm-cart"; // Корзина
+
+//
+// Медиа
+@import "media"; // Always at the end

@@ -1,0 +1,13 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular", 400);
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", 700);
+@include font-face("roboto-example", "../fonts/RobotoLight/RobotoLight", 300);
+@include font-face("roboto-example", "../fonts/RobotoMedium/RobotoMedium", 500);
+@include font-face("roboto-example", "../fonts/RobotoThin/RobotoThin", 100);
+// Gotham Pro шрифт
+@include font-face("gotham-example", "../fonts/GothamProBlack/GothamProBlack", 800);
+@include font-face("gotham-example", "../fonts/GothamProBold/GothamProBold", 700);
+@include font-face("gotham-example", "../fonts/GothamProLight/GothamProLight", 200);
+@include font-face("gotham-example", "../fonts/GothamProMedium/GothamProMedium", 500);
+@include font-face("gotham-example", "../fonts/GothamProRegular/GothamProRegular", 400);
