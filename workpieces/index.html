@@ -328,7 +328,7 @@
 					<ul class="bottom-line__data data">
 						<li class="data__item">
 							<button class="data__button info" id="info">
-								<svg class="data__icon" width="10" height="10">
+								<svg class="data__icon info__icon" width="10" height="10">
 									<use xlink:href="#triang-down"></use>
 								</svg>
 								Информация
@@ -378,7 +378,7 @@
 						</li>
 						<li class="data__item">
 							<button class="data__button currency" id="currency">
-								<svg class="data__icon" width="10" height="10">
+								<svg class="data__icon currency__icon" width="10" height="10">
 									<use xlink:href="#triang-down"></use>
 								</svg>
 								USD
@@ -401,7 +401,7 @@
 					</ul>
 					<!-- Информация конец -->
 					<!-- Корзина -->
-					<button class="cart">
+					<button data-mfp-src="#scm-cart" class="cart open-popup-link">
 						<svg class="cart__icon" width="18" height="18">
 							<use xlink:href="#cart-icon"></use>
 						</svg>
@@ -416,17 +416,109 @@
 	</header>
 	<!-- Шапка конец -->
 
+	<!-- Слайдер на главном экране -->
+	<section class="slider-section">
+		<!-- Слайдер -->
+		<div class="main-slider owl-carousel owl-theme">
+			<!-- Один слайд -->
+			<div class="main-slider__item">
+				<!-- Контент -->
+				<div class="main-slider__content">
+					<!-- Заголовок -->
+					<p class="main-slider__title">
+						Закажи 200 единиц товара и получи <br>
+						<span>бесплатную доставку</span> по терртитории <br>
+						Росийской Федераации
+					</p>
+					<!-- Таймер -->
+					<div class="main-slider__timer ms-timer">
+						<p class="ms-timer__title">
+							До конца акции осталось:
+						</p>
+						<div class="ms-timer__timer" id="ms-timer__timer">
+						</div>
+					</div>
+					<!-- Таймер конец -->
+				</div>
+				<!-- Контент конец -->
+			</div>
+			<!-- Один слайд конец -->
+			<!-- Один слайд -->
+			<div class="main-slider__item">
+				<!-- Контент -->
+				<div class="main-slider__content">
+					<!-- Заголовок -->
+					<p class="main-slider__title">
+						Закажи 200 единиц товара и получи <br>
+						<span>бесплатную доставку</span> по терртитории <br>
+						Росийской Федераации
+					</p>
+					<!-- Таймер -->
+					<div class="main-slider__timer ms-timer">
+						<p class="ms-timer__title">
+							До конца акции осталось:
+						</p>
+						<div class="ms-timer__timer" id="ms-timer__timer">
+						</div>
+					</div>
+					<!-- Таймер конец -->
+				</div>
+				<!-- Контент конец -->
+			</div>
+			<!-- Один слайд конец -->
+			<!-- Один слайд -->
+			<div class="main-slider__item">
+				<!-- Контент -->
+				<div class="main-slider__content">
+					<!-- Заголовок -->
+					<p class="main-slider__title">
+						Закажи 200 единиц товара и получи <br>
+						<span>бесплатную доставку</span> по терртитории <br>
+						Росийской Федераации
+					</p>
+					<!-- Таймер -->
+					<div class="main-slider__timer ms-timer">
+						<p class="ms-timer__title">
+							До конца акции осталось:
+						</p>
+						<div class="ms-timer__timer" id="ms-timer__timer">
+						</div>
+					</div>
+					<!-- Таймер конец -->
+				</div>
+				<!-- Контент конец -->
+			</div>
+			<!-- Один слайд конец -->
+			<!-- Навигация -->
+			<div class="main-slider__nav ms-nav">
+				<button class="ms-nav__button ms-nav__prev">
+					<svg width="13" height="13">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+				</button>
+				<button class="ms-nav__button ms-nav__next">
+					<svg width="13" height="13">
+						<use xlink:href="#angle-right"></use>
+					</svg>
+				</button>
+			</div>
+			<!-- Навигация конец -->
+		</div>
+		<!-- Слайдер конец -->
+	</section>
+	<!-- Слайдер на главном экране конец -->
+
 	<!-- Поп-ап окна -->
 	<!-- ------------ -->
 	<!-- Корзина -->
-	<div class="scm-cart" id="scm-cart">
+	<div class="scm-cart mfp-hide" id="scm-cart">
 		<!-- Шапка -->
 		<div class="scm-cart__header scm-header">
 			<div class="scm-header__wrapper">
 				<p class="scm-header__title">
 					Корзина
 				</p>
-				<button class="scm-header__close">
+				<button class="scm-header__close" id="scm-header__close">
 					<svg width="13" height="13">
 						<use xlink:href="#close-icon"></use>
 					</svg>
@@ -452,40 +544,42 @@
 				</button>
 				<!-- Карточка -->
 				<div class="scm-product__card">
-					<!-- Картинка -->
-					<div class="scm-product__img">
-						<img src="img/product-1.png" alt="Куллон">
-					</div>
-					<!-- Текст -->
-					<div class="scm-product__wrapper">
-						<p class="scm-product__name">
-							Глянцевая обложка для документов
-							из натуральной кожи темно-синего цвета
-						</p>
-						<!-- Опции -->
-						<div class="scm-product__list apps">
-							<div class="apps__item">
-								<p class="apps__title apps__base">
-									Основание:
-								</p>
-								<p class="apps__text apps__options">
-									<span class="apps__collor apps__collor--green"></span>
-									Зелёный
-								</p>
-							</div>
-							<div class="apps__item">
-								<p class="apps__title apps__insert">
-									Вставка:
-								</p>
-								<p class="apps__text apps__edition">
-									<span class="apps__collor apps__collor--red"></span>
-									Красный
-								</p>
-							</div>
+					<div class="scm-product__show">
+						<!-- Картинка -->
+						<div class="scm-product__img">
+							<img src="img/product-1.png" alt="Куллон">
 						</div>
-						<!-- Опции конец -->
+						<!-- Текст -->
+						<div class="scm-product__wrapper">
+							<p class="scm-product__name">
+								Глянцевая обложка для документов
+								из натуральной кожи темно-синего цвета
+							</p>
+							<!-- Опции -->
+							<div class="scm-product__list apps">
+								<div class="apps__item">
+									<p class="apps__title apps__base">
+										Основание:
+									</p>
+									<p class="apps__text apps__options">
+										<span class="apps__collor apps__collor--green"></span>
+										Зелёный
+									</p>
+								</div>
+								<div class="apps__item">
+									<p class="apps__title apps__insert">
+										Вставка:
+									</p>
+									<p class="apps__text apps__edition">
+										<span class="apps__collor apps__collor--red"></span>
+										Красный
+									</p>
+								</div>
+							</div>
+							<!-- Опции конец -->
+						</div>
+						<!-- Текст конец -->
 					</div>
-					<!-- Текст конец -->
 					<!-- Цена -->
 					<div class="scm-product__price scm-price">
 						<span class="scm-price__number">699</span>
@@ -496,14 +590,174 @@
 					<!-- Цена конец -->
 					<!-- Кол-во товара -->
 					<div class="scm-product__quantity scn-quantity">
-						<button class="scn-quantity__button scn-quantity__button--plus" type="button" name="button">
-							<svg width="13" height="13">
+						<button class="scn-quantity__button scn-quantity__button--minus" type="button" name="button">
+							<svg width="18" height="18">
 								<use xlink:href="#angle-right"></use>
 							</svg>
 						</button>
-						<input type="text" name="name" value="1">
+						<input class="scn-quantity__input" type="text" name="name" value="1">
+						<button class="scn-quantity__button scn-quantity__button--plus" type="button" name="button">
+							<svg width="18" height="18">
+								<use xlink:href="#angle-right"></use>
+							</svg>
+						</button>
+					</div>
+					<!-- Кол-во товара конец -->
+					<!-- Общая стоимость -->
+					<div class="scm-product__total-price total-price">
+						<span class="total-price__price">6990</span>
+						<svg width="10" height="10">
+							<use xlink:href="#rub-symbol"></use>
+						</svg>
+					</div>
+					<!-- Общая стоимость конец -->
+				</div>
+			</div>
+			<!-- Товар конец -->
+			<!-- Товар -->
+			<div class="scm-product">
+				<!-- Удалить -->
+				<button class="scm-product__del">
+					<svg width="13" height="13">
+						<use xlink:href="#close-icon"></use>
+					</svg>
+				</button>
+				<!-- Карточка -->
+				<div class="scm-product__card">
+					<div class="scm-product__show">
+						<!-- Картинка -->
+						<div class="scm-product__img">
+							<img src="img/product-1.png" alt="Куллон">
+						</div>
+						<!-- Текст -->
+						<div class="scm-product__wrapper">
+							<p class="scm-product__name">
+								Глянцевая обложка для документов
+								из натуральной кожи темно-синего цвета
+							</p>
+							<!-- Опции -->
+							<div class="scm-product__list apps">
+								<div class="apps__item">
+									<p class="apps__title apps__base">
+										Основание:
+									</p>
+									<p class="apps__text apps__options">
+										<span class="apps__collor apps__collor--green"></span>
+										Зелёный
+									</p>
+								</div>
+								<div class="apps__item">
+									<p class="apps__title apps__insert">
+										Вставка:
+									</p>
+									<p class="apps__text apps__edition">
+										<span class="apps__collor apps__collor--red"></span>
+										Красный
+									</p>
+								</div>
+							</div>
+							<!-- Опции конец -->
+						</div>
+						<!-- Текст конец -->
+					</div>
+					<!-- Цена -->
+					<div class="scm-product__price scm-price">
+						<span class="scm-price__number">699</span>
+						<svg width="10" height="10">
+							<use xlink:href="#rub-symbol"></use>
+						</svg>
+					</div>
+					<!-- Цена конец -->
+					<!-- Кол-во товара -->
+					<div class="scm-product__quantity scn-quantity">
 						<button class="scn-quantity__button scn-quantity__button--minus" type="button" name="button">
-							<svg width="13" height="13">
+							<svg width="18" height="18">
+								<use xlink:href="#angle-right"></use>
+							</svg>
+						</button>
+						<input class="scn-quantity__input" type="text" name="name" value="1">
+						<button class="scn-quantity__button scn-quantity__button--plus" type="button" name="button">
+							<svg width="18" height="18">
+								<use xlink:href="#angle-right"></use>
+							</svg>
+						</button>
+					</div>
+					<!-- Кол-во товара конец -->
+					<!-- Общая стоимость -->
+					<div class="scm-product__total-price total-price">
+						<span class="total-price__price">6990</span>
+						<svg width="10" height="10">
+							<use xlink:href="#rub-symbol"></use>
+						</svg>
+					</div>
+					<!-- Общая стоимость конец -->
+				</div>
+			</div>
+			<!-- Товар конец -->
+			<!-- Товар -->
+			<div class="scm-product">
+				<!-- Удалить -->
+				<button class="scm-product__del">
+					<svg width="13" height="13">
+						<use xlink:href="#close-icon"></use>
+					</svg>
+				</button>
+				<!-- Карточка -->
+				<div class="scm-product__card">
+					<div class="scm-product__show">
+						<!-- Картинка -->
+						<div class="scm-product__img">
+							<img src="img/product-1.png" alt="Куллон">
+						</div>
+						<!-- Текст -->
+						<div class="scm-product__wrapper">
+							<p class="scm-product__name">
+								Глянцевая обложка для документов
+								из натуральной кожи темно-синего цвета
+							</p>
+							<!-- Опции -->
+							<div class="scm-product__list apps">
+								<div class="apps__item">
+									<p class="apps__title apps__base">
+										Основание:
+									</p>
+									<p class="apps__text apps__options">
+										<span class="apps__collor apps__collor--green"></span>
+										Зелёный
+									</p>
+								</div>
+								<div class="apps__item">
+									<p class="apps__title apps__insert">
+										Вставка:
+									</p>
+									<p class="apps__text apps__edition">
+										<span class="apps__collor apps__collor--red"></span>
+										Красный
+									</p>
+								</div>
+							</div>
+							<!-- Опции конец -->
+						</div>
+						<!-- Текст конец -->
+					</div>
+					<!-- Цена -->
+					<div class="scm-product__price scm-price">
+						<span class="scm-price__number">699</span>
+						<svg width="10" height="10">
+							<use xlink:href="#rub-symbol"></use>
+						</svg>
+					</div>
+					<!-- Цена конец -->
+					<!-- Кол-во товара -->
+					<div class="scm-product__quantity scn-quantity">
+						<button class="scn-quantity__button scn-quantity__button--minus" type="button" name="button">
+							<svg width="18" height="18">
+								<use xlink:href="#angle-right"></use>
+							</svg>
+						</button>
+						<input class="scn-quantity__input" type="text" name="name" value="1">
+						<button class="scn-quantity__button scn-quantity__button--plus" type="button" name="button">
+							<svg width="18" height="18">
 								<use xlink:href="#angle-right"></use>
 							</svg>
 						</button>
@@ -524,28 +778,28 @@
 		<!-- Тело конец -->
 		<!-- Подвал -->
 		<div class="scm-cart__footer scm-footer">
-			<div class="scm-links">
-				<!-- Продолжить покупку -->
-				<button class="scm-links__button scm-continue">
-					Продолжить покупки
-				</button>
-				<!-- Итоговая сумма -->
-				<div class="scm-links__end-price end-price">
-					<p class="end-price__title">Итоговая сумма:</p>
-					<div class="end-price__wrapper">
-						<span class="end-price__price">27960</span>
-						<svg width="10" height="10">
-							<use xlink:href="#rub-symbol"></use>
-						</svg>
-					</div>
+			<!-- <div class="scm-links"> -->
+			<!-- Продолжить покупку -->
+			<button class="scm-footer__button scm-continue">
+				Продолжить покупки
+			</button>
+			<!-- Итоговая сумма -->
+			<div class="scm-footer__end-price end-price">
+				<p class="end-price__title">Итоговая сумма:</p>
+				<div class="end-price__wrapper">
+					<span class="end-price__price">27960</span>
+					<svg width="10" height="10">
+						<use xlink:href="#rub-symbol"></use>
+					</svg>
 				</div>
-				<!-- Итоговая сумма конец -->
-				<!-- Оформить заказ -->
-				<button class="scm-links__button scm-checkout">
-					Оформить заказ
-				</button>
-				<!-- Оформить заказ конец -->
 			</div>
+			<!-- Итоговая сумма конец -->
+			<!-- Оформить заказ -->
+			<button class="scm-footer__button scm-checkout">
+				Оформить заказ
+			</button>
+			<!-- Оформить заказ конец -->
+			<!-- </div> -->
 		</div>
 		<!-- Подвал конец -->
 	</div>

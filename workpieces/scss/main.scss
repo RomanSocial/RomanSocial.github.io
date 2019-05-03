@@ -75,8 +75,9 @@ ul, li {
 
 //
 // Подключение кастомных стилей
-@import "_custom/header";
+@import "_custom/header"; // Шапка
 @import "_custom/scm-cart"; // Корзина
+@import "_custom/main-slider"; // Слайдер
 
 //
 // Медиа
