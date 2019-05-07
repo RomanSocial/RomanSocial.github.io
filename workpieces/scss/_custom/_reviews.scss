@@ -1,0 +1,41 @@
+.reviews-section {
+  background-color: $alto;
+  padding: 60px 0px;
+}
+
+.reviews__title {
+  margin-bottom: 50px;
+}
+
+.r-slider {
+  &__slide {
+		padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__qoute {
+    fill: $basic;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__avatar {
+    margin-top: 20px;
+  }
+
+  &__name {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

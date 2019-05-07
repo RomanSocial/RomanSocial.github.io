@@ -1,0 +1,25 @@
+.about-shop-section {
+	padding: 60px 0px;
+}
+
+.about-shop__card {
+	margin-top: 50px;
+}
+
+.as-card {
+	display: flex;
+	flex-direction: column;
+	&__wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-top: 10px;
+	}
+}

@@ -72,12 +72,48 @@ ul, li {
 	font-weight: 700;
 }
 
+//
+// Заголовок H2
+.h2 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $text;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		margin-top: 12.5px;
+		width: 67px;
+		height: 4px;
+		background-color: $basic;
+	}
+}
+//
+// Информационная полоска
+.info-bar {
+	border-radius: 6px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 14px 20px;
+	background-color: $coconutcream;
+	svg {
+		flex-shrink: 0;
+		margin-right: 20px;
+	}
+}
 
 //
 // Подключение кастомных стилей
 @import "_custom/header"; // Шапка
 @import "_custom/scm-cart"; // Корзина
 @import "_custom/main-slider"; // Слайдер
+@import "_custom/advantage"; // Преимущество
+@import "_custom/about-shop"; // Преимущество
+@import "_custom/reviews"; // Отзывы
+@import "_custom/information"; // Информация
+@import "_custom/contact-us"; // Обратная связь
 
 //
 // Медиа

@@ -1,4 +1,9 @@
+.slider-section {
+	position: relative;
+}
+
 .main-slider {
+	position: relative;
 	background-color: #f3f3f3;
 	&__item {
 		display: flex;
@@ -33,6 +38,32 @@
 			}
 		}
 	}
+}
+
+.ms-nav__button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	height: 44px;
+	border-radius: 6px;
+	background-color: #ffffff80;
+	border: none;
+	z-index: 2;
+}
+.ms-nav__prev {
+	top: 50%;
+	margin-top: -22px;
+	left: 15%;
+	svg {
+		transform: rotate(180deg);
+	}
+}
+.ms-nav__next {
+	top: 50%;
+	margin-top: -22px;
+	right: 15%;
 }
 
 .ms-timer {

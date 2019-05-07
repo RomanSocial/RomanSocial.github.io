@@ -148,6 +148,40 @@
 				</g>
 			</symbol>
 			<!-- Символ рубля иконка конец -->
+			<!-- Кавычки иконка -->
+			<symbol id="quote-icon" viewBox="0 0 38 38">
+				<g>
+					<path
+						d="M21.375 21.375L21.375 4.75L38 4.75L38 21.6125C38 33.0125 27.3125 34.4375 27.3125 34.4375L25.8875 31.1125C25.8875 31.1125 30.6375 30.4 31.5875 26.6C32.5375 23.75 30.6375 21.375 30.6375 21.375L21.375 21.375Z" />
+					<path
+						d="M1.14196e-06 21.375L2.59536e-06 4.75L16.625 4.75L16.625 21.6125C16.625 33.0125 5.9375 34.4375 5.9375 34.4375L4.5125 31.1125C4.5125 31.1125 9.2625 30.4 10.2125 26.6C11.1625 23.75 9.2625 21.375 9.2625 21.375L1.14196e-06 21.375Z" />
+				</g>
+			</symbol>
+			<!-- Кавычки иконка конец -->
+			<!-- Знак вопроса иконка -->
+			<symbol id="question-icon" viewBox="0 0 16 16">
+				<g>
+					<path
+						d="M8 12.6094C8.43147 12.6094 8.78125 12.2596 8.78125 11.8281C8.78125 11.3967 8.43147 11.0469 8 11.0469C7.56853 11.0469 7.21875 11.3967 7.21875 11.8281C7.21875 12.2596 7.56853 12.6094 8 12.6094Z" />
+					<path
+						d="M8 0C3.57863 0 0 3.57803 0 8C0 12.4214 3.57803 16 8 16C12.4214 16 16 12.422 16 8C16 3.57863 12.422 0 8 0ZM8 14.75C4.26947 14.75 1.25 11.731 1.25 8C1.25 4.26947 4.26897 1.25 8 1.25C11.7305 1.25 14.75 4.26897 14.75 8C14.75 11.7305 11.731 14.75 8 14.75Z" />
+					<path
+						d="M8 4.01562C6.6215 4.01562 5.5 5.13713 5.5 6.51562C5.5 6.86081 5.77981 7.14062 6.125 7.14062C6.47019 7.14062 6.75 6.86081 6.75 6.51562C6.75 5.82638 7.31075 5.26562 8 5.26562C8.68925 5.26562 9.25 5.82638 9.25 6.51562C9.25 7.20487 8.68925 7.76562 8 7.76562C7.65481 7.76562 7.375 8.04544 7.375 8.39062V9.95312C7.375 10.2983 7.65481 10.5781 8 10.5781C8.34519 10.5781 8.625 10.2983 8.625 9.95312V8.93653C9.70206 8.65831 10.5 7.67841 10.5 6.51562C10.5 5.13713 9.3785 4.01562 8 4.01562Z" />
+				</g>
+			</symbol>
+			<!-- Знак вопроса иконка конец -->
+			<!-- Знак восклицания иконка -->
+			<symbol id="exclamation-icon" viewBox="0 0 16 16">
+				<g>
+					<path
+						d="M8 0C3.58892 0 0 3.58868 0 8C0 12.4113 3.58892 16 8 16C12.4111 16 16 12.4113 16 8C16 3.58868 12.4111 0 8 0ZM8 15.0154C4.13169 15.0154 0.984615 11.8683 0.984615 8C0.984615 4.13169 4.13169 0.984615 8 0.984615C11.8683 0.984615 15.0154 4.13169 15.0154 8C15.0154 11.8683 11.8683 15.0154 8 15.0154Z" />
+					<path
+						d="M8.12807 5.63348C8.58281 5.63348 8.95146 5.26484 8.95146 4.81009C8.95146 4.35535 8.58281 3.98671 8.12807 3.98671C7.67333 3.98671 7.30469 4.35535 7.30469 4.81009C7.30469 5.26484 7.67333 5.63348 8.12807 5.63348Z" />
+					<path
+						d="M7.91125 6.9765C7.6395 6.9765 7.41895 7.19706 7.41895 7.46881V11.6534C7.41895 11.9252 7.6395 12.1457 7.91125 12.1457C8.18301 12.1457 8.40356 11.9252 8.40356 11.6534V7.46881C8.40356 7.19681 8.18301 6.9765 7.91125 6.9765Z" />
+				</g>
+			</symbol>
+			<!-- Знак восклицания иконка конец -->
 		</svg>
 	</div>
 	<!-- SVG контейнер конец -->
@@ -406,7 +440,7 @@
 							<use xlink:href="#cart-icon"></use>
 						</svg>
 						Корзина
-						<span class="cart__quant">10</span>
+						<span class="cart__quant">3</span>
 					</button>
 					<!-- Корзина конец -->
 				</div>
@@ -418,6 +452,18 @@
 
 	<!-- Слайдер на главном экране -->
 	<section class="slider-section">
+		<!-- Навигация -->
+		<button class="ms-nav__button ms-nav__prev">
+			<svg width="13" height="13">
+				<use xlink:href="#angle-right"></use>
+			</svg>
+		</button>
+		<button class="ms-nav__button ms-nav__next">
+			<svg width="13" height="13">
+				<use xlink:href="#angle-right"></use>
+			</svg>
+		</button>
+		<!-- Навигация конец -->
 		<!-- Слайдер -->
 		<div class="main-slider owl-carousel owl-theme">
 			<!-- Один слайд -->
@@ -489,24 +535,358 @@
 				<!-- Контент конец -->
 			</div>
 			<!-- Один слайд конец -->
-			<!-- Навигация -->
-			<div class="main-slider__nav ms-nav">
-				<button class="ms-nav__button ms-nav__prev">
-					<svg width="13" height="13">
-						<use xlink:href="#angle-right"></use>
-					</svg>
-				</button>
-				<button class="ms-nav__button ms-nav__next">
-					<svg width="13" height="13">
-						<use xlink:href="#angle-right"></use>
-					</svg>
-				</button>
-			</div>
-			<!-- Навигация конец -->
 		</div>
 		<!-- Слайдер конец -->
 	</section>
 	<!-- Слайдер на главном экране конец -->
+
+	<!-- Преимущества -->
+	<section class="advantage-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4">
+					<!-- Преимущество №1 -->
+					<div class="advantage">
+						<div class="advantage__img">
+							<img src="img/adv-deliv.png" alt="Быстрая доставка">
+						</div>
+						<div class="advantage__wrapper">
+							<p class="advantage__title">
+								Быстрая доставка
+							</p>
+							<p class="advantage__text">
+								Сотрудничаем со всеми почтовыми компаниями Российской Федерации
+							</p>
+						</div>
+					</div>
+					<!-- Преимущество №1 конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Преимущество №1 -->
+					<div class="advantage">
+						<div class="advantage__img">
+							<img src="img/adv-sale.png" alt="Лидер Продаж">
+						</div>
+						<div class="advantage__wrapper">
+							<p class="advantage__title">
+								Лидер продаж
+							</p>
+							<p class="advantage__text">
+								Гарантия качества, помощь в обучении,
+								а также бесплатная база логотипов
+							</p>
+						</div>
+					</div>
+					<!-- Преимущество №1 конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Преимущество №1 -->
+					<div class="advantage">
+						<div class="advantage__img">
+							<img src="img/adv-price.png" alt="Низкие цены">
+						</div>
+						<div class="advantage__wrapper">
+							<p class="advantage__title">
+								Низкие цены
+							</p>
+							<p class="advantage__text">
+								Самые низкие цены, существенные скидки при оптовых закупках
+							</p>
+						</div>
+					</div>
+					<!-- Преимущество №1 конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Преимущества конец -->
+
+	<!-- О магазине -->
+	<section class="about-shop-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Заголовок -->
+					<h2 class="about-shop__title h2">
+						О магазине
+					</h2>
+					<!-- Заголовок конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-assortiment.png" alt="Большой ассортимент">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Большой ассортимент
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-price.png" alt="Низкие цены">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Низкие цены
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-deliv.png" alt="Доставка по всей россии">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Доставка по всей россии
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-for-all.png" alt="Для всех клинетов">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Для всех клинетов
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-sale.png" alt="Cистема скидок">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Cистема скидок
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+				<div class="col-xl-4">
+					<!-- Факт "О магазине" -->
+					<div class="about-shop__card as-card">
+						<div class="as-card__img">
+							<img src="img/as-podhod.png" alt="Индивудуальных подход">
+						</div>
+						<div class="as-card__wrapper">
+							<p class="as-card__title">
+								Индивидуальных подход
+							</p>
+							<p class="as-card__text">
+								В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+								Ipsum для распечатки образцов.
+							</p>
+						</div>
+					</div>
+					<!-- Факт "О магазине" конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- О магазине конец -->
+
+	<!-- Отзывы -->
+	<section class="reviews-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<h2 class="reviews__title h2">
+						Отзывы покупателей
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Карточка отзыва -->
+					<div class="r-slider__slide">
+						<svg class="r-slider__qoute" width="38" height="38">
+							<use xlink:href="#quote-icon"></use>
+						</svg>
+						<p class="r-slider__text">
+							В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+							Ipsum для распечатки только образцов и ещё шаблонов.
+						</p>
+						<div class="r-slider__avatar">
+							<img src="img/r-ava-1.png" alt="Василий Петухов">
+						</div>
+						<p class="r-slider__name">
+							Василий Петухов
+						</p>
+					</div>
+					<!-- Карточка отзыва конец -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Отзывы конец -->
+
+	<!-- Информация -->
+	<section class="information-section">
+		<div class="i-accordion__container">
+			<!-- Заголовок -->
+			<h2 class="information__title h2">
+				Информация
+			</h2>
+			<!-- Заголовок конец -->
+		</div>
+
+		<div class="information__accordion i-accordion" id="i-accordion">
+			<!-------------------->
+			<!-- 1 слайд -->
+			<!-- Шапка -->
+			<div class="i-accordion__header-wrapper">
+				<div class="i-accordion__header i-accordion__container">
+					<svg width="16" height="16">
+						<use xlink:href="#question-icon"></use>
+					</svg>
+					Кто мы такие?
+				</div>
+			</div>
+			<!-- Шапка конец -->
+			<!-- Тело -->
+			<div class="i-accordion__body-wrapper">
+				<div class="i-accordion__body i-accordion__container">
+					<ul class="i-accordion__list">
+						<li class="i-accordion__item">
+							Доставка до транспортной компании <b>абсолютно бесплатная</b>.
+						</li>
+						<li class="i-accordion__item">
+							<b>Минимальная сумма</b> для отправки заказов 2500 рублей (без стоимости учета доставки)
+						</li>
+						<li class="i-accordion__item">
+							Находимся в Москве, по Москве возможен самовывоз, доставка к станции метро и по адресу службой достависта
+							в среднем 500 рублей.
+						</li>
+						<li class="i-accordion__item">
+							Доставка "Почтой России" (обязательно к заполнению страна, город, улица, дом, ИНДЕКС, ФИО получателя) -
+							средняя стоимость 350 руб
+						</li>
+					</ul>
+					<a href="#" class="i-accordion__link">Рассчитать стоимость доставки</a>
+					<div class="i-accordion__info">
+						<svg width="16" height="16">
+							<use xlink:href="#exclamation-icon"></use>
+						</svg>
+						<p class="i-accordion__info-text">
+							Отправка <b>по всему миру</b> в течении 48 часов с момента оплаты. Работаем со всеми транспортными
+							компаниями
+							ПЭК, Деловые линии, PoniExpress, СПСР-экспресс и многими другими. Возможна доставка проводниками поезда,
+							Bla Bla Car и любым удобным для Вас способом!
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Тело конец -->
+			<!-- 1 слайд конец -->
+			<!-------------------->
+			<!-- 1 слайд -->
+			<!-- Шапка -->
+			<div class="i-accordion__header-wrapper">
+				<div class="i-accordion__header i-accordion__container">
+					<svg width="16" height="16">
+						<use xlink:href="#question-icon"></use>
+					</svg>
+					Кто мы такие?
+				</div>
+			</div>
+			<!-- Шапка конец -->
+			<!-- Тело -->
+			<div class="i-accordion__body-wrapper">
+				<div class="i-accordion__body i-accordion__container">
+					Доставка до транспортной компании абсолютно бесплатная.
+					Минимальная сумма для отправки заказов 2500 рублей (без стоимости учета доставки)
+					Находимся в Москве, по Москве возможен самовывоз, доставка к станции метро и по адресу службой достависта в
+					среднем 500 рублей.
+					Доставка "Почтой России" (обязательно к заполнению страна, город, улица, дом, ИНДЕКС, ФИО получателя) -
+					средняя стоимость 350 руб
+					<a href="#" class="i-accordion__link">Рассчитать стоимость доставки</a>
+					<div class="i-accordion__info info-bar">
+						<svg width="16" height="16">
+							<use xlink:href="#exclamation-icon"></use>
+						</svg>
+						<p class="i-accordion__info-text info-bar__text">
+							Отправка по всему миру в течении 48 часов с момента оплаты. Работаем со всеми транспортными компаниями
+							ПЭК, Деловые линии, PoniExpress, СПСР-экспресс и многими другими. Возможна доставка проводниками поезда,
+							Bla Bla Car и любым удобным для Вас способом!
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Тело конец -->
+			<!-- 1 слайд конец -->
+		</div>
+	</section>
+	<!-- Информация конец -->
+
+	<!-- Обратная связь -->
+	<section class="contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Заголовок -->
+					<h2 class="contact-us__title h2">
+						Обратная связь
+					</h2>
+					<!-- Заголовок конец -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="contact-us__info info-bar">
+						<svg width="16" height="16">
+							<use xlink:href="#exclamation-icon"></use>
+						</svg>
+						<p class="contact-us__info-text info-bar__text">
+								Ваш вопрос будет передан в службу поддержки. Мы сделаем все возможное для того, чтобы вы получили ответ в самые короткие сроки.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Обратная связь конец -->
 
 	<!-- Поп-ап окна -->
 	<!-- ------------ -->

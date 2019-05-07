@@ -1,5 +1,7 @@
  .header {
-   background-color: $basic;
+	 position: relative;
+	 background-color: $basic;
+	 z-index: 10;
 
    &__top-line {
      padding: 17px 0px;

@@ -41,12 +41,25 @@ $(function () {
 	});
 
 	// Слайдер на главном экране
-	$('.main-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
+	var owl = $('.main-slider');
+	owl.owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
 		items: 1,
-		navContainer: '.ms-nav',
-})
+	});
+	// Go to the next item
+	$('.ms-nav__next').click(function () {
+		owl.trigger('next.owl.carousel');
+	})
+	// Go to the previous item
+	$('.ms-nav__prev').click(function () {
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl.trigger('prev.owl.carousel');
+	})
+
+	// Аккардион
+	$( "#i-accordion" ).accordion();
 
 });
