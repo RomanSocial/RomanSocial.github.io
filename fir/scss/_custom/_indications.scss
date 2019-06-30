@@ -1,0 +1,44 @@
+.indications {
+  padding: 80px 0px;
+
+  &__item {
+    margin-top: 50px;
+  }
+
+  &__decor {
+    margin-top: 6px;
+  }
+
+  &__quote {
+    margin-top: 50px;
+  }
+}
+
+.illness {
+  &__item {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &--pt {
+    padding-top: 30px;
+  }
+
+  &__wrapper {
+    margin-left: 16px;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__koleni {
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}

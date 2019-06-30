@@ -1,0 +1,145 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'MyriadPro', sans-serif
+	overflow-x: hidden
+	color: $text
+
+	h1,h2,h3,h4,h5,h6,p,li,ul, button
+		margin: 0
+		padding: 0
+
+// Custom Sass
+
+.container
+	max-width: 720px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+// Основные стили
+
+// Размер текста
+//--------------------------------
+// Заглавный текст в хедере
+.text-s_header
+	font-family: 'Arial', sans-serif
+	font-size: 36px
+	font-weight: 700
+	line-height: 36.72px
+
+// Обычный текст
+.text-s_reg
+	font-size: 30px
+	font-weight: 400
+	line-height: 22.11px
+
+// Текст кнопок
+.text-s_button
+	text-transform: uppercase
+	font-size: 30px
+	font-weight: 400
+
+// Текст начала списка
+.text-s_title
+	font-size: 36px
+	font-weight: 400
+	line-height: 22.11px
+
+// Текст колличества
+.text-s_quant
+	font-size: 30px
+	font-weight: bold
+	line-height: 22.11px
+
+// Текст нижней строки
+.text-s_footer
+	font-family: 'Arial', sans-serif
+	font-size: 21px
+	font-weight: 400
+
+// Текст подкатегорий заказа
+.text-s_order
+	font-size: 24px
+	font-weight: 400
+
+// Вспомогательный текст
+.text-s_help
+	font-size: 18px
+	font-weight: 400
+
+// Цвета текста
+//--------------------------------
+// Заглавный в плашке
+.text-c_caption
+	font-family: "Arial", sans-serif
+	color: $sub-text
+
+// Главный в плашке
+.text-c_main
+	font-family: "Arial", sans-serif
+	color: $text
+
+// Размеры плашек
+//--------------------------------
+// Большая плашка
+.s-hight
+	padding: 0px 30px
+	height: 151px
+
+// Средний плашка
+.s-mid
+	padding: 0px 30px
+	height: 120px
+
+// Мелкий плашка
+.s-short
+	height: 98px
+
+// Внутренние объекты
+//--------------------------------
+// Обёртка в плашке
+.basic-wrapp
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+// Заголовок в плашке
+.basic-caption
+
+// Главный в плашке
+.basic-main
+	margin-top: 13px
+
+@import custom-sass/_elements
+@import custom-sass/_header
+@import custom-sass/_footer
+@import custom-sass/_main

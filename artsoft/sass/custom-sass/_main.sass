@@ -1,0 +1,52 @@
+// Основной контент
+.main
+	display: flex
+	flex-direction: column
+	height: 1068px
+	padding-top: 18px
+	padding-bottom: 40px
+	background-color: $bg
+	&__basic-item
+		margin-top: 5px
+		&:first-child
+			margin-top: 0px
+
+// Страница "Авторизация"
+.p-enter
+	&__enter-button
+		margin: 18px 25px 0px 25px
+
+// Страница "Регистрация"
+.p-reg
+	height: 1568px
+	&__wrapp
+		display: flex
+		&_chek-b
+			align-items: center
+			padding: 29px
+		&_button
+			padding: 30px
+			justify-content: center
+			flex-direction: column
+	&__next
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 47px
+		height: 47px
+		border-radius: 50%
+		border: 2px solid $sub-text
+		svg
+			margin-left: 3px
+			transform: rotate(180deg)
+			fill: $sub-text
+	&__chek-b
+		padding: 0px 36px
+		text-transform: none
+		&:last-child
+			margin-left: 16px
+	&__button
+		&:last-child
+			margin-top: 18px
+
+

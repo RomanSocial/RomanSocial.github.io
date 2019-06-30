@@ -1,0 +1,75 @@
+// Элементы
+// Основная плашка
+.basic
+	&-item
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+		background-color: $white
+	&-input
+		border: none
+		outline: none
+		background-color: transparent
+		&_b
+			opacity: 1
+			color: $text
+		&_s
+			line-height: 1.7
+			flex: 1
+			border-bottom: 2px solid $sub-text
+			&:focus
+				color: $text
+				border-bottom: 2px solid $accent
+	&-button
+		border: none
+		outline: none
+		background-color: transparent
+	&-icon
+		&_accent
+			fill: $accent
+		&_normal
+			fill: #838383
+			transform: rotate(180deg)
+	&-help-text
+		position: absolute
+		top: 10px
+		left: 30px
+		opacity: 0
+		&_active
+			opacity: 1
+			color: $accent
+
+//Кнопка Вход
+.enter-button
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 110px
+	background-image: url(../img/_src/button-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	border-radius: 10px
+	border: 2px solid $text
+	text-transform: uppercase
+	font-family: 'Arial', sans-serif
+	color: $text
+
+// Кнопка Регистрация
+.registr-button
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 151px
+	margin-top: auto
+	padding: 0px 22px 0px 30px
+	background-color: $white
+	&:hover
+		text-decoration: none
+	&__text
+		font-family: 'Arial', sans-serif
+		text-transform: uppercase
+		color: $accent
+	&__icon
+		transform: rotate(180deg)
+		fill: $icon

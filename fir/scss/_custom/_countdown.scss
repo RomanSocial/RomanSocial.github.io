@@ -1,0 +1,44 @@
+.c-timer {
+  margin-top: 15px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 54px;
+    height: 54px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    background-color: $text;
+    color: $white;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.54px;
+  }
+
+  &__text {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: $text;
+  }
+}

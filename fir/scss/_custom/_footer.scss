@@ -1,0 +1,27 @@
+.footer {
+  padding: 25px 0px;
+	background-color: $alabaster;
+	text-align: center;
+
+  &__text {
+    text-align: center;
+    color: $text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+  }
+
+  &__link {
+		margin-top: 15px;
+		text-align: center;
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+		letter-spacing: -0.28px;
+		&:hover {
+			text-decoration: none;
+		}
+  }
+}

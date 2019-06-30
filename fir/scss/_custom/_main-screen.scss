@@ -1,0 +1,230 @@
+ .main-screen {
+	 padding-bottom: 60px;
+	 position: relative;
+	 padding-top: 17px;
+	 background-image: url(../img/png-sun.png);
+	 background-position: center bottom;
+	 background-repeat: no-repeat;
+	 background-size: 60%;
+
+   &__wrapper {
+     margin-bottom: 77px;
+	 }
+	 &__title-wrapper {
+		 position: relative;
+		 z-index: 1;
+		 display: flex;
+		 flex-direction: row;
+	 }
+	 &__title {
+		margin-left: 50px;
+	 }
+
+   &__decor {
+     margin-top: 6px;
+   }
+
+   &__sub-title {
+     margin-top: 20px;
+     color: $text;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 20px;
+     letter-spacing: 0.32px;
+   }
+ }
+
+ .power-fir {
+   display: flex;
+   flex-direction: row;
+
+   &__tel {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: auto;
+     transition: all .3s ease;
+
+     svg {
+       transition: all .3s ease;
+       margin-right: 9px;
+     }
+
+     &:hover {
+       cursor: pointer;
+       color: $accent;
+
+       svg {
+         fill: $accent;
+       }
+     }
+   }
+ }
+
+ .menu {
+   padding: 0px 40px;
+   flex: 1;
+   display: flex;
+   align-items: center;
+
+   &__list {
+     flex: 1;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   &__link {
+     color: $text;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 24px;
+     letter-spacing: 0.32px;
+
+     &:hover {
+       text-decoration: none;
+       color: $accent;
+     }
+   }
+ }
+
+ .plus {
+	 position: relative;
+	 z-index: 1;
+   &__item {
+		 max-width: 350px;
+     margin-top: 20px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 25px;
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+     border-radius: 30px;
+     background-color: $white;
+
+     &:first-child {
+       margin-top: 36px;
+     }
+   }
+
+   &__text {
+     margin-left: 20px;
+   }
+ }
+
+ .main-form {
+	 position: relative;
+	 z-index: 1;
+   padding: 40px 31px 45px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+   border-radius: 20px;
+   background-color: $white;
+
+   &__title {
+     color: $text;
+     font-size: 27px;
+     font-weight: 700;
+     line-height: 30px;
+     letter-spacing: 0.54px;
+   }
+
+   &__sub-title {
+		 margin-top: 14px;
+     color: $text;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.32px;
+   }
+
+   &__sale-text {
+     color: $text;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     letter-spacing: 0.32px;
+   }
+
+   &__price {
+		 margin: 15px 0px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+   }
+
+   &__new-price {
+     padding: 17px 30px;
+     border-radius: 20px;
+     background-color: #f75959;
+     color: $white;
+     font-family: Montserrat;
+     font-size: 27px;
+     font-weight: 700;
+     line-height: 24px;
+     letter-spacing: 0.54px;
+   }
+
+   &__old-price {
+     text-align: center;
+     border-radius: 20px;
+     background-color: $text;
+     padding: 17px 25px 17px 27px;
+     color: $white;
+     font-family: Montserrat;
+     font-size: 27px;
+     font-weight: 400;
+     line-height: 24px;
+     text-decoration: line-through;
+     letter-spacing: 0.54px;
+   }
+
+   &__sale-note {
+     color: $text;
+     font-size: 12px;
+     font-weight: 700;
+     line-height: 24px;
+     letter-spacing: 0.24px;
+	 }
+
+   &__time-text {
+     color: $text;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     letter-spacing: 0.32px;
+   }
+
+   &__link {
+     padding: 18px 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     background-color: $accent;
+     color: $white;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 24px;
+     text-transform: uppercase;
+     letter-spacing: 0.32px;
+
+     &:hover {
+       text-decoration: none;
+       background-color: lighten($accent, 5);
+       color: $white;
+     }
+   }
+ }
+
+ .main-fir {
+	 position: absolute;
+	 top: 50%;
+	 margin-top: -203px;
+	 left: 50%;
+	 margin-left: -333px;
+ }
