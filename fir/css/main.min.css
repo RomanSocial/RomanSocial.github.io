@@ -4668,5 +4668,5 @@ a {
 
 .cn {
     position: absolute;
-    
+    z-index: 1;
 }
