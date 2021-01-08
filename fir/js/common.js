@@ -43,7 +43,7 @@ $(function () {
       event.preventDefault();
       var id = $(this).attr("href"),
         top = $(id).offset().top;
-      $("body,html").animate({ scrollTop: top }, 200);
+      $("body,html").animate({ scrollTop: top }, 10000);
     });
   });
 });
