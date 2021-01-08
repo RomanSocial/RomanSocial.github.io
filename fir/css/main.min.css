@@ -4668,7 +4668,7 @@ a {
 
 .cn {
     position: fixed;
-    top: 0;
+    top: 250px;
     left: 0;
     z-index: 1;
 }
