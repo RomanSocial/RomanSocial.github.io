@@ -5082,3 +5082,11 @@ ul {
   text-decoration: underline;
   letter-spacing: -0.2px;
 }
+
+/* Для кейса */
+.cn {
+    position: fixed;
+    top: 250px;
+    left: 0;
+    z-index: 1;
+}
